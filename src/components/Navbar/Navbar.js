@@ -3,12 +3,12 @@ import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
 // import logo from './logo.png';
-import HomeIcon from '@material-ui/icons/Home';
-import InfoIcon from '@material-ui/icons/Info';
-import BuildIcon from '@material-ui/icons/Build';
-import PlaceIcon from '@material-ui/icons/Place';
-import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
-import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
+// import HomeIcon from '@material-ui/icons/Home';
+// import InfoIcon from '@material-ui/icons/Info';
+// import BuildIcon from '@material-ui/icons/Build';
+// import PlaceIcon from '@material-ui/icons/Place';
+// import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
+// import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
 
 const Navbar = () => {
 
@@ -79,34 +79,44 @@ const Navbar = () => {
 
           <li className="nav-item active">
             <NavLink className="nav-link" to="/" exact>
-              <HomeIcon /> Home
+              Home
             </NavLink>
           </li>
 
           <li className="nav-item">
             <NavLink className="nav-link" to="/about" exact>
-              <InfoIcon /> About
+              About
             </NavLink>
           </li>
 
           <li className="nav-item">
             <NavLink className="nav-link" to="/change" exact>
-              <BuildIcon />Make A Change
+              Make A Change
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/places" exact>
-              <PlaceIcon />Places To Visit
+              Places To Visit
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/studentlife" exact>
-              <EmojiPeopleIcon />Student Life
+              Student Life
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/helpandadvice" exact>
+              Help & Advice
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/notice" exact>
+              General Notice Board
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/contact" exact>
-              <PermContactCalendarIcon />Contact Us
+              Contact Us
             </NavLink>
           </li>
         </ul>

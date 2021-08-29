@@ -12,6 +12,7 @@ import Contact from "./pages/Contact/Contact";
 import Change from "./pages/Change/Change";
 import Places from "./pages/Places/Places";
 import Studentlife from "./pages/Studentlife/Studentlife";
+import HelpAndAdvice from "./pages/HelpAndAdvice/HelpAndAdvice";
 import Navbar from './components/Navbar/Navbar';
 
 
@@ -29,6 +30,7 @@ const App = () => {
             <Route path='/change' exact component={Change} />
             <Route path='/places' exact component={Places} />
             <Route path='/studentlife' exact component={Studentlife} />
+            <Route path='/helpandadvice' exact component={HelpAndAdvice} />
             <Route path='/contact' exact component={Contact} />
             <Redirect to="/" />
           </Switch>

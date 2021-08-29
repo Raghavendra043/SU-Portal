@@ -1,0 +1,93 @@
+/* change-page */
+
+.change {
+    width: 100%;
+    padding: 80px 25px;
+    background-color: black;
+}
+
+.change-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-content: left ;
+}
+
+.main .change-text { 
+    text-align: left;
+}
+
+.list-items {
+        list-style-type: none;
+        font-size: 2rem;
+        margin: 45px 45px;
+        padding-right: 10px;
+}
+
+.change-content {
+    margin-top: -40px;
+
+}
+
+.change-content-heading {
+    margin: 5rem auto;
+}
+
+.change h2 {
+    color: rgb(255, 42, 5);
+    font-size: 60px;
+    text-transform: capitalize;
+    /* padding: 50px 600px; */
+    margin: auto;
+    padding-bottom: 75px;
+}
+
+.change-text h5 {
+    color: rgb(3, 3, 3);
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+span {
+    color: rgb(255, 42, 5);
+}
+
+.change-text p {
+    color: rgba(10, 8, 8, 0.705);
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.vertical {
+    border-left: 2px solid black;
+    height: 28rem;
+    position:absolute;
+    left: 52%;
+}
+
+@media (max-width: 800px) {
+
+    .main {
+        flex-direction: column;
+        padding: 30%;
+    }
+
+    .change {
+        padding: 80px 5px;
+    }
+
+    .main {
+        padding: 2px;
+    }
+}
