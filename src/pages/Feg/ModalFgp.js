@@ -1,6 +1,6 @@
 import React from 'react'
 
-function FegComponent() {
+function ModalFgp() {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function FegComponent() {
     )
 }
 
-export default FegComponent
+export default ModalFgp

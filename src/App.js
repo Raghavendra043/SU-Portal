@@ -14,7 +14,7 @@ import Places from "./pages/Places/Places";
 import Studentlife from "./pages/Studentlife/Studentlife";
 import HelpAndAdvice from "./pages/HelpAndAdvice/HelpAndAdvice";
 import Navbar from './components/Navbar/Navbar';
-
+import FegComponent from "./pages/Feg/FegComponent";
 
 
 const App = () => {
@@ -30,6 +30,7 @@ const App = () => {
             <Route path='/change' exact component={Change} />
             <Route path='/places' exact component={Places} />
             <Route path='/studentlife' exact component={Studentlife} />
+            <Route path='/feg' exact component={FegComponent} />
             <Route path='/helpandadvice' exact component={HelpAndAdvice} />
             <Route path='/contact' exact component={Contact} />
             <Redirect to="/" />
