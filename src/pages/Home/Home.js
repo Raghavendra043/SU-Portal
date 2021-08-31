@@ -1,21 +1,26 @@
+import React from "react";
+import path1 from "../../assets/home/hero/path1.svg";
+import heroImg from "../../assets/home/hero/heroImg.svg";
 
-const Home = () => {
+function Home() {
+  return (
+    <div>
+      <div style={{ position: "relative" }}>
+        <img src={path1} alt="path1" style={{ width: "100%" }} />
+        <img
+          src={heroImg}
+          alt=" heroimg"
+          style={{ position: "absolute", top: 46, right: 60 }}
+        />
 
-    return (
-        <div className="container">
-        
-          <h1 className="text-center" style={{paddingTop: "20%"}}>
-            Hello
-          </h1>
-          
+        <div style={{ position: "absolute" }}>
+          <img src="" alt="" />
+          <div></div>
+          <div></div>
         </div>
-      )
-
+      </div>
+    </div>
+  );
 }
 
 export default Home;
-
-
-/* section*6>(h1>{Curves})+p>lorem20 */
-/* https://haikei.app */
-/* https://www.shapedivider.app */
