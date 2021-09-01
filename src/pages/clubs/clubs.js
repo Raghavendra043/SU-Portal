@@ -1,13 +1,14 @@
 import React from 'react'
-import Club_name from './clubname'
-import Club_events from './Clubevents'
+import Clubname from './clubname'
+import Clubevents from './Clubevents'
 
-
+import Clubvideo from './clubvideo'
 export default function clubs() {
     return (
         <div>
-            <Club_name />
-            <Club_events />
+            <Clubname />
+            <Clubvideo />
+            <Clubevents />
         </div>
     )
 }

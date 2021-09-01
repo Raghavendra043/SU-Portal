@@ -1,0 +1,103 @@
+#clubvideo{
+    width: 100%;
+    height: 550px;
+    margin: auto;
+
+    position: relative;
+    top: 0px;
+    z-index: 1;
+border-radius: 30px;
+overflow: hidden;
+}
+#clubvideodiv{
+    width: 70%;
+    height: 550px;
+    margin: auto;
+
+    position: relative;
+    top: 0px;
+    z-index: 1;
+border-radius: 30px;
+overflow: hidden;
+}
+
+#svg3{
+    /* transform: translateY(-270px); */
+    margin-top: -270px;
+    width: 30%;
+    margin-left:20px;
+}
+#svg4{
+    /* border: 2px solid red; */
+    /* float: right; */
+    /* padding-right: 100px; */
+    /* width: 28%; */
+    /* transform: translateY(-174px); */
+    margin-top: -86px;
+    margin-left: 253px;
+    width: 30%;
+}
+@media only screen and (max-width: 980px)
+{
+    #svg4{
+        margin-top: -60px;
+    }
+    #clubvideodiv,#clubvideo{
+        height: 452px;
+    }
+}
+@media only screen and (max-width: 850px)
+{
+    #svg3 {
+        /* transform: translateY(-270px); */
+        margin-top: -144px;
+        width: 30%;}
+}
+@media only screen and (max-width: 700px)
+{
+    #svg4 {
+        margin-top: -32px;
+        margin-left: 138px;
+    }
+}
+@media only screen and (max-width: 570px)
+{
+
+    #clubvideodiv {
+        height: 360px;
+        width: 78%;
+    }
+   #clubvideo{
+        height: 360px;
+    }
+}
+@media only screen and (max-width: 569px)
+{
+
+    #svg3 {
+        /* transform: translateY(-270px); */
+        margin-top: -100px;
+        width: 33%;
+    }
+}
+@media only screen and (max-width: 429px)
+{
+
+    #svg4 {
+        margin-top: -20px;
+        margin-left: 93px;
+    }
+}
+@media only screen and (max-width: 393px)
+{
+    #clubvideodiv {
+        height: 268px;
+        width: 85%;
+    }
+    #clubvideo{
+        height: 268px;
+    }
+    #svg3{
+        margin-left: 0px;
+    }
+}

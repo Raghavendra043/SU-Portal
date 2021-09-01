@@ -9,7 +9,7 @@
     /* border: 2px solid red; */
     background-color: white;
     border-radius: 50%;
-    margin-left: 216px;
+    margin-left: 13%;
     padding-right: 20px;
     padding-left: -20px;
 }
@@ -36,7 +36,8 @@ transform: translateY(-150px);
 }
 .club_aboutus h5{
     font-family: 'Fredericka the Great';
-    font-size: 40px;
+    font-size: 48px;
+
 
 
 }
@@ -46,7 +47,91 @@ transform: translateY(-150px);
     font-size: 14px;
     margin-left: 60px;
     font-weight: bolder;
+
 }
 .video{
     opacity: 0.3;
+}
+
+@media only screen and (max-width: 1195px)
+{
+    .clubname{
+        transform: translateY(-128px);
+    }
+}
+@media only screen and (max-width: 1012px)
+{
+    .club_aboutus{
+       width: 70%;
+    }
+}
+@media only screen and (max-width: 868px)
+{
+    .club_aboutus{
+       width: 80%;
+    }
+}
+@media only screen and (max-width: 710px)
+{
+    .clubname {
+font-size: 40px;
+    }
+    .club_aboutus h5{
+        font-size: 35px;
+    }
+    .club_aboutus{
+        width: 90%;
+
+     }
+     .club_aboutus p{
+        margin-left: 5px;
+     }
+     .clubname{
+         margin-left: 0px;
+     }
+}
+@media only screen and (max-width: 632px)
+{
+    .club_aboutus p{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 546px)
+{
+    .clubname {
+        font-size: 30px;
+    }
+    .club_aboutus h5 {
+        font-size: 28px;
+    }
+    .clublogo{
+        width: 150px;
+        height: 150px;
+    }
+    .club_aboutus p {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 434px)
+{
+    .clubname{
+        transform: translateY(-100px);
+        font-size: 26px;
+    }
+    .club_aboutus h5 {
+        font-size: 25px;
+    }
+    .club_aboutus {
+        width: 99%;
+    }
+}
+@media only screen and (max-width: 358px)
+{
+    .clubname {
+        transform: translateY(-100px);
+        font-size: 23px;
+    }
+    .club_aboutus h5 {
+        font-size: 21px;
+    }
 }
