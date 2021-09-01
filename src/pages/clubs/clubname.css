@@ -1,0 +1,52 @@
+.image{
+    width: 100%;
+    height: 450px;
+}
+.clublogo{
+    width: 200px;
+    height: 200px;
+    transform: translateY(-100px);
+    /* border: 2px solid red; */
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 216px;
+    padding-right: 20px;
+    padding-left: -20px;
+}
+.clubname
+{
+    font-family: 'Fredericka the Great';
+    color: black;
+    font-size: 48px;
+    margin-left: 30px;
+    /* border: 2px solid red; */
+    display: flex;
+justify-content: center;
+align-items: center;
+transform: translateY(-150px);
+
+}
+.club_aboutus
+{
+    /* border: 2px solid red; */
+    width: 60%;
+    margin: auto;
+    transform: translateY(-50px);
+
+}
+.club_aboutus h5{
+    font-family: 'Fredericka the Great';
+    font-size: 40px;
+
+
+}
+
+.club_aboutus p{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    margin-left: 60px;
+    font-weight: bolder;
+}
+.video{
+    opacity: 0.3;
+}
