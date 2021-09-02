@@ -1,6 +1,7 @@
 .fgp-container{
-    margin: 4em 0;
-    padding: 0 8em;
+    max-width: 80%;
+    margin: 4em auto;
+    padding: 0 0;
     text-align: justify;
 }
 
@@ -90,17 +91,27 @@
     position:absolute;
     left :0;
     transform: translateX(-60%);
+    z-index: -5;
 }
 
 .right-boxes{
     position:absolute;
     right :0;
     transform: translateX(60%);
+    z-index: -5;
 }
 
+.fgp-modal-label{
+    margin-right: 1em;
+}
+
+.modal-body > div{
+    margin: 0.5em 2em;
+}
 
 @media only screen and (min-width:600px){
     .fgp-container{
+        max-width: 100%;
         padding: 0 12em;
     }
 
