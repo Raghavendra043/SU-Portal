@@ -14,6 +14,7 @@ import Places from "./pages/Places/Places";
 import Studentlife from "./pages/Studentlife/Studentlife";
 import HelpAndAdvice from "./pages/HelpAndAdvice/HelpAndAdvice";
 import Navbar from './components/Navbar/Navbar';
+import Clubs from "./pages/clubs/clubs";
 
 
 
@@ -25,7 +26,10 @@ const App = () => {
         <Navbar />
         <main>
           <Switch>
-            <Route exact path="/" component={Home} />
+          <Route exact path="/club"  >
+          <Clubs />
+</Route>            
+<Route exact path="/" component={Home} />
             <Route path='/about' exact component={About} />
             <Route path='/change' exact component={Change} />
             <Route path='/places' exact component={Places} />
