@@ -20,7 +20,7 @@ let right_heading = right.firstChild
 right_para.style.display = "none"
 right_button.style.display = "block"
 right_heading.style.color = "white"
-// left.style.justifyContent = "center"
+left.style.justifyContent = "center"
 // right.style.clipPath="circle(140.5% at 0 0)"
 right.style.animation = "back 1s forwards";
 right.style.backgroundColor = "rgb(218,37,29)"
@@ -37,6 +37,7 @@ right.style.backgroundColor = "rgb(218,37,29)"
     right_heading.style.color = "#2D7DD2"
     right.style.backgroundColor = "white"
     right.style.animation = "none";
+    left.style.justifyContent = "flex-start"
 }} >
                 <div className="events_left" id="events_main_left_first" >
                     <h1>22</h1>
@@ -60,7 +61,7 @@ let right_heading = right.firstChild
 right_para.style.display = "none"
 right_button.style.display = "block"
 right_heading.style.color = "white"
-// left.style.justifyContent = "center"
+left.style.justifyContent = "center"
 // right.style.clipPath="circle(140.5% at 0 0)"
 right.style.animation = "back 1s forwards";
 right.style.backgroundColor = "#45B43B"
@@ -78,6 +79,7 @@ onMouseLeave={() => {
     right_heading.style.color = "#2D7DD2"
     right.style.backgroundColor = "white"
     right.style.animation = "none";
+    left.style.justifyContent = "flex-start"
 }} >
                 <div className="events_left"  id="events_main_left_second" >
                     <h1>22</h1>
@@ -100,7 +102,7 @@ onMouseLeave={() => {
                     right_para.style.display = "none"
                     right_button.style.display = "block"
                     right_heading.style.color = "white"
-                    // left.style.justifyContent = "center"
+                    left.style.justifyContent = "center"
                     // right.style.clipPath="circle(140.5% at 0 0)"
                     right.style.animation = "back 1s forwards";
                     right.style.backgroundColor = "#2D7DD2"
@@ -116,6 +118,7 @@ onMouseLeave={() => {
                     right_heading.style.color = "#2D7DD2"
                     right.style.backgroundColor = "white"
                     right.style.animation = "none";
+                    left.style.justifyContent = "flex-start"
                 }}>
                 <div className="events_left" id="events_main_left_third" >
                     <h1>22</h1>
@@ -138,7 +141,7 @@ onMouseLeave={() => {
                     right_para.style.display = "none"
                     right_button.style.display = "block"
                     right_heading.style.color = "white"
-                    // left.style.justifyContent = "center"
+                    left.style.justifyContent = "center"
                     // right.style.clipPath="circle(140.5% at 0 0)"
                     right.style.animation = "back 1s forwards";
                     right.style.backgroundColor = "#FFC300"
@@ -153,6 +156,7 @@ onMouseLeave={() => {
                     right_heading.style.color = "#2D7DD2"
                     right.style.backgroundColor = "white"
                     right.style.animation = "none";
+                    left.style.justifyContent = "flex-start"
                 }}>
                 <div className="events_left"  id="events_main_left_fourth" >
                     <h1>22</h1>

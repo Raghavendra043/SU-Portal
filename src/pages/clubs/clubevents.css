@@ -37,8 +37,8 @@ font: normal normal normal 70px/86px Montserrat;
 letter-spacing: 0px;
 color: #FFFFFF;
 opacity: 1;
-margin-top: 30px;
-font-size: 30px;
+
+font-size: 53px;
 }
 .events_left h4{
     text-align: left;
@@ -102,6 +102,7 @@ font-size: 30px;
     font-family: 'Fredericka the Great';
     font-size: 40px;
     margin-bottom: 30px;
+    margin-top: -67px;
 
 }
 .events_right h1{
@@ -189,6 +190,11 @@ font-size: 30px;
     letter-spacing: 0px;
 }
 }
+@media only screen and (max-width: 836px){
+    .events_left h4 {
+        font-size: 20px;
+    }
+}
 @media only screen and (max-width: 690px){
 
     .events_left h4 {
@@ -201,6 +207,10 @@ font-size: 30px;
         width: 44%;}
         #third, #fourth {
             width: 47%;}
+        #events_heading{
+            margin-top: -40px;
+        }
+
 }
 @media only screen and (max-width: 600px){
     .box{
@@ -230,6 +240,11 @@ flex-direction: column;
         width: 40%;
     }
 }
+@media only screen and (max-width: 512px){
+#events_heading{
+    font-size: 33px;
+}
+}
 @media only screen and (max-width: 407px){
 .events_right h1 {
     font-size: 24px;
@@ -257,3 +272,9 @@ flex-direction: column;
     width: 58%;
 }
 }
+@media only screen and (max-width: 350px){
+    #events_heading{
+        font-size: 25px;
+        margin-top: 0px;
+    }
+    }
