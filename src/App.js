@@ -13,7 +13,7 @@ import Change from "./pages/Change/Change";
 import Places from "./pages/Places/Places";
 import Studentlife from "./pages/Studentlife/Studentlife";
 import HelpAndAdvice from "./pages/HelpAndAdvice/HelpAndAdvice";
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar new/Navbar';
 import FegComponent from "./pages/Feg/FegComponent";
 
 
@@ -29,7 +29,7 @@ const App = () => {
             <Route path='/about' exact component={About} />
             <Route path='/change' exact component={Change} />
             <Route path='/places' exact component={Places} />
-            <Route path='/studentlife' exact component={Studentlife} />
+            <Route path='/studentlife' exact component={FegComponent} />
             <Route path='/feg' exact component={FegComponent} />
             <Route path='/helpandadvice' exact component={HelpAndAdvice} />
             <Route path='/contact' exact component={Contact} />
