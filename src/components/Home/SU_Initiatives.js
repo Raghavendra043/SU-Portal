@@ -3,7 +3,7 @@ import React from 'react'
 export default function SU_Initiatives() {
     return (
         <div>
-            <div className="box">
+            <div className="image-card">
             <div className="bottom">
               <h5>The heading and heading</h5>
               <p>
