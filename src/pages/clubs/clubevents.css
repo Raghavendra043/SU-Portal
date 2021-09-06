@@ -106,16 +106,17 @@
 }
 .events_right h1 {
   color: #2d7dd2;
-  font-size: 30px;
+  font-size: 36px;
   width: 100%;
 }
+
 .events_right p {
   text-align: left;
   font-family: "Montserrat";
   letter-spacing: -1px;
   color: #2d7dd2;
   opacity: 1;
-  font-weight: bolder;
+
   font-size: 13px;
 }
 #events_main_left_fourth {
@@ -147,6 +148,14 @@
   padding-right: 50px;
   margin-top: -100px;
 }
+@media only screen and (max-width: 1400px) {
+  .events_right h1 {
+    color: #2d7dd2;
+    font-size: 30px;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 1177px) {
   .box {
     width: 86%;
@@ -191,7 +200,7 @@
     font-size: 20px;
   }
 }
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 720px) {
   .events_left h4 {
     font-size: 20px;
   }
@@ -209,7 +218,7 @@
     margin-top: -40px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 620px) {
   .box {
     flex-direction: column;
   }
