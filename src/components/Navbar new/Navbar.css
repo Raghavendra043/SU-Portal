@@ -1,0 +1,58 @@
+nav{
+   height: 12%;
+}
+
+.nav-des-top{
+    background-color: rgba(0, 0, 0, 0.082);
+    --nav-col : white;
+    --nav-hov-col : rgb(43, 209, 209);
+}
+
+.nav-des-free{  
+    background-color: rgba(255, 255, 255, 0.842);
+    --nav-col: black;
+    --nav-hov-col : darkcyan;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 50ms linear 0s;
+    padding: 0.1em 1.3em;
+    font-size: 1.1em;
+    color: var(--nav-col);
+    transition: 0.2s ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    border-bottom-color:var(--nav-hov-col);
+    font-size: 1.12em;
+    color: var(--nav-hov-col);
+}
+
+.bits-logo-img{
+    height: 4em;
+    width: 10em;
+    margin-right: 0.2em;
+    transition: 0.2s ease;
+}
+
+.bits-logo-img:hover{
+    height: 4.1em;
+    width: 10.2em;
+}
+
+@media only screen and (max-width:993px){
+
+    .navbar{
+        background-color: black;
+    }
+    
+    nav{
+        height: auto;
+    }
+
+    .navbar-dark .navbar-nav .nav-link{
+        color: white;
+        padding: .5em 1em;
+    }
+
+}
