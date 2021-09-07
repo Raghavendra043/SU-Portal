@@ -57,7 +57,7 @@ function Navbar() {
                                 </li>
                                 <li className="nav-item">
                                     <NavLink className="nav-link" to="/places" exact>
-                                        Places To Visit
+                                        Places For You
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
@@ -72,10 +72,14 @@ function Navbar() {
                                 </li>
                                 <li className="nav-item">
                                     <NavLink className="nav-link" to="/notice" exact>
-                                        General Notice Board
+                                        General Noticeboard
                                     </NavLink>
                                 </li>
-
+                                <li className="nav-item">
+                                    <NavLink className="nav-link navbar-login" to="/studentlife" exact>
+                                        Login
+                                    </NavLink>
+                                </li>
                         </ul>
                     </div>
                 </div>
