@@ -13,7 +13,7 @@ import Change from "./pages/Change/Change";
 import Places from "./pages/Places/Places";
 import Studentlife from "./pages/Studentlife/Studentlife";
 import HelpAndAdvice from "./pages/HelpAndAdvice/HelpAndAdvice";
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar new/Navbar';
 import Clubs from "./pages/clubs/clubs";
 
 
