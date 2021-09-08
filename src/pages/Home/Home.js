@@ -1,8 +1,8 @@
 import React from "react";
 import path1 from "../../assets/home/hero/path1.svg";
 import heroImg from "../../assets/home/hero/heroImg.svg";
-import Campus_Events from "../../components/Home/Campus_Events";
-import SU_Initiatives from "../../components/Home/SU_Initiatives";
+import CampusEvents from "../../components/Home/CampusEvents";
+import SUInitiatives from "../../components/Home/SUInitiatives";
 import "./Home.css";
 
 function Home() {
@@ -28,10 +28,10 @@ function Home() {
       <div>
         <p className="header">Campus Events</p>
         <div className="container">
-          <Campus_Events title="Campus Event Headline" width="25vw" date="21" month="Dec"/>
-          <Campus_Events title="Campus Event Headline" width="30vw" date="18" month="Sept"/>
-          <Campus_Events title="Campus Event Headline" width="30vw" date="25" month="August"/>
-          <Campus_Events title="Campus Event Headline" width="25vw" date="01" month="Sept"/>
+          <CampusEvents title="Campus Event Headline" width="350px" date="21" month="Dec"/>
+          <CampusEvents title="Campus Event Headline" width="400px" date="18" month="Sept"/>
+          <CampusEvents title="Campus Event Headline" width="400px" date="25" month="August"/>
+          <CampusEvents title="Campus Event Headline" width="350px" date="01" month="Sept"/>
           <a href="#" className="more">
             <i class="fa fa-lg fa-chevron-right" aria-hidden="true"></i>
           </a>
@@ -42,11 +42,11 @@ function Home() {
       
       <div>
         <p className="header">SU Initiatives</p>
-        <div className="container">
-          <SU_Initiatives />
-          <SU_Initiatives />
-          <SU_Initiatives />
-          <a href="#" className="more">
+        <div className="container" style={{width: "100vw"}}>
+          <SUInitiatives />
+          <SUInitiatives />
+          <SUInitiatives />
+          <a href="#" className="more" style={{right: "5vw"}}>
             <i class="fa fa-lg fa-chevron-right" aria-hidden="true"></i>
           </a>
         </div>
