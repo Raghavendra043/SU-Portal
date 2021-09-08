@@ -19,7 +19,7 @@
     display: flex;
 }
 .count-dots{
-    background-image: url(../assets/images/Group\ 52.svg);
+    background-image: url(../../assets/images/dots.svg);
     width: 20px;
     height: 150px;
     background-size: cover;

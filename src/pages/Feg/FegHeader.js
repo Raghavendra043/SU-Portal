@@ -1,7 +1,7 @@
 import React from 'react'
 import "./FegHeader.css"
-import Footer from './Footer/Footer'
-import background from "../assets/images/footer.png"
+// import Footer from './Footer/Footer'
+// import background from "../../assets/images/footer.png"
 function FegHeader() {
     return (
         <div>
@@ -40,7 +40,7 @@ function FegHeader() {
                     </div>
                 </div>
             </div>
-        <Footer background={background}/>
+        {/* <Footer background={background}/> */}
         </div>
     )
 }
