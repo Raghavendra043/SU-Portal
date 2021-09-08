@@ -1,55 +1,80 @@
-/* eslint-disable import/no-anonymous-default-export */
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
 import { Fade } from "react-awesome-reveal";
-import './AboutContent.css'
-
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-        minHeight: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        [theme.breakpoints.down('md')]: {
-            flexDirection: 'column',
-        },
-        marginBottom: '20vh',
-    },
-}));
+import aboutcss from "./AboutContent.module.css";
+import image from "./bitscampus.jpeg";
+import { Link } from "react-router-dom";
 
 export default function () {
-    const classes = useStyles();
-
-    return (
-        <div className={classes.root} id="about-content">
-            <section className="about-section">
-                <Fade direction="up" delay={300} triggerOnce>
-                    <h2 className="about-content-heading"><span>SUC</span> BPHC</h2>
-
-                </Fade>
-                <div className="main">
-                    <Fade direction="left" delay={300} triggerOnce>
-                        <div className="about-text">
-                            <h5>About Us</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ab qui voluptatem sapiente, mollitia beatae, voluptatibus iste illum architecto sed ipsum earum minus molestias reiciendis laborum veritatis dignissimos nostrum. Tempora! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, voluptatum maiores veritatis omnis illo incidunt vitae quaerat, sed vel, nobis eos deleniti at adipisci ea? Totam sed facilis quas. Quo explicabo numquam provident blanditiis! Assumenda suscipit minima dolorem repudiandae labore!</p>
-                        </div>
-                    </Fade>
-                    <div className = "vertical" />
-                    <Fade direction="right" delay={300} triggerOnce>
-                        <div className="about-text">
-                            <ul className="list-items">
-                                <li>The SUC</li>
-                                <li>Our Vision</li>
-                                <li>Our Responsibilities</li>
-                                <li>SU Team</li>
-                                <li>Batch Reps / Hostel Reps</li>
-                                <li>Contact Us</li>
-                            </ul>
-                        </div>
-                    </Fade>
+  const back = () => {
+    window.history.go(-1);
+  };
+  return (
+    <div className={aboutcss.aboutfont}>
+      <div className={aboutcss.aboutsection}>
+        <div className={aboutcss.aboutbackimage}></div>
+        <div className={aboutcss.aboutmain}>
+          <div className={aboutcss.aboutback}>
+            <i
+              className="fa fa-chevron-left"
+              style={{ fontSize: "2em" }}
+              aria-hidden="true"
+              onClick={back}
+            ></i>
+            <h4
+              style={{ marginBottom: "0px", marginLeft: "10px" }}
+              onClick={back}
+            >
+              Back
+            </h4>
+          </div>
+          <div className={aboutcss.aboutcontent}>
+            <div className={aboutcss.aboutleft}>
+              <Fade direction="left" delay={300} triggerOnce>
+                <div className={aboutcss.aboutleftheading}>
+                  <h1>About us</h1>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptates quibusdam, nulla voluptate officiis eum
+                    reiciendis quia quo aliquid consequatur quidem ea dolorum
+                    tempore! Esse cum magni nesciunt. Culpa voluptatum officia
+                    repellat assumenda in harum officiis veritatis et nobis iste
+                    magnam, placeat blanditiis rem perferendis molestiae
+                    mollitia sit accusantium optio enim. Dolorem nisi aut non
+                    obcaecati, voluptas modi magnam autem at amet animi.
+                    Repudiandae, magni neque unde accusamus ipsa animi ipsum?
+                  </p>
                 </div>
-            </section>
+              </Fade>
+            </div>
+            <div className={aboutcss.aboutright}>
+              <Fade direction="right" delay={300} triggerOnce>
+                <Link to="#" className={aboutcss.link}>
+                  <h1>The SUC </h1>
+                </Link>
+                <Link to="#" className={aboutcss.link}>
+                  <h1 id={aboutcss.padding}>Our Vision </h1>
+                </Link>
+                <Link to="#" className={aboutcss.link}>
+                  <h1 id={aboutcss.padding}>Our Responsiblities </h1>
+                </Link>
+                <Link to="#" className={aboutcss.link}>
+                  <h1 id={aboutcss.padding}>SU Team </h1>
+                </Link>
+                <Link to="#" className={aboutcss.link}>
+                  <h1 id={aboutcss.padding}>Batch Reps/Hostel Reps</h1>
+                </Link>
+                <Link to="#" className={aboutcss.link}>
+                  <h1 id={aboutcss.padding}>Contact us</h1>
+                </Link>
+              </Fade>
+            </div>
+          </div>
+          <div className={aboutcss.aboutbottomheading}>
+            <h1>About</h1>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
