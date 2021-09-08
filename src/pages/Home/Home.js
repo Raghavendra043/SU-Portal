@@ -1,9 +1,13 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react/jsx-pascal-case */
 import React from "react";
 import path1 from "../../assets/home/hero/path1.svg";
 import heroImg from "../../assets/home/hero/heroImg.svg";
-import Campus_Events from "../../components/Home/Campus_Events";
-import SU_Initiatives from "../../components/Home/SU_Initiatives";
+import CampusEvents from "../../components/Home/CampusEvents";
+import WelcomeOnBoard from "../../components/Home/WelcomeOnBoard";
+import SUInitiatives from "../../components/Home/SUInitiatives";
 import "./Home.css";
+import WelcomeFreshers from "../../components/Home/WelcomeFreshers";
 
 function Home() {
   return (
@@ -23,36 +27,61 @@ function Home() {
         </div>
       </div>
 
-        {/* Campus Events */}
-      
+      {/* Campus News */}
+
+      <h5 style={{ marginTop: "8vh", marginBottom: "-1vh", textAlign: "center" }}><b>Campus News :</b> Lorem ipsum dolor sit | Lorem ipsum dolor sit | Lorem ipsum dolor sit | Lorem ipsum dolor sit</h5>
+
+      {/* Welcome On Board */}
+
+      <div>
+        <WelcomeOnBoard />
+      </div>
+
+      {/* Campus Events */}
+
       <div>
         <p className="header">Campus Events</p>
         <div className="container">
-          <Campus_Events title="Campus Event Headline" width="25vw" date="21" month="Dec"/>
-          <Campus_Events title="Campus Event Headline" width="30vw" date="18" month="Sept"/>
-          <Campus_Events title="Campus Event Headline" width="30vw" date="25" month="August"/>
-          <Campus_Events title="Campus Event Headline" width="25vw" date="01" month="Sept"/>
+          <CampusEvents title="Campus Event Headline" width="25vw" date="21" month="Dec" />
+          <CampusEvents title="Campus Event Headline" width="30vw" date="18" month="Sept" />
+          <CampusEvents title="Campus Event Headline" width="30vw" date="25" month="August" />
+          <CampusEvents title="Campus Event Headline" width="25vw" date="01" month="Sept" />
           <a href="#" className="more">
             <i class="fa fa-lg fa-chevron-right" aria-hidden="true"></i>
           </a>
         </div>
       </div>
 
-        {/* SU Initiaves */}
-      
+      {/* Welcome Freshers */}
+
       <div>
-        <p className="header">SU Initiatives</p>
-        <div className="container">
-          <SU_Initiatives />
-          <SU_Initiatives />
-          <SU_Initiatives />
-          <a href="#" className="more">
+        <p className="header">Welcome Freshers</p>
+        <WelcomeFreshers />
+      </div>
+
+      {/* SU Initiaves */}
+
+      <div>
+        <p className="header" style={{ marginTop: "-2vh", marginBottom: "4vh" }}>SU Initiatives</p>
+        <div className="container" style={{ width: "100vw" }}>
+          <SUInitiatives />
+          <SUInitiatives />
+          <SUInitiatives />
+          <a href="#" className="more" style={{ right: "5vw" }}>
             <i class="fa fa-lg fa-chevron-right" aria-hidden="true"></i>
           </a>
         </div>
       </div>
 
-        {/* Built By */}
+      {/* Know Your SUC */}
+
+      <div>
+        <p className="header">Know Your SUC</p>
+        <div className="container">
+        </div>
+      </div>
+
+      {/* Built By */}
 
       <div>
         <p className="header">Built By</p>
