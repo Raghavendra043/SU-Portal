@@ -7,6 +7,7 @@ import CampusEvents from "../../components/Home/CampusEvents";
 import WelcomeOnBoard from "../../components/Home/WelcomeOnBoard";
 import SUInitiatives from "../../components/Home/SUInitiatives";
 import "./Home.css";
+import WelcomeFreshers from "../../components/Home/WelcomeFreshers";
 
 function Home() {
   return (
@@ -33,7 +34,7 @@ function Home() {
       {/* Welcome On Board */}
 
       <div>
-          <WelcomeOnBoard />
+        <WelcomeOnBoard />
       </div>
 
       {/* Campus Events */}
@@ -55,20 +56,18 @@ function Home() {
 
       <div>
         <p className="header">Welcome Freshers</p>
-        <div className="container">
-
-        </div>
+        <WelcomeFreshers />
       </div>
 
       {/* SU Initiaves */}
 
       <div>
-        <p className="header">SU Initiatives</p>
-        <div className="container" style={{width: "100vw"}}>
+        <p className="header" style={{ marginTop: "-2vh", marginBottom: "4vh" }}>SU Initiatives</p>
+        <div className="container" style={{ width: "100vw" }}>
           <SUInitiatives />
           <SUInitiatives />
           <SUInitiatives />
-          <a href="#" className="more" style={{right: "5vw"}}>
+          <a href="#" className="more" style={{ right: "5vw" }}>
             <i class="fa fa-lg fa-chevron-right" aria-hidden="true"></i>
           </a>
         </div>
