@@ -1,32 +1,31 @@
-
-.welcome-title{
+.welcome-title {
     text-align: center;
     font-weight: 700;
     position: absolute;
     top: 7vh;
     left: 50%;
-  transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-.welcome-subtitle{
+.welcome-subtitle {
     text-align: center;
     font-weight: 200;
-font-size: 1.5rem;
+    font-size: 1.5rem;
     margin-bottom: 10vh;
     position: absolute;
     top: 13vh;
     left: 50%;
-  transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-.welcome-container{
+.welcome-container {
     display: flex;
     flex-wrap: wrap;
     margin-top: 10vh;
 
 }
 
-.image1{
+.image1 {
     margin: 8vh 3vw;
     height: 350px;
     width: 15%;
@@ -44,7 +43,7 @@ font-size: 1.5rem;
 
 }
 
-.image2{
+.image2 {
     margin: 2vh 3vw 0 0;
     height: 350px;
     width: 15%;
@@ -60,7 +59,7 @@ font-size: 1.5rem;
     left: 40vh;
 }
 
-.welcome-text{
+.welcome-text {
     margin-top: 5vh;
     font-size: 1rem;
     position: absolute;
