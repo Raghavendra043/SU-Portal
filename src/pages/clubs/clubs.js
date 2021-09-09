@@ -12,5 +12,5 @@ export default function clubs() {
       <Clubevents />
 	  <ClubPOR/>
     </>
-  );
+   );
 }
