@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
-import AboutContent from "./pages/About/AboutContent";
+import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Change from "./pages/Change/Change";
 import Places from "./pages/Places/Places";
@@ -27,7 +27,7 @@ const App = () => {
               <Clubs />
             </Route>
             <Route exact path="/" component={Home} />
-            <Route path="/about" exact component={AboutContent} />
+            <Route path="/about" exact component={About} />
             <Route path="/change" exact component={Change} />
             <Route path="/places" exact component={Places} />
             <Route path="/studentlife" exact component={Studentlife} />
