@@ -22,7 +22,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 10vh;
-
+    position: relative;
 }
 
 .image1 {
@@ -40,7 +40,6 @@
     position: absolute;
     top: 25vh;
     left: 5vh;
-
 }
 
 .image2 {
@@ -67,5 +66,4 @@
     top: 25vh;
     left: 40%;
     width: 53%;
-
 }

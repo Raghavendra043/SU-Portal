@@ -8,6 +8,7 @@ import WelcomeOnBoard from "../../components/Home/WelcomeOnBoard";
 import SUInitiatives from "../../components/Home/SUInitiatives";
 import "./Home.css";
 import WelcomeFreshers from "../../components/Home/WelcomeFreshers";
+import KnowYourSUC from "../../components/Home/KnowYourSUC";
 
 function Home() {
   return (
@@ -77,8 +78,7 @@ function Home() {
 
       <div>
         <p className="header">Know Your SUC</p>
-        <div className="container">
-        </div>
+        <KnowYourSUC />
       </div>
 
       {/* Built By */}

@@ -1,68 +1,73 @@
-import React, { useEffect, useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { IconButton, Collapse } from '@material-ui/core';
-import { Link as Scroll } from 'react-scroll';
-import ChangeContent from './ChangeContent';
-
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-    fontFamily: 'Nunito',
-  },
-  colorText: {
-    color: 'black',
-    fontSize: '3.3rem',
-  },
-  container: {
-    textAlign: 'center',
-  },
-  title: {
-    paddingTop: "25%", 
-    color: 'red', 
-    fontSize: '2.2rem',
-    marginBottom: '2rem',
-  },
-  goDown: {
-    color: 'red',
-    fontSize: '4rem',
-  },
-}));
+import React from "react";
+import { Fade } from "react-awesome-reveal";
+import changecss from "./ChangeContent.module.css";
+import { Link } from "react-router-dom";
+import { change } from "./ChangeData";
 
 export default function Change() {
-  const classes = useStyles();
-  const [checked, setChecked] = useState(false);
-  useEffect(() => {
-    setChecked(true);
-  }, []);
+  const back = () => {
+    window.history.go(-1);
+  };
 
   return (
-    <>
-      {/* <div className="container" style={{backgroundImage: `url("https://www.transparenttextures.com/patterns/black-linen.png")`}}> */}
-      <div className="container">
-        <Collapse
-          in={checked}
-          {...(checked ? { timeout: 1000 } : {})}
-          collapsedHeight={50}
-        >
-          <div className={classes.container}>
-            <h1 className={classes.title}>
-              Make A Change To The<br /><span className={classes.colorText}> Student Union Council </span>
-            </h1>
-            <Scroll to="change-content" smooth={true}>
-              <IconButton>
-                <ExpandMoreIcon className={classes.goDown} />
-              </IconButton>
-              <ChangeContent />
-            </Scroll>
+    <div className={changecss.changefont}>
+      <div
+        className={changecss.changesection}
+        style={{
+          display: `flex`,
+          flexDirection: `column`,
+          margin: `auto`,
+          background: `url(${change.backimage}) no-repeat center center/cover`,
+          position: `absolute`,
+          top: `0px`,
+          zIndex: -2,
+          width: `100%`,
+          minHeight: `100vh`,
+          color: `white`,
+        }}
+      >
+        <div className={changecss.changebackimage}></div>
+        <div className={changecss.changemain}>
+          <div className={changecss.changeback}>
+            <i
+              className="fa fa-chevron-left"
+              style={{ fontSize: "2em" }}
+              aria-hidden="true"
+              onClick={back}
+            ></i>
+            <h6
+              style={{ marginBottom: "0px", marginLeft: "10px" }}
+              onClick={back}
+            >
+              Back
+            </h6>
           </div>
-        </Collapse>
-
+          <div className={changecss.changecontent}>
+            <div className={changecss.changeleft}>
+              <Fade direction="left" delay={300} triggerOnce>
+                <div className={changecss.changeleftheading}>
+                  <h1>{change.leftheading}</h1>
+                  <p style={{ marginTop: "3rem" }}>{change.leftpara}</p>
+                </div>
+              </Fade>
+            </div>
+            <div className={changecss.changeright}>
+              <Fade direction="right" delay={300} triggerOnce>
+                {change.rightheading.map(event => {
+                  return (
+                    <Link to="#" className={changecss.link}>
+                      <h1>{event.heading}</h1>
+                    </Link>
+                  );
+                })}
+              </Fade>
+            </div>
+          </div>
+          <div className={changecss.changebottomheading}>
+            <h1>{change.bottomheading}</h1>
+          </div>
+        </div>
       </div>
-    </>
-  )
+    </div>
+  );
 }
