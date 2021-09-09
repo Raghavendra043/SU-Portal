@@ -1,17 +1,29 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import { Fade } from "react-awesome-reveal";
 import aboutcss from "./AboutContent.module.css";
-import image from "./bitscampus.jpeg";
 import { Link } from "react-router-dom";
-
+import { about } from "./data";
 export default function () {
   const back = () => {
     window.history.go(-1);
   };
   return (
     <div className={aboutcss.aboutfont}>
-      <div className={aboutcss.aboutsection}>
+      <div
+        className={aboutcss.aboutsection}
+        style={{
+          display: `flex`,
+          flexDirection: `column`,
+          margin: `auto`,
+          background: `url(${about.backimage}) no-repeat center center/cover`,
+          position: `absolute`,
+          top: `0px`,
+          zIndex: -2,
+          width: `100%`,
+          minHeight: `100vh`,
+          color: `white`,
+        }}
+      >
         <div className={aboutcss.aboutbackimage}></div>
         <div className={aboutcss.aboutmain}>
           <div className={aboutcss.aboutback}>
@@ -32,46 +44,25 @@ export default function () {
             <div className={aboutcss.aboutleft}>
               <Fade direction="left" delay={300} triggerOnce>
                 <div className={aboutcss.aboutleftheading}>
-                  <h1>About us</h1>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Voluptates quibusdam, nulla voluptate officiis eum
-                    reiciendis quia quo aliquid consequatur quidem ea dolorum
-                    tempore! Esse cum magni nesciunt. Culpa voluptatum officia
-                    repellat assumenda in harum officiis veritatis et nobis iste
-                    magnam, placeat blanditiis rem perferendis molestiae
-                    mollitia sit accusantium optio enim. Dolorem nisi aut non
-                    obcaecati, voluptas modi magnam autem at amet animi.
-                    Repudiandae, magni neque unde accusamus ipsa animi ipsum?
-                  </p>
+                  <h1>{about.leftheading}</h1>
+                  <p>{about.leftpara}</p>
                 </div>
               </Fade>
             </div>
             <div className={aboutcss.aboutright}>
               <Fade direction="right" delay={300} triggerOnce>
-                <Link to="#" className={aboutcss.link}>
-                  <h1>The SUC </h1>
-                </Link>
-                <Link to="#" className={aboutcss.link}>
-                  <h1 id={aboutcss.padding}>Our Vision </h1>
-                </Link>
-                <Link to="#" className={aboutcss.link}>
-                  <h1 id={aboutcss.padding}>Our Responsiblities </h1>
-                </Link>
-                <Link to="#" className={aboutcss.link}>
-                  <h1 id={aboutcss.padding}>SU Team </h1>
-                </Link>
-                <Link to="#" className={aboutcss.link}>
-                  <h1 id={aboutcss.padding}>Batch Reps/Hostel Reps</h1>
-                </Link>
-                <Link to="#" className={aboutcss.link}>
-                  <h1 id={aboutcss.padding}>Contact us</h1>
-                </Link>
+                {about.rightheading.map(event => {
+                  return (
+                    <Link to="#" className={aboutcss.link}>
+                      <h1>{event.heading}</h1>
+                    </Link>
+                  );
+                })}
               </Fade>
             </div>
           </div>
           <div className={aboutcss.aboutbottomheading}>
-            <h1>About</h1>
+            <h1>{about.bottomheading}</h1>
           </div>
         </div>
       </div>
