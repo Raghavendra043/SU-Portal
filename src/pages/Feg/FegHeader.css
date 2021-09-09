@@ -1,0 +1,141 @@
+.feg-div1{
+    background-image: url(../../assets/images/feg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:110vw;
+    min-height:55vw;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    transform: translateX(-8%);
+}
+.feg-welcome{
+    font-size: 50px;
+    margin-left: 14%;
+    margin-top: 21%;
+}
+.event-countdown{
+    margin-top: 100px;
+    display: flex;
+    transform: translateX(8%);
+}
+.count-dots{
+    background-image: url(../../assets/images/dots.svg);
+    width: 20px;
+    height: 150px;
+    background-size: cover;
+    margin-left: 10px;
+    margin-top: 15px;
+    z-index: 1;
+}
+.feg-event{
+    width: 420px;
+    height: 185.41px;
+    background-color:rgb(255,195,0);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-35px);
+    color: white;
+    font-size: 20px;
+    z-index: 0;
+}
+.count-row1{
+    font-weight: bold;
+    margin-top: 20px;
+}
+.count-row2{
+    display: flex;
+    margin-top: 20px;
+}
+.row2-col1{
+    margin-top: 20px;
+}
+.row2-col2{
+    display: flex;
+    text-align: center;
+}
+.col2-box{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.col2-heading{
+    font-size: 10px;
+    margin: auto;
+}
+.col2-boxes{
+    display: flex;
+    color: black;
+}
+.boxes-box1{
+    background-color: white;
+    border-radius: 2px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    margin: 1px;
+    width: 25px;
+}
+.boxes-box2{
+    background-color: white;
+    border-radius: 2px;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    margin: 1px;
+    width: 25px;
+}
+@media only screen and (max-width:1100px){
+    .feg-event{
+        width: 350px;
+    }
+    .count-row2{
+        text-align: center;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width:950px){
+    .feg-welcome{
+        margin-top: 250px;
+    }
+}
+@media only screen and (max-width:600px){
+
+
+    .event-countdown{
+        transform: translate(0);
+    }
+    .feg-welcome{
+        font-size: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .count-dots{
+        width: 15px;
+        height: 120px;
+    }
+    .feg-event{
+        width: 300px;
+        height: 150px;
+        font-size: 15px;
+    }
+    .count-row1{
+        font-size: 18px;
+    }
+    .row2-col1{
+        margin: auto;
+    }
+    .col2-box{
+        margin: 2.5px;
+    }
+}
+@media only screen and (max-width:500px){
+    .feg-welcome{
+        font-size: 30px;
+    }
+}

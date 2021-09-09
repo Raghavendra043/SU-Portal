@@ -42,10 +42,10 @@ function Home() {
       <div>
         <p className="header">Campus Events</p>
         <div className="container">
-          <CampusEvents title="Campus Event Headline" width="25vw" date="21" month="Dec" />
-          <CampusEvents title="Campus Event Headline" width="30vw" date="18" month="Sept" />
-          <CampusEvents title="Campus Event Headline" width="30vw" date="25" month="August" />
-          <CampusEvents title="Campus Event Headline" width="25vw" date="01" month="Sept" />
+          <CampusEvents title="Campus Event Headline" width="350px" date="21" month="Dec" />
+          <CampusEvents title="Campus Event Headline" width="400px" date="18" month="Sept" />
+          <CampusEvents title="Campus Event Headline" width="400px" date="25" month="August" />
+          <CampusEvents title="Campus Event Headline" width="350px" date="01" month="Sept" />
           <a href="#" className="more">
             <i class="fa fa-lg fa-chevron-right" aria-hidden="true"></i>
           </a>
