@@ -7,7 +7,7 @@ function Text() {
         style={{
           margin: 0,
           padding: 0,
-          fontSize: 60,
+          fontSize: 50,
           fontFamily: "Montserrat",
           fontWeight: "bold",
           background:

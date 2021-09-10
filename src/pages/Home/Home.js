@@ -21,17 +21,16 @@ function Home() {
         <img
           src={heroImg}
           alt=" heroimg"
-          style={{ position: "absolute", top: 4, right: 60, width: "50vw" }}
+          style={{ position: "absolute", top: 4, right: 20, width: "50vw" }}
         />
 
-        <div style={{ position: "absolute", top: 0 }}>
+        <div style={{ position: "absolute", top: 100, paddingLeft: 30 }}>
           <Text />
           <div
             style={{
-              width: "340px",
-              height: "49px",
+              height: "60px",
               textAlign: "left",
-              font: "normal normal 800 40px/49px Montserrat",
+              font: "normal normal 800 30px/49px Montserrat",
               letterSpacing: "0px",
               color: "#FFFFFF",
               opacity: "1",
@@ -53,6 +52,7 @@ function Home() {
                 letterSpacing: "0px",
                 color: "#FFFFFF",
                 opacity: "1",
+                paddingRight: 10,
               }}
             >
               Let's
@@ -63,6 +63,7 @@ function Home() {
                 letterSpacing: "0.16px",
                 color: "#DF456A",
                 opacity: "1",
+                paddingRight: 10,
               }}
             >
               Innovate
