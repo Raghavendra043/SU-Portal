@@ -1,68 +1,73 @@
-import React, { useEffect, useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { IconButton, Collapse } from '@material-ui/core';
-import { Link as Scroll } from 'react-scroll';
-import AboutContent from './AboutContent';
-
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-    fontFamily: 'Nunito',
-  },
-  colorText: {
-    color: 'black',
-    fontSize: '3.2rem',
-  },
-  container: {
-    textAlign: 'center',
-  },
-  title: {
-    paddingTop: "25%", 
-    color: 'red', 
-    fontSize: '2.2rem',
-    marginBottom: '2rem',
-  },
-  goDown: {
-    color: 'red',
-    fontSize: '4rem',
-  },
-}));
+import React from "react";
+import { Fade } from "react-awesome-reveal";
+import aboutcss from "./AboutContent.module.css";
+import { Link } from "react-router-dom";
+import { about } from "./data";
 
 export default function About() {
-  const classes = useStyles();
-  const [checked, setChecked] = useState(false);
-  useEffect(() => {
-    setChecked(true);
-  }, []);
+  const back = () => {
+    window.history.go(-1);
+  };
 
   return (
-    <>
-      {/* <div className="container" style={{backgroundImage: `url("https://www.transparenttextures.com/patterns/black-linen.png")`}}> */}
-      <div className="container">
-        <Collapse
-          in={checked}
-          {...(checked ? { timeout: 1000 } : {})}
-          collapsedHeight={50}
-        >
-          <div className={classes.container}>
-            <h1 className={classes.title}>
-              About The<br /><span className={classes.colorText}> Student Union Council </span>
-            </h1>
-            <Scroll to="about-content" smooth={true}>
-              <IconButton>
-                <ExpandMoreIcon className={classes.goDown} />
-              </IconButton>
-              <AboutContent />
-            </Scroll>
+    <div className={aboutcss.aboutfont}>
+      <div
+        className={aboutcss.aboutsection}
+        style={{
+          display: `flex`,
+          flexDirection: `column`,
+          margin: `auto`,
+          background: `url(${about.backimage}) no-repeat center center/cover`,
+          position: `absolute`,
+          top: `0px`,
+          zIndex: -2,
+          width: `100%`,
+          minHeight: `100vh`,
+          color: `white`,
+        }}
+      >
+        <div className={aboutcss.aboutbackimage}></div>
+        <div className={aboutcss.aboutmain}>
+          <div className={aboutcss.aboutback}>
+            <i
+              className="fa fa-chevron-left"
+              style={{ fontSize: "2em" }}
+              aria-hidden="true"
+              onClick={back}
+            ></i>
+            <h6
+              style={{ marginBottom: "0px", marginLeft: "10px" }}
+              onClick={back}
+            >
+              Back
+            </h6>
           </div>
-        </Collapse>
-
+          <div className={aboutcss.aboutcontent}>
+            <div className={aboutcss.aboutleft}>
+              <Fade direction="left" delay={300} triggerOnce>
+                <div className={aboutcss.aboutleftheading}>
+                  <h1>{about.leftheading}</h1>
+                  <p style={{ marginTop: "3rem" }}>{about.leftpara}</p>
+                </div>
+              </Fade>
+            </div>
+            <div className={aboutcss.aboutright}>
+              <Fade direction="right" delay={300} triggerOnce>
+                {about.rightheading.map(event => {
+                  return (
+                    <Link to="#" className={aboutcss.link}>
+                      <h1>{event.heading}</h1>
+                    </Link>
+                  );
+                })}
+              </Fade>
+            </div>
+          </div>
+          <div className={aboutcss.aboutbottomheading}>
+            <h1>{about.bottomheading}</h1>
+          </div>
+        </div>
       </div>
-    </>
-  )
+    </div>
+  );
 }

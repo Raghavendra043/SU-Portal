@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+.more{
+    position: absolute; 
+    right: 10vw;
+    background: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 0.5px 0.5px 8px rgba(7, 5, 5, 0.2);
+}
+
+.more i{
+    margin: auto 5px;
+    color: #DA544F;
+}
+
+.header{
+    display: inline-block;
+    margin: 1vh 4vw;
+    margin-top: 20vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 2.2rem;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.header::after{
+    content: '';
+    height: 5px;
+    width: 55%;
+    background: linear-gradient(90deg, #CE19C9, #DA544F) ;
+    position: absolute;
+    left: 4px;
+    border-radius: 1px;
+    bottom: -4px;
+    transition: 0.3s;
+}
+
+.header:hover::after{
+    width: 98%;
+    transition: 0.3s ease-in;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    padding: 1em;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0.8rem 1vw;
+    border-radius: 20px;
+    height: 200px;
+    background-color: #000;
+    color: white;
+    overflow: hidden;
+    border: none;
+    transition: 0.5s ease;
+}
+
+.card p{
+    padding-left: 10px;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #DA544F;
+    overflow: hidden;
+    width: 30%;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+.slide{
+    display: none;
+}
+
+.overlay h2{
+    font-size: 2.3rem;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+.card:hover > p:first-of-type {
+    position: absolute;
+    padding-top: 25px;
+    transition: 0.5s ease;
+}
+
+.card:hover > p:nth-of-type(2n){
+    position: relative;
+    display: none;
+}
+
+.card:hover .overlay{
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.card:hover .slide{
+    display: contents;
+    transition: 0.5s ease;
+}
+
+.slide > button {
+    border: none;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 10em;
+    width: 6vw;
+    padding: 4px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.card:hover .overlay > h2{
+    transform: translate(5%, 130%);
+    transition: 0.5s ease;
+}
+
+.card:hover .overlay > .Date{
+    transform: translate(5%, 150%);
+    transition: 0.5s ease;
+}
+
+.image-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    margin: 2vh 3vw;
+    height: 370px;
+    width: 255px;
+    border-radius: 16px;
+    background: url(./../../assets/home/SU_Initiatives/image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bottom{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    margin-top: 0;
+    height: 36%;
+    width: 100%;
+    padding: 6px 1vw;
+    font-family: 'Montserrat', sans-serif;
+    backdrop-filter: blur(8px);
+    background: rgba(59, 56, 56, 0.6);
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.btn{
+    position: absolute;
+    background-color: #da544f;
+    padding: 0.2rem 1.2rem;
+    height: 23%;
+    right: 0;
+    bottom: 0;
+    border-radius: 16px;
+}
+
+.btn i{
+    color: white;
+    margin: auto;
+}
+
+.contri-btn{
+    margin: 2vh auto;
+    padding: 1.4vh 1.8vw;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    background-color: #da544f;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bottom h5{
+    margin: 5px auto;
+    line-height: 23px;
+    font-weight: bold;
+}
+
+.bottom p{
+    margin-top: -3px;
+    font-size: 0.6em;
+}
+
+@media (max-width: 1300px) {
+    .container{
+        width: 100vw;
+    }
+    .more{
+        right: 3vw !important;
+    }
+
+    .image-card{
+        margin: 2vh 2vw;
+    }
+
+
+}
+
+@media (max-width: 1000px) {
+    .container{
+        flex-direction: column;
+        width: 100vw;
+        padding: 0.5em;
+        margin-bottom: -5em;
+    }
+    .card{
+        width: 500px !important;
+    }
+    .more{
+        right: 0;
+        position: relative;
+        margin-top: 2em;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .card{
+        width: 360px !important;
+    }
+}
+
+@media (min-width: 1600px) {
+    .more{
+        right: 15vw !important;
+    }
+}

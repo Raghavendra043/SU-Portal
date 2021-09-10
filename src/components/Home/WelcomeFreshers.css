@@ -1,0 +1,22 @@
+.welcome-freshers {
+    height: 80vh;
+    width: 100vw;
+}
+
+
+.welcome-freshers-text {
+
+    position: absolute;
+    top: 13vh;
+    width: 40%;
+    left: 10vw;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.group_photo {
+    position: absolute;
+    right: 10vw;
+    top: 3vh;
+    height: 60vh;
+}

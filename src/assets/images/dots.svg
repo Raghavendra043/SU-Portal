@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="150" viewBox="0 0 24 200">
+  <defs>
+    <filter id="Ellipse_7">
+      <feOffset dx="2" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_7-2">
+      <feOffset dx="2" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-opacity="0.161" result="color-2"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color-2"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_7-3">
+      <feOffset dx="2" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-3"/>
+      <feFlood flood-opacity="0.161" result="color-3"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-3"/>
+      <feComposite operator="in" in="color-3"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_7-4">
+      <feOffset dx="2" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-4"/>
+      <feFlood flood-opacity="0.161" result="color-4"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-4"/>
+      <feComposite operator="in" in="color-4"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_7-5">
+      <feOffset dx="2" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-5"/>
+      <feFlood flood-opacity="0.161" result="color-5"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-5"/>
+      <feComposite operator="in" in="color-5"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_52" data-name="Group 52" transform="translate(-22 -1321)">
+    <g data-type="innerShadowGroup">
+      <circle id="Ellipse_7-6" data-name="Ellipse 7" cx="10" cy="10" r="10" transform="translate(22 1321)" fill="#2d7dd2"/>
+      <g transform="matrix(1, 0, 0, 1, 22, 1321)" filter="url(#Ellipse_7)">
+        <circle id="Ellipse_7-7" data-name="Ellipse 7" cx="10" cy="10" r="10" fill="#fff"/>
+      </g>
+    </g>
+    <g data-type="innerShadowGroup">
+      <circle id="Ellipse_7-8" data-name="Ellipse 7" cx="10" cy="10" r="10" transform="translate(22 1365)" fill="#2d7dd2"/>
+      <g transform="matrix(1, 0, 0, 1, 22, 1321)" filter="url(#Ellipse_7-2)">
+        <circle id="Ellipse_7-9" data-name="Ellipse 7" cx="10" cy="10" r="10" transform="translate(0 44)" fill="#fff"/>
+      </g>
+    </g>
+    <g data-type="innerShadowGroup">
+      <circle id="Ellipse_7-10" data-name="Ellipse 7" cx="10" cy="10" r="10" transform="translate(22 1409)" fill="#2d7dd2"/>
+      <g transform="matrix(1, 0, 0, 1, 22, 1321)" filter="url(#Ellipse_7-3)">
+        <circle id="Ellipse_7-11" data-name="Ellipse 7" cx="10" cy="10" r="10" transform="translate(0 88)" fill="#fff"/>
+      </g>
+    </g>
+    <g data-type="innerShadowGroup">
+      <circle id="Ellipse_7-12" data-name="Ellipse 7" cx="10" cy="10" r="10" transform="translate(22 1453)" fill="#2d7dd2"/>
+      <g transform="matrix(1, 0, 0, 1, 22, 1321)" filter="url(#Ellipse_7-4)">
+        <circle id="Ellipse_7-13" data-name="Ellipse 7" cx="10" cy="10" r="10" transform="translate(0 132)" fill="#fff"/>
+      </g>
+    </g>
+    <g data-type="innerShadowGroup">
+      <circle id="Ellipse_7-14" data-name="Ellipse 7" cx="10" cy="10" r="10" transform="translate(22 1497)" fill="#2d7dd2"/>
+      <g transform="matrix(1, 0, 0, 1, 22, 1321)" filter="url(#Ellipse_7-5)">
+        <circle id="Ellipse_7-15" data-name="Ellipse 7" cx="10" cy="10" r="10" transform="translate(0 176)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

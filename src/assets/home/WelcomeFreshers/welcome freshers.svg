@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="567.789" height="637.896" viewBox="0 0 567.789 637.896">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#pattern);
+      }
+
+      .cls-2 {
+        fill: url(#pattern-2);
+      }
+
+      .cls-3 {
+        fill: url(#pattern-3);
+      }
+
+      .cls-4 {
+        fill: url(#pattern-4);
+      }
+
+      .cls-17, .cls-5 {
+        fill: none;
+      }
+
+      .cls-5 {
+        stroke: #da544f;
+        stroke-linecap: round;
+        stroke-width: 5px;
+      }
+
+      .cls-6 {
+        fill: #ce19c9;
+      }
+
+      .cls-7 {
+        fill: url(#pattern-5);
+      }
+
+      .cls-8 {
+        fill: #da544f;
+      }
+
+      .cls-9 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-10 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-11 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-12 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-13 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-14 {
+        fill: url(#pattern-6);
+      }
+
+      .cls-15 {
+        fill: url(#linear-gradient-6);
+      }
+
+      .cls-16 {
+        stroke: none;
+      }
+    </style>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 200 200">
+      <image width="200" height="200" xlink:href="Group%2070-image.jpg"/>
+    </pattern>
+    <pattern id="pattern-2" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 250 250">
+      <image width="250" height="250" xlink:href="Group%2070-image2.jpg"/>
+    </pattern>
+    <pattern id="pattern-3" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 250 250">
+      <image width="250" height="250" xlink:href="Group%2070-image3.jpg"/>
+    </pattern>
+    <pattern id="pattern-4" width="1" height="1" viewBox="39.766 0 155.353 289.932">
+      <image preserveAspectRatio="xMidYMid slice" width="306.836" height="306.836" xlink:href="Group%2070-image4.jpg"/>
+    </pattern>
+    <pattern id="pattern-5" width="1" height="1" viewBox="0 1.436 150.337 150.337">
+      <image preserveAspectRatio="xMidYMid slice" width="162.499" height="162.499" xlink:href="Group%2070-image5.jpg"/>
+    </pattern>
+    <linearGradient id="linear-gradient" x1="0.852" y1="0.945" x2="-0.112" y2="-0.486" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#da544f" stop-opacity="0.486"/>
+      <stop offset="1" stop-color="#ce19c9" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.148" y1="0.055" x2="0.701" y2="0.96" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ce19c9" stop-opacity="0"/>
+      <stop offset="1" stop-color="#da544f" stop-opacity="0.745"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.149" y1="0.152" x2="1.156" y2="1.15" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ce19c9" stop-opacity="0"/>
+      <stop offset="1" stop-color="#da544f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.808" y1="0.83" x2="-0.413" y2="-0.421" xlink:href="#linear-gradient-3"/>
+    <linearGradient id="linear-gradient-5" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#da544f" stop-opacity="0.122"/>
+      <stop offset="1" stop-color="#ce19c9" stop-opacity="0.576"/>
+    </linearGradient>
+    <pattern id="pattern-6" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 250 250">
+      <image width="250" height="250" xlink:href="Group%2070-image6.jpg"/>
+    </pattern>
+    <linearGradient id="linear-gradient-6" x1="0.904" y1="-0.052" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#da544f" stop-opacity="0.051"/>
+      <stop offset="0.988" stop-color="#ce19c9" stop-opacity="0.71"/>
+      <stop offset="1" stop-color="gray"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_70" data-name="Group 70" transform="translate(-1206.711 -2891.5)">
+    <circle id="Ellipse_9" data-name="Ellipse 9" class="cls-1" cx="109.925" cy="109.925" r="109.925" transform="translate(1345.783 3296.514)"/>
+    <path id="Rectangle_33" data-name="Rectangle 33" class="cls-2" d="M81.249,0h0A81.249,81.249,0,0,1,162.5,81.249v65a16.25,16.25,0,0,1-16.25,16.25h-65A81.249,81.249,0,0,1,0,81.249v0A81.249,81.249,0,0,1,81.249,0Z" transform="translate(1401.202 3117.708)"/>
+    <rect id="Rectangle_34" data-name="Rectangle 34" class="cls-3" width="164.41" height="307.791" rx="82.205" transform="translate(1206.711 3037.271)"/>
+    <rect id="Rectangle_37" data-name="Rectangle 37" class="cls-4" width="164.41" height="306.836" rx="82.205" transform="translate(1590.016 3220.799)"/>
+    <g id="Rectangle_36" data-name="Rectangle 36" class="cls-5" transform="translate(1590.465 2997.284) rotate(-45)">
+      <rect class="cls-16" width="38.368" height="38.368" rx="9"/>
+      <rect class="cls-17" x="2.5" y="2.5" width="33.368" height="33.368" rx="6.5"/>
+    </g>
+    <ellipse id="Ellipse_10" data-name="Ellipse 10" class="cls-6" cx="19.867" cy="19.867" rx="19.867" ry="19.867" transform="translate(1734.765 3180.447)"/>
+    <rect id="Rectangle_35" data-name="Rectangle 35" class="cls-7" width="162.499" height="162.499" rx="81.249" transform="translate(1570.598 3046.19)"/>
+    <path id="blob" class="cls-8" d="M-7.567-48.567c2.594,9.266-4.9,20.508-13.96,26.314-9.019,5.765-19.643,6.177-27.55.865-7.948-5.271-13.178-16.266-10.46-25.738s13.425-17.5,25.079-17.79C-22.8-65.245-10.161-57.873-7.567-48.567Z" transform="translate(1446.825 3144.357)"/>
+    <rect id="Rectangle_38" data-name="Rectangle 38" class="cls-9" width="163.94" height="307.913" rx="81.97" transform="translate(1206.711 3037.575)"/>
+    <rect id="Rectangle_39" data-name="Rectangle 39" class="cls-10" width="163.94" height="307.913" rx="81.97" transform="translate(1590.289 3221.482)"/>
+    <circle id="Ellipse_11" data-name="Ellipse 11" class="cls-11" cx="109.819" cy="109.819" r="109.819" transform="translate(1345.43 3297.147)"/>
+    <circle id="Ellipse_12" data-name="Ellipse 12" class="cls-12" cx="81.445" cy="81.445" r="81.445" transform="translate(1571.373 3044.931)"/>
+    <path id="Rectangle_40" data-name="Rectangle 40" class="cls-13" d="M80.919,0h0a80.919,80.919,0,0,1,80.919,80.919v64.735a16.184,16.184,0,0,1-16.184,16.184H80.919A80.919,80.919,0,0,1,0,80.919v0A80.919,80.919,0,0,1,80.919,0Z" transform="translate(1401.127 3118.494)"/>
+    <path id="Path_31" data-name="Path 31" class="cls-14" d="M44.845,0H171.976A44.926,44.926,0,0,1,216.9,44.926V172.057c0,24.812-10.8,47.764-35.614,47.764-74.452,0-183.132-106-183.132-183.49C-1.844,11.519,20.033,0,44.845,0Z" transform="translate(1354.953 2891.5)"/>
+    <path id="Path_30" data-name="Path 30" class="cls-15" d="M44.845,0H171.976A44.926,44.926,0,0,1,216.9,44.926V172.057c0,24.812-10.8,47.764-35.614,47.764-74.452,0-183.132-106-183.132-183.49C-1.844,11.519,20.033,0,44.845,0Z" transform="translate(1354.953 2891.5)"/>
+  </g>
+</svg>
