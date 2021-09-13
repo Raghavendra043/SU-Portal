@@ -3,10 +3,12 @@ import { Fade } from "react-awesome-reveal";
 import aboutcss from "./AboutContent.module.css";
 import { Link } from "react-router-dom";
 import { about } from "./data";
-export default function () {
+
+export default function About() {
   const back = () => {
     window.history.go(-1);
   };
+
   return (
     <div className={aboutcss.aboutfont}>
       <div
@@ -33,19 +35,19 @@ export default function () {
               aria-hidden="true"
               onClick={back}
             ></i>
-            <h4
+            <h6
               style={{ marginBottom: "0px", marginLeft: "10px" }}
               onClick={back}
             >
               Back
-            </h4>
+            </h6>
           </div>
           <div className={aboutcss.aboutcontent}>
             <div className={aboutcss.aboutleft}>
               <Fade direction="left" delay={300} triggerOnce>
                 <div className={aboutcss.aboutleftheading}>
                   <h1>{about.leftheading}</h1>
-                  <p>{about.leftpara}</p>
+                  <p style={{ marginTop: "3rem" }}>{about.leftpara}</p>
                 </div>
               </Fade>
             </div>

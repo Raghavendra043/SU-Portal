@@ -1,9 +1,9 @@
 nav{
-   height: 12%;
+   height: 10%;
 }
 
 .nav-des-top{
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.14);
     --nav-col : white;
     --nav-hov-col : rgb(43, 209, 209);
 }
@@ -17,8 +17,8 @@ nav{
 .navbar-dark .navbar-nav .nav-link{
     border-bottom: 2px solid transparent;
     transition: border-bottom-color 50ms linear 0s;
-    padding: 0.1em 1.9em;
-    font-size: 1.1em;
+    padding: 0.1em 2rem;
+    font-size: 1.4em;
     color: var(--nav-col);
     transition: 0.2s ease;
     font-size: 0.9em;;
@@ -29,11 +29,16 @@ nav{
 }
 
 .navbar-dark .navbar-nav .navbar-login{
+    margin: 0 2em;
     color: red;
     border : 2px solid red;
-    padding: 0.5em 0.8em;
+    padding: 0.5em 1em;
     border-radius: 5px;
     transform: translateY(-15%);
+}
+.navbar-dark .navbar-nav .navbar-login:hover{
+    color: red;
+    border : 2.5px solid red;
 }
 
 .bits-logo-img{
@@ -58,6 +63,10 @@ nav{
     .navbar-dark .navbar-nav .nav-link{
         color: white;
         padding: .5em 1em;
+    }
+
+    .navbar-dark .navbar-nav .navbar-login{
+        margin: 0;
     }
 
 }

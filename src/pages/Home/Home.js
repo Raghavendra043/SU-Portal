@@ -3,11 +3,15 @@
 import React from "react";
 import path1 from "../../assets/home/hero/path1.svg";
 import heroImg from "../../assets/home/hero/heroImg.svg";
+
+import Text from "./Text";
+
 import CampusEvents from "../../components/Home/CampusEvents";
 import WelcomeOnBoard from "../../components/Home/WelcomeOnBoard";
 import SUInitiatives from "../../components/Home/SUInitiatives";
 import "./Home.css";
 import WelcomeFreshers from "../../components/Home/WelcomeFreshers";
+import KnowYourSUC from "../../components/Home/KnowYourSUC";
 
 function Home() {
   return (
@@ -17,19 +21,75 @@ function Home() {
         <img
           src={heroImg}
           alt=" heroimg"
-          style={{ position: "absolute", top: 4, right: 60, width: "50vw" }}
+          style={{ position: "absolute", top: 4, right: 20, width: "50vw" }}
         />
 
-        <div style={{ position: "absolute" }}>
-          <img src="" alt="" />
-          <div></div>
-          <div></div>
+        <div style={{ position: "absolute", top: 100, paddingLeft: 30 }}>
+          <Text />
+          <div
+            style={{
+              height: "60px",
+              textAlign: "left",
+              font: "normal normal 800 30px/49px Montserrat",
+              letterSpacing: "0px",
+              color: "#FFFFFF",
+              opacity: "1",
+            }}
+          >
+            Students' Union
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              // justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div
+              style={{
+                font: "normal normal 800 32px/39px Montserrat",
+                letterSpacing: "0px",
+                color: "#FFFFFF",
+                opacity: "1",
+                paddingRight: 10,
+              }}
+            >
+              Let's
+            </div>
+            <div
+              style={{
+                font: "normal normal 800 40px/49px Montserrat",
+                letterSpacing: "0.16px",
+                color: "#DF456A",
+                opacity: "1",
+                paddingRight: 10,
+              }}
+            >
+              Innovate
+            </div>
+            <div
+              style={{
+                font: "normal normal 800 32px/39px Montserrat",
+                letterSpacing: "0px",
+                color: "#FFFFFF",
+                opacity: "1",
+              }}
+            >
+              together
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Campus News */}
 
-      <h5 style={{ marginTop: "8vh", marginBottom: "-1vh", textAlign: "center" }}><b>Campus News :</b> Lorem ipsum dolor sit | Lorem ipsum dolor sit | Lorem ipsum dolor sit | Lorem ipsum dolor sit</h5>
+      <h5
+        style={{ marginTop: "8vh", marginBottom: "-1vh", textAlign: "center" }}
+      >
+        <b>Campus News :</b> Lorem ipsum dolor sit | Lorem ipsum dolor sit |
+        Lorem ipsum dolor sit | Lorem ipsum dolor sit
+      </h5>
 
       {/* Welcome On Board */}
 
@@ -42,10 +102,30 @@ function Home() {
       <div>
         <p className="header">Campus Events</p>
         <div className="container">
-          <CampusEvents title="Campus Event Headline" width="350px" date="21" month="Dec" />
-          <CampusEvents title="Campus Event Headline" width="400px" date="18" month="Sept" />
-          <CampusEvents title="Campus Event Headline" width="400px" date="25" month="August" />
-          <CampusEvents title="Campus Event Headline" width="350px" date="01" month="Sept" />
+          <CampusEvents
+            title="Campus Event Headline"
+            width="350px"
+            date="21"
+            month="Dec"
+          />
+          <CampusEvents
+            title="Campus Event Headline"
+            width="400px"
+            date="18"
+            month="Sept"
+          />
+          <CampusEvents
+            title="Campus Event Headline"
+            width="400px"
+            date="25"
+            month="August"
+          />
+          <CampusEvents
+            title="Campus Event Headline"
+            width="350px"
+            date="01"
+            month="Sept"
+          />
           <a href="#" className="more">
             <i class="fa fa-lg fa-chevron-right" aria-hidden="true"></i>
           </a>
@@ -62,7 +142,12 @@ function Home() {
       {/* SU Initiaves */}
 
       <div>
-        <p className="header" style={{ marginTop: "-2vh", marginBottom: "4vh" }}>SU Initiatives</p>
+        <p
+          className="header"
+          style={{ marginTop: "-2vh", marginBottom: "4vh" }}
+        >
+          SU Initiatives
+        </p>
         <div className="container" style={{ width: "100vw" }}>
           <SUInitiatives />
           <SUInitiatives />
@@ -77,8 +162,7 @@ function Home() {
 
       <div>
         <p className="header">Know Your SUC</p>
-        <div className="container">
-        </div>
+        <KnowYourSUC />
       </div>
 
       {/* Built By */}

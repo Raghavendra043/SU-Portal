@@ -15,6 +15,7 @@ import FegComponent from "./pages/Feg/FegComponent";
 import HelpAndAdvice from "./pages/HelpAndAdvice/HelpAndAdvice";
 import Navbar from "./components/Navbar new/Navbar";
 import Clubs from "./pages/clubs/clubs";
+import Studentlife from "./pages/Studentlife/Studentlife";
 
 const App = () => {
   return (
@@ -26,12 +27,15 @@ const App = () => {
             <Route exact path="/club">
               <Clubs />
             </Route>
+            <Route exact path="/feg">
+              <FegComponent />
+            </Route>
             <Route exact path="/" component={Home} />
 
             <Route path='/about' exact component={About} />
             <Route path='/change' exact component={Change} />
             <Route path='/places' exact component={Places} />
-            <Route path='/studentlife' exact component={FegComponent} />
+            <Route path='/studentlife' exact component={Studentlife} />
             <Route path='/helpandadvice' exact component={HelpAndAdvice} />
             <Route path='/contact' exact component={Contact} />
 

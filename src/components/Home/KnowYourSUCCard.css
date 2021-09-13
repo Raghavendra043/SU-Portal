@@ -1,0 +1,8 @@
+.shape { 
+    position: absolute;
+    top: 20vh;
+    /* left: 40vw; */
+    height: 400px;
+    width: 400px;
+    background-color: red;
+}
