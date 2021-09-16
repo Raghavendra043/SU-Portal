@@ -2,17 +2,19 @@
 
 .more{
     position: absolute; 
-    right: 10vw;
     background: rgb(255, 255, 255);
     padding: 8px;
     border-radius: 50%;
     box-shadow: 0.5px 0.5px 8px rgba(7, 5, 5, 0.2);
+    cursor: pointer;
+    border: none;
 }
 
 .more i{
     margin: auto 5px;
     color: #DA544F;
 }
+
 
 .header{
     display: inline-block;
@@ -213,6 +215,9 @@
     .more{
         right: 3vw !important;
     }
+    .more-left{
+        left: 3vw !important;
+    }
 
     .image-card{
         margin: 2vh 2vw;
@@ -248,5 +253,22 @@
 @media (min-width: 1600px) {
     .more{
         right: 15vw !important;
+    }
+}
+
+.scroll-text{
+    overflow: hidden;
+    flex-direction: row;
+    animation: scroll 25s linear infinite;
+}
+
+
+@keyframes scroll {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(-100%);
     }
 }
