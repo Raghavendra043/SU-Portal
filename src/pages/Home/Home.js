@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-pascal-case */
-import React from "react";
+import React, { useState } from "react";
 import path1 from "../../assets/home/hero/path1.svg";
 import heroImg from "../../assets/home/hero/heroImg.svg";
 
@@ -14,6 +14,48 @@ import WelcomeFreshers from "../../components/Home/WelcomeFreshers";
 import KnowYourSUC from "../../components/Home/KnowYourSUC";
 
 function Home() {
+  const [index, setIndex] = useState(0);
+  const [count, setCount] = useState(0);
+
+  const Event = [
+    {
+      title: "Campus Headlines",
+      width: 350,
+      month: "Sept",
+      day: "23",
+    },
+    {
+      title: "Campus Headlines",
+      width: 430,
+      month: "Sept",
+      day: "03",
+    },
+    {
+      title: "Campus Headlines",
+      width: 430,
+      month: "Aug",
+      day: "19",
+    },
+    {
+      title: "Campus Headlines",
+      width: 350,
+      month: "Aug",
+      day: "20",
+    },
+  ];
+
+  const Initiatives = [
+    {
+      title: "The heading and heading",
+    },
+    {
+      title: "The heading and heading",
+    },
+    {
+      title: "The heading and heading",
+    }
+  ];
+
   return (
     <div>
       <div style={{ position: "relative" }}>
@@ -84,12 +126,15 @@ function Home() {
 
       {/* Campus News */}
 
-      <h5
-        style={{ marginTop: "8vh", marginBottom: "-1vh", textAlign: "center" }}
+      <div
+        className="scroll-text"
+        style={{ marginTop: "8vh", marginBottom: "-1vh", textAlign: "left" }}
       >
-        <b>Campus News :</b> Lorem ipsum dolor sit | Lorem ipsum dolor sit |
-        Lorem ipsum dolor sit | Lorem ipsum dolor sit
-      </h5>
+        <h5>
+          <b>Campus News: </b>Lorem ipsum dolor sit | Lorem ipsum dolor sit |
+          Lorem ipsum dolor sit | Lorem ipsum dolor sit | Lorem ipsum dolor sit
+        </h5>
+      </div>
 
       {/* Welcome On Board */}
 
@@ -98,37 +143,34 @@ function Home() {
       </div>
 
       {/* Campus Events */}
-
       <div>
         <p className="header">Campus Events</p>
         <div className="container">
-          <CampusEvents
-            title="Campus Event Headline"
-            width="350px"
-            date="21"
-            month="Dec"
-          />
-          <CampusEvents
-            title="Campus Event Headline"
-            width="400px"
-            date="18"
-            month="Sept"
-          />
-          <CampusEvents
-            title="Campus Event Headline"
-            width="400px"
-            date="25"
-            month="August"
-          />
-          <CampusEvents
-            title="Campus Event Headline"
-            width="350px"
-            date="01"
-            month="Sept"
-          />
-          <a href="#" className="more">
-            <i class="fa fa-lg fa-chevron-right" aria-hidden="true"></i>
-          </a>
+          <button
+            disabled={index <= 0 ? true : false}
+            className="more more-left"
+            style={{ left: "5vw" }}
+            onClick={() => {
+              setIndex(index - 4);
+            }}
+          >
+            <i className="fa fa-lg fa-chevron-left" aria-hidden="true"></i>
+          </button>
+
+          <CampusEvents Event={Event} index={index} />
+
+          <button
+            disabled={
+              index == 4 * (Math.ceil(Event.length / 4) - 1) ? true : false
+            }
+            className="more"
+            style={{ right: "5vw" }}
+            onClick={() => {
+              setIndex(index + 4);
+            }}
+          >
+            <i className="fa fa-lg fa-chevron-right" aria-hidden="true"></i>
+          </button>
         </div>
       </div>
 
@@ -149,12 +191,31 @@ function Home() {
           SU Initiatives
         </p>
         <div className="container" style={{ width: "100vw" }}>
-          <SUInitiatives />
-          <SUInitiatives />
-          <SUInitiatives />
-          <a href="#" className="more" style={{ right: "5vw" }}>
-            <i class="fa fa-lg fa-chevron-right" aria-hidden="true"></i>
-          </a>
+          <button
+            disabled={count <= 0 ? true : false}
+            className="more more-left"
+            style={{ left: "5vw" }}
+            onClick={() => {
+              setCount(count - 3);
+            }}
+          >
+            <i className="fa fa-lg fa-chevron-left" aria-hidden="true"></i>
+          </button>
+
+          <SUInitiatives Event={Initiatives} index={count} />
+
+          <button
+            disabled={
+              count == 3 * (Math.ceil(Event.length / 3) - 1) ? true : false
+            }
+            className="more"
+            style={{ right: "5vw" }}
+            onClick={() => {
+              setCount(count + 3);
+            }}
+          >
+            <i className="fa fa-lg fa-chevron-right" aria-hidden="true"></i>
+          </button>
         </div>
       </div>
 
