@@ -1,20 +1,25 @@
 import React from 'react'
 
-export default function SU_Initiatives() {
+export default function SU_Initiatives(props) {
+  const { Event, index } = props;
+  return Event.map((element, i) => {
+    if (index <= i && i < index + 3) {
   return (
-    <div>
+    <div key={i}>
       <div className="image-card">
         <div className="bottom">
-          <h5>The heading and heading</h5>
+          <h5>{element.title}</h5>
           <p>
             Lorem ipsum dolor sit amet consecniti culpa magni quaerat vero
             laudantium natus et dolor. Nostrum, suscipit!
           </p>
           <button className="btn">
-            <i class="fa fa-arrow-right " aria-hidden="true" />
+            <i className="fa fa-arrow-right " aria-hidden="true" />
           </button>
         </div>
       </div>
     </div>
   )
+}
+});
 }
