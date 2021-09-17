@@ -1,23 +1,47 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+.knowyoursuc_images {
+  width: 100%;
+  position: absolute;
+  top: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  font-size: 16px;
+}
+.knowyoursuc_images div {
+  display: flex;
+}
 
 .knowursuc-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10vh;
-    position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10vh;
+  position: relative;
 }
 
 .row {
-    display: flex;
+  display: flex;
 }
 
 /* Create two equal columns that sits next to each other */
 .column {
-    flex: 50%;
-    padding: 10px;
-    height: 300px;
-    /* Should be removed. Only for demonstration */
+  flex: 50%;
+  padding: 10px;
+  height: 300px;
+  /* Should be removed. Only for demonstration */
+}
+@media only screen and (max-width: 1320px) {
+  .knowyoursuc_images {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1158px) {
+  .knowyoursuc_images {
+    font-size: 12px;
+  }
 }

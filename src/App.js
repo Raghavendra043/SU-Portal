@@ -32,12 +32,12 @@ const App = () => {
             </Route>
             <Route exact path="/" component={Home} />
 
-            <Route path='/about' exact component={About} />
-            <Route path='/change' exact component={Change} />
-            <Route path='/places' exact component={Places} />
-            <Route path='/studentlife' exact component={Studentlife} />
-            <Route path='/helpandadvice' exact component={HelpAndAdvice} />
-            <Route path='/contact' exact component={Contact} />
+            <Route path="/about" exact component={About} />
+            <Route path="/change" exact component={Change} />
+            <Route path="/places" exact component={Places} />
+            <Route path="/studentlife" exact component={Studentlife} />
+            <Route path="/helpandadvice" exact component={HelpAndAdvice} />
+            <Route path="/contact" exact component={Contact} />
 
             <Redirect to="/" />
           </Switch>
