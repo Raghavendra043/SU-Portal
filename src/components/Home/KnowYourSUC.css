@@ -45,3 +45,23 @@
     font-size: 12px;
   }
 }
+@media only screen and (max-width: 1010px) {
+  .knowyoursuc_images {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 931px) {
+  .knowyoursuc_images {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 773px) {
+  .knowyoursuc_images {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .knowyoursuc_images {
+    font-size: 6px;
+  }
+}
