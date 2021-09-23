@@ -2,10 +2,8 @@ import React from "react";
 import "./KnowYourSUC.css";
 import knowursucbg1 from "../../assets/home/KnowYourSUC/knowursuc1.svg";
 import knowursucbg2 from "../../assets/home/KnowYourSUC/knowursuc2.svg";
-// import KnowYourSUCCard from "../../components/Home/KnowYourSUCCard";
-// import { Container, Col, Row } from 'react-bootstrap';
-import knowyoursuc3 from "../../assets/home/KnowYourSUC/knowyoursuc3.svg";
-
+import SVG from "./svg";
+import { knowyoursucimage } from "./data";
 export default function KnowYourSUC() {
   return (
     <>
@@ -18,50 +16,14 @@ export default function KnowYourSUC() {
           />
           <div className="knowyoursuc_images">
             <div className="row1">
-              <img
-                src={knowyoursuc3}
-                alt="knowyoursuc"
-                style={{
-                  width: "15em",
-                }}
-              />
-              <img
-                src={knowyoursuc3}
-                alt="knowyoursuc"
-                style={{
-                  width: "15em",
-                }}
-              />
+              <SVG knowyoursucimage={knowyoursucimage.first} />
+              <SVG knowyoursucimage={knowyoursucimage.second} />
             </div>
             <div className="row2">
-              <img
-                src={knowyoursuc3}
-                alt="knowyoursuc"
-                style={{
-                  width: "15em",
-                }}
-              />
-              <img
-                src={knowyoursuc3}
-                alt="knowyoursuc"
-                style={{
-                  width: "15em",
-                }}
-              />
-              <img
-                src={knowyoursuc3}
-                alt="knowyoursuc"
-                style={{
-                  width: "15em",
-                }}
-              />
-              <img
-                src={knowyoursuc3}
-                alt="knowyoursuc"
-                style={{
-                  width: "15em",
-                }}
-              />
+              <SVG knowyoursucimage={knowyoursucimage.third} />
+              <SVG knowyoursucimage={knowyoursucimage.fourth} />
+              <SVG knowyoursucimage={knowyoursucimage.fifth} />
+              <SVG knowyoursucimage={knowyoursucimage.sixth} />
             </div>
           </div>
 
