@@ -16,6 +16,7 @@ import HelpAndAdvice from "./pages/HelpAndAdvice/HelpAndAdvice";
 import Navbar from "./components/Navbar new/Navbar";
 import Clubs from "./pages/clubs/clubs";
 import Studentlife from "./pages/Studentlife/Studentlife";
+import Senates from "./pages/Senates/Senates";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
             <Route path="/studentlife" exact component={Studentlife} />
             <Route path="/helpandadvice" exact component={HelpAndAdvice} />
             <Route path="/contact" exact component={Contact} />
+            <Route path="/senates" exact component={Senates}/>
 
             <Redirect to="/" />
           </Switch>
