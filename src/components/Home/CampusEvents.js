@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import React from "react";
 
 export default function Campus_Events(props) {
