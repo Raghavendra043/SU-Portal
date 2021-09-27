@@ -53,7 +53,7 @@ function Home() {
     },
     {
       title: "The heading and heading",
-    }
+    },
   ];
 
   return (
@@ -90,7 +90,7 @@ function Home() {
           >
             <div
               style={{
-                font: "normal normal 800 32px/39px Montserrat",
+                font: "normal normal 800 30px/49px Montserrat",
                 letterSpacing: "0px",
                 color: "#FFFFFF",
                 opacity: "1",
@@ -101,7 +101,7 @@ function Home() {
             </div>
             <div
               style={{
-                font: "normal normal 800 40px/49px Montserrat",
+                font: "normal normal 800 30px/49px Montserrat",
                 letterSpacing: "0.16px",
                 color: "#DF456A",
                 opacity: "1",
@@ -112,7 +112,7 @@ function Home() {
             </div>
             <div
               style={{
-                font: "normal normal 800 32px/39px Montserrat",
+                font: "normal normal 800 30px/49px Montserrat",
                 letterSpacing: "0px",
                 color: "#FFFFFF",
                 opacity: "1",
