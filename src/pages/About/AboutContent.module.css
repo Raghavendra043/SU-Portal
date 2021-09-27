@@ -1,13 +1,16 @@
 .aboutfont {
   font-size: 8px;
 }
+
 .aboutcontent {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 80%;
   margin: auto;
   margin-top: 40px;
   /* border: 2px solid red; */
+  min-height: 60vh;
+  align-items: center;
 }
 .aboutleft {
   display: flex;
@@ -36,7 +39,7 @@
   font-family: "Montserrat";
   font-size: 55em;
   text-align: center;
-  opacity: 0.3;
+  opacity: 0.18;
   font-weight: bold;
 }
 .aboutright {
@@ -91,6 +94,16 @@
     height: 270px;
     font-size: 76%;
   }
+  .aboutcontent {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    /* border: 2px solid red; */
+    min-height: 0vh;
+    align-items: none;
+  }
 }
 @media only screen and (max-width: 1180px) {
   .aboutfont {
@@ -101,6 +114,11 @@
     font-size: 75%;
   }
 }
+@media only screen and (max-height: 560px) {
+  .aboutbottomheading {
+    max-height: 200px;
+  }
+}
 @media only screen and (max-width: 993px) {
   .aboutbottomheading {
     height: 230px;
@@ -108,6 +126,9 @@
   }
   .aboutcontent {
     width: 90%;
+  }
+  .aboutback {
+    margin-top: 100px;
   }
   .aboutsection:before {
     clip-path: circle(65.2% at -5% 56%);
@@ -139,9 +160,7 @@
     height: 210px;
     font-size: 65%;
   }
-  .aboutback {
-    margin-top: 150px;
-  }
+
   .aboutright {
     width: 45%;
   }
@@ -154,9 +173,7 @@
     height: 170px;
     font-size: 60%;
   }
-  .aboutback {
-    margin-top: 100px;
-  }
+
   .aboutsection:before {
     clip-path: circle(65.2% at -17% 53%);
   }
