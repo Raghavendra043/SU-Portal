@@ -42,6 +42,12 @@ function Home() {
       month: "Aug",
       day: "20",
     },
+    {
+      title: "Campus Headlines",
+      width: 350,
+      month: "Aug",
+      day: "20",
+    },
   ];
 
   const Initiatives = [
@@ -126,15 +132,23 @@ function Home() {
 
       {/* Campus News */}
 
-      <div
-        className="scroll-text"
-        style={{ marginTop: "8vh", marginBottom: "-1vh", textAlign: "left" }}
-      >
-        <h5>
-          <b>Campus News: </b>Lorem ipsum dolor sit | Lorem ipsum dolor sit |
+      <h5 style={{ marginTop: "15px" }}>
+        <b
+          style={{
+            position: "absolute",
+            zIndex: "100",
+            backgroundColor: "white",
+            padding: "0 1px 0 8px",
+          }}
+        >
+          Campus News:{" "}
+        </b>
+        <div className="scroll-text">
           Lorem ipsum dolor sit | Lorem ipsum dolor sit | Lorem ipsum dolor sit
-        </h5>
-      </div>
+          | Lorem ipsum dolor sit | Lorem ipsum dolor sit | Lorem ipsum dolor
+          sit 
+        </div>
+      </h5>
 
       {/* Welcome On Board */}
 

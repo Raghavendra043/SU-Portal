@@ -24,79 +24,65 @@ function Navbar() {
     };
   }, []);
 
-  return (
-    <div>
-      <nav
-        className="navbar navbar-expand-lg navbar-dark fixed-top py-0"
-        id="main-nav"
-      >
-        <div className="container-fluid">
-          <a className="navbar-brand mx-lg-5 mt-lg-1" href="/">
-            <div className="bits-logo">
-              <img src={logo} alt="Bits SU" className="bits-logo-img" />
-            </div>
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div
-            className="collapse navbar-collapse ms-lg-2 pt-2"
-            id="navbarSupportedContent"
-          >
-            <ul className="navbar-nav ml-auto  navbar-right">
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/about" exact>
-                  About
-                </NavLink>
-              </li>
 
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/change" exact>
-                  Make A Change
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/places" exact>
-                  Places For You
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/studentlife" exact>
-                  Student Life
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/helpandadvice" exact>
-                  Help & Advice
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/notice" exact>
-                  General Noticeboard
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link navbar-login"
-                  to="/studentlife"
-                  exact
-                >
-                  Login
-                </NavLink>
-              </li>
-            </ul>
-          </div>
+    
+    return (
+        <div>
+            <nav className="navbar navbar-expand-lg navbar-dark fixed-top py-0" id='main-nav'>
+                <div className='container-fluid'>
+                    <a className="navbar-brand" href="/">
+                        <div className='bits-logo'>
+                            <img src={logo} alt='Bits SU' className='bits-logo-img'/>
+                        </div>
+                    </a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse ms-lg-2 pt-2" id="navbarSupportedContent">
+                        <ul className="navbar-nav ml-auto ">
+
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="/about" exact>
+                                        About Us
+                                    </NavLink>
+                                </li>
+
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="/change" exact>
+                                        Make A Change
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="/places" exact>
+                                        Places For You
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="/studentlife" exact>
+                                        Student Life
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="/helpandadvice" exact>
+                                        Help & Advice
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="/notice" exact>
+                                        General Noticeboard
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link navbar-login" to="/studentlife" exact>
+                                        Login
+                                    </NavLink>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-      </nav>
-    </div>
+ 
   );
 }
 
