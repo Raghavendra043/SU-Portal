@@ -33,7 +33,7 @@ function Navbar() {
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark fixed-top py-0" id='main-nav'>
                 <div className='container-fluid'>
-                    <a className="navbar-brand mx-lg-5 mt-lg-1" href="/">
+                    <a className="navbar-brand" href="/">
                         <div className='bits-logo'>
                             <img src={logo} alt='Bits SU' className='bits-logo-img'/>
                         </div>
@@ -42,11 +42,11 @@ function Navbar() {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse ms-lg-2 pt-2" id="navbarSupportedContent">
-                        <ul className="navbar-nav ml-auto  navbar-right">
+                        <ul className="navbar-nav ml-auto ">
 
                                 <li className="nav-item">
                                     <NavLink className="nav-link" to="/about" exact>
-                                        About
+                                        About Us
                                     </NavLink>
                                 </li>
 

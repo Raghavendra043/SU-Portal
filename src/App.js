@@ -23,6 +23,7 @@ const App = () => {
     <>
       <Router>
         <Navbar />
+        <div style={{height:'10vh',width:'100%'}}></div>
         <main>
           <Switch>
             <Route exact path="/club">
