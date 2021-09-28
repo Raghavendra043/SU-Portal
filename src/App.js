@@ -17,6 +17,9 @@ import Navbar from "./components/Navbar new/Navbar";
 import Clubs from "./pages/clubs/clubs";
 import Studentlife from "./pages/Studentlife/Studentlife";
 import Senates from "./pages/Senates/Senates";
+import tech_senate from "./components/Senates/tech_senate";
+import cult_senate from "./components/Senates/cult_senate";
+import sports_senate from "./components/Senates/sports_senate";
 
 const App = () => {
   return (
@@ -41,6 +44,9 @@ const App = () => {
             <Route path="/helpandadvice" exact component={HelpAndAdvice} />
             <Route path="/contact" exact component={Contact} />
             <Route path="/senates" exact component={Senates}/>
+            <Route path="/techsenate" exact component={tech_senate} />
+            <Route path="/cultsenate" exact component={cult_senate} />
+            <Route path="/sportssenate" exact component={sports_senate} />
 
             <Redirect to="/" />
           </Switch>

@@ -8,10 +8,10 @@ nav{
     --nav-hov-col : purple;
 }
 
-.nav-des-free{  
-    background-color: rgba(255, 255, 255, 0.842);
-    --nav-col: black;
-    --nav-hov-col : darkcyan;
+.nav-des-free {
+  background-color: rgba(255, 255, 255, 0.842);
+  --nav-col: black;
+  --nav-hov-col: darkcyan;
 }
 
 .navbar-dark .navbar-nav .nav-link{
@@ -26,13 +26,13 @@ nav{
     color: var(--nav-hov-col);
 }
 
-.navbar-dark .navbar-nav .navbar-login{
-    margin: 0 2em;
-    color: red;
-    border : 2px solid red;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    transform: translateY(-15%);
+.navbar-dark .navbar-nav .navbar-login {
+  margin: 0 2em;
+  color: red;
+  border: 2px solid red;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transform: translateY(-15%);
 }
 .navbar-dark .navbar-nav .navbar-login:hover{
     color: white;
