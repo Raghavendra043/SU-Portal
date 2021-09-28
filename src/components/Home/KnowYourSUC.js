@@ -24,6 +24,7 @@ export default function KnowYourSUC() {
               <SVG knowyoursucimage={knowyoursucimage.fourth} />
               <SVG knowyoursucimage={knowyoursucimage.fifth} />
               <SVG knowyoursucimage={knowyoursucimage.sixth} />
+              <SVG knowyoursucimage={knowyoursucimage.seventh} />
             </div>
           </div>
 

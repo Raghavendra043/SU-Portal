@@ -16,6 +16,9 @@
 .knowyoursuc_images div {
   display: flex;
 }
+.row2 {
+  justify-content: center;
+}
 
 .knowursuc-container {
   display: flex;

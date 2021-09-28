@@ -1,4 +1,5 @@
 import React from "react";
+import { knowyoursucimage } from "./data";
 
 export default function svg(prop) {
   return (
@@ -75,11 +76,12 @@ export default function svg(prop) {
             transform="matrix(1, 0, 0, 1, 146.5, 5817.38)"
             filter="url(#_233927002_3002635430007293_6642489037113739055_n-removebg-preview)"
           >
+            {prop.knowyoursucimage.imageattri}
             <image
               id="_233927002_3002635430007293_6642489037113739055_n-removebg-preview-2"
               data-name="233927002_3002635430007293_6642489037113739055_n-removebg-preview"
-              width="268.462"
-              height="244.85"
+              width={prop.knowyoursucimage.image_width}
+              height={prop.knowyoursucimage.image_height}
               transform="translate(30 30)"
               xlinkHref={prop.knowyoursucimage.image}
             />

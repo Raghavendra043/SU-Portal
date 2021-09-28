@@ -1,4 +1,4 @@
-import backimage from "./bitscampusdark.jpg";
+import backimage from "./Union1.jpeg";
 export const about = {
   leftheading: "About us",
   rightheading: [
