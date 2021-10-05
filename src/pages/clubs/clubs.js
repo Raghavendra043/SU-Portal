@@ -1,8 +1,8 @@
 import React from "react";
 import Clubname from "./clubname";
 import Clubevents from "./Clubevents";
-import ClubPOR from "./ClubPOR"
-
+import ClubPOR from "./ClubPOR";
+import Activities from "./activities";
 import Clubvideo from "./clubvideo";
 export default function clubs() {
   return (
@@ -10,7 +10,8 @@ export default function clubs() {
       <Clubname />
       <Clubvideo />
       <Clubevents />
-	  <ClubPOR/>
+      <Activities />
+      <ClubPOR />
     </>
-   );
+  );
 }
