@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import path1 from "../../assets/home/hero/path1.svg";
 import heroImg from "../../assets/home/hero/heroImg.svg";
+import { motion, AnimatePresence } from "framer-motion";
 
 import Text from "./Text";
 
@@ -16,6 +17,27 @@ import KnowYourSUC from "../../components/Home/KnowYourSUC";
 function Home() {
   const [index, setIndex] = useState(0);
   const [count, setCount] = useState(0);
+  const [counter, setCounter] = useState("Innovate");
+  const [counterText, setCounterText] = useState("Innovate");
+
+  setTimeout(() => {
+    if (counterText === "Innovate") {
+      setCounterText("Achieve");
+    } else if (counterText === "Achieve") {
+      setCounterText("Lead");
+    } else if (counterText === "Lead") {
+      setCounterText("Innovate");
+    }
+  }, 4000);
+
+  //animation
+  const counterV = {
+    state1: { y: 100, opacity: 0 },
+    state2: { y: 0, opacity: 1 },
+    transition: {
+      delay: 100,
+    },
+  };
 
   const Event = [
     {
@@ -105,17 +127,64 @@ function Home() {
             >
               Let's
             </div>
-            <div
+            {/* {counter ? (
+              <motion.div
+                style={{
+                  font: "normal normal 800 30px/49px Montserrat",
+                  letterSpacing: "0.16px",
+                  color: "#DF456A",
+                  opacity: "1",
+                  paddingRight: 10,
+                }}
+                variants={counterV}
+                initial={"state1"}
+                animate={"state2"}
+                exit={{ y: -100 }}
+              >
+                Innovate
+              </motion.div>
+            ) : (
+              <motion.div
+                style={{
+                  font: "normal normal 800 30px/49px Montserrat",
+                  letterSpacing: "0.16px",
+                  color: "#DF456A",
+                  opacity: "1",
+                  paddingRight: 10,
+                }}
+                variants={counterV}
+                initial={"state1"}
+                animate={"state2"}
+              >
+                Panda
+              </motion.div>
+            )} */}
+            <motion.div
               style={{
                 font: "normal normal 800 30px/49px Montserrat",
                 letterSpacing: "0.16px",
                 color: "#DF456A",
                 opacity: "1",
                 paddingRight: 10,
+                width: "150px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
+              variants={counterV}
+              initial={"state1"}
+              animate={"state2"}
             >
-              Innovate
-            </div>
+              {counterText}
+              {/* <AnimatePresence>
+                {counter ? (
+                  <motion.span exit={{ y: -100 }}>Innovate</motion.span>
+                ) : (
+                  <motion.span>Achieve</motion.span>
+                )}
+                
+              </AnimatePresence> */}
+            </motion.div>
             <div
               style={{
                 font: "normal normal 800 30px/49px Montserrat",
@@ -146,7 +215,7 @@ function Home() {
         <div className="scroll-text">
           Lorem ipsum dolor sit | Lorem ipsum dolor sit | Lorem ipsum dolor sit
           | Lorem ipsum dolor sit | Lorem ipsum dolor sit | Lorem ipsum dolor
-          sit 
+          sit
         </div>
       </h5>
 

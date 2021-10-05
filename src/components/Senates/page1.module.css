@@ -1,36 +1,36 @@
-.outer{
-    background-color: rgba(187, 187, 187, 0.514);
-    margin-top: 80px;
-    font-family:Montserrat;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url('../../assets/images/Senates/deptsbg.svg');
+.outer {
+  background-color: rgba(187, 187, 187, 0.514);
+  margin-top: 0px;
+  font-family: Montserrat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../assets/images/Senates/deptsbg.svg");
 }
-.container{
-    margin: auto;
-    display: flex;
-    width: fit-content;
+.container {
+  margin: auto;
+  display: flex;
+  width: fit-content;
 }
-.col2{
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
+.col2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
 }
-.row1{
-    display: flex;
-    align-items: flex-end;
+.row1 {
+  display: flex;
+  align-items: flex-end;
 }
-.heading{
-    font-weight: 800;
-    font-size: 95px;
-    width: 500px;
-    line-height: 95px;
-    letter-spacing: 0;
-    margin-bottom: 50px;
+.heading {
+  font-weight: 800;
+  font-size: 95px;
+  width: 500px;
+  line-height: 95px;
+  letter-spacing: 0;
+  margin-bottom: 50px;
 }
-.description{
-    width: 550px;
-    text-align: justify;
+.description {
+  width: 550px;
+  text-align: justify;
 }

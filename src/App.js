@@ -13,7 +13,7 @@ import Change from "./pages/Change/Change";
 import Places from "./pages/Places/Places";
 import FegComponent from "./pages/Feg/FegComponent";
 import HelpAndAdvice from "./pages/HelpAndAdvice/HelpAndAdvice";
-import Navbar from "./components/Navbar new/Navbar";
+import Navbar from "./components/NavbarNew/Navbar";
 import Clubs from "./pages/clubs/clubs";
 import Studentlife from "./pages/Studentlife/Studentlife";
 import Senates from "./pages/Senates/Senates";
@@ -26,7 +26,7 @@ const App = () => {
     <>
       <Router>
         <Navbar />
-        <div style={{height:'10vh',width:'100%'}}></div>
+        <div style={{ height: "10vh", width: "100%" }}></div>
         <main>
           <Switch>
             <Route exact path="/club">
@@ -43,7 +43,7 @@ const App = () => {
             <Route path="/studentlife" exact component={Studentlife} />
             <Route path="/helpandadvice" exact component={HelpAndAdvice} />
             <Route path="/contact" exact component={Contact} />
-            <Route path="/senates" exact component={Senates}/>
+            <Route path="/senates" exact component={Senates} />
             <Route path="/techsenate" exact component={tech_senate} />
             <Route path="/cultsenate" exact component={cult_senate} />
             <Route path="/sportssenate" exact component={sports_senate} />
