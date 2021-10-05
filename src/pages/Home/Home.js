@@ -166,6 +166,10 @@ function Home() {
                 color: "#DF456A",
                 opacity: "1",
                 paddingRight: 10,
+                width: "150px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
               variants={counterV}
               initial={"state1"}
