@@ -212,10 +212,22 @@ function Home() {
         >
           Campus News:{" "}
         </b>
-        <div className="scroll-text">
-          Lorem ipsum dolor sit | Lorem ipsum dolor sit | Lorem ipsum dolor sit
-          | Lorem ipsum dolor sit | Lorem ipsum dolor sit | Lorem ipsum dolor
-          sit
+        <div className="hwrap">
+          <div className="scroll-text">
+            <div className="hitem">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit........
+            </div>
+            <div className="hitem">
+              Aliquam consequat varius consequat.......
+            </div>
+            <div className="hitem">
+              Fusce dapibus turpis vel nisi malesuada sollicitudin.......
+            </div>
+            <div className="hitem">
+              Pellentesque auctor molestie orci ut blandit.......
+            </div>
+            {/* can have many elements */}
+          </div>
         </div>
       </h5>
 
