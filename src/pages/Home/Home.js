@@ -201,7 +201,7 @@ function Home() {
 
       {/* Campus News */}
 
-      <h5 style={{ marginTop: "15px" }}>
+      <h5 style={{ margin: "50px", marginTop: "15px" }}>
         <b
           style={{
             position: "absolute",
