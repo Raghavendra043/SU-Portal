@@ -82,6 +82,15 @@ function Home() {
     {
       title: "The heading and heading",
     },
+    {
+      title: "The heading and heading part2",
+    },
+    {
+      title: "The heading and heading part2",
+    },
+    {
+      title: "The heading and heading part2",
+    },
   ];
 
   return (
@@ -301,7 +310,7 @@ function Home() {
 
           <button
             disabled={
-              count === 3 * (Math.ceil(Event.length / 3) - 1) ? true : false
+              count === 3 * (Math.ceil(Initiatives.length / 3) - 1) ? true : false
             }
             className="more"
             style={{ right: "5vw" }}
