@@ -2,8 +2,8 @@ import image2 from "../../assets/home/KnowYourSUC/h (1).png";
 import image7 from "../../assets/home/KnowYourSUC/Rahul_Vashishtha-removebg-preview.png";
 import image4 from "../..//assets/home/KnowYourSUC/WhatsApp_Image_2021-05-05_at_9.43.00_PM-removebg-preview (1).png";
 import image1 from "../../assets/home/KnowYourSUC/IMG_9707-removebg-preview (1).png";
-import image5 from "../..//assets/home/KnowYourSUC/Sakshi-rawat-removebg-preview.png";
-import image6 from "../../assets/home/KnowYourSUC/Shimoly_Shrivastava-removebg-preview.png";
+import image5 from "../..//assets/home/KnowYourSUC/Sakshi-rawat-removebg-preview-2.png";
+import image6 from "../../assets/home/KnowYourSUC/Shimoly_Shrivastava-removebg-preview-2.png";
 export const knowyoursucimage = {
   first: {
     name: "Krishna Prawjal S 1",

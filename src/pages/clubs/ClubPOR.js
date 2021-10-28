@@ -17,7 +17,7 @@ export default function ClubPOR() {
       <h1 id="events_heading" className="mt-4">
         POR Holders
       </h1>
-      <div style={{ width: "60%", margin: "auto" }}>
+      <div style={{ width: "65%", margin: "auto" }}>
         <Svg PorHolders={PorHolders.first} />
 
         <Svg PorHolders={PorHolders.second} />
