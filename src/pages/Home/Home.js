@@ -310,7 +310,9 @@ function Home() {
 
           <button
             disabled={
-              count === 3 * (Math.ceil(Initiatives.length / 3) - 1) ? true : false
+              count === 3 * (Math.ceil(Initiatives.length / 3) - 1)
+                ? true
+                : false
             }
             className="more"
             style={{ right: "5vw" }}
