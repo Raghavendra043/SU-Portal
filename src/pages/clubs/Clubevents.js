@@ -4,6 +4,7 @@ import svg1 from "./images/clipart-smooth_zigzag.jpg";
 import svg2 from "./images/clipart-sharp_zigzag.png";
 import { dota } from "./data";
 export default function Clubevents() {
+  const [index, setIndex] = useState(0);
   return (
     <div id="events">
       <h1 id="events_heading">Our Events</h1>
