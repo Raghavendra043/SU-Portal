@@ -1,4 +1,4 @@
-import backimage from "./bitscampusdark.jpg";
+import backimage from "./Union4.jpg";
 export const places = {
   leftheading: "Place For You",
   rightheading: [
