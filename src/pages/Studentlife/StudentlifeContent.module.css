@@ -8,6 +8,8 @@
   margin: auto;
   margin-top: 40px;
   /* border: 2px solid red; */
+  min-height: 60vh;
+  align-items: center;
 }
 .studentlifeleft {
   display: flex;
@@ -18,7 +20,7 @@
 .studentlifebottomheading {
   margin: auto;
   width: 100%;
-  max-height: 275px;
+  max-height: 350px;
   overflow: hidden;
   position: absolute;
   bottom: 0px;
@@ -34,10 +36,11 @@
 }
 .studentlifebottomheading h1 {
   font-family: "Montserrat";
-  font-size: 42em;
+  font-size: 55em;
   text-align: center;
-  opacity: 0.3;
+  opacity: 0.1;
   font-weight: bold;
+  letter-spacing: 2vw;
 }
 .studentliferight {
   display: flex;
@@ -63,10 +66,15 @@
 }
 .studentlifeback {
   display: flex;
-  width: 94%;
+  width: 79%;
   align-items: center;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 14vh;
+}
+.studentlifeback i {
+  cursor: pointer;
+}
+.studentlifeback h6 {
   cursor: pointer;
 }
 #padding {
@@ -82,14 +90,23 @@
   height: 100%;
   background: rgb(206,24,201);
   z-index: -1;
-  clip-path: circle(51.8% at 12% 50%);
+  clip-path: circle(65.2% at -2% 53%);
+
 }
-@media only screen and (max-width: 1390px) {
-  .studentlifebottomheading h1 {
-    font-size: 38em;
-  }
+@media only screen and (max-width: 1450px) {
   .studentlifebottomheading {
-    height: 300px;
+    height: 270px;
+    font-size: 76%;
+  }
+  .studentlifecontent {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+
+    min-height: 0vh;
+    align-items: none;
   }
 }
 @media only screen and (max-width: 1180px) {
@@ -98,25 +115,39 @@
   }
   .studentlifebottomheading {
     height: 250px;
-    font-size: 80%;
+    font-size: 75%;
+  }
+}
+@media only screen and (max-height: 560px) {
+  .studentlifebottomheading {
+    max-height: 200px;
   }
 }
 @media only screen and (max-width: 993px) {
   .studentlifebottomheading {
     height: 230px;
-    font-size: 6px;
+    font-size: 5px;
   }
   .studentlifecontent {
     width: 90%;
   }
+  .studentlifeback {
+    margin-top: 130px;
+  }
   .studentlifesection:before {
-    clip-path: circle(51.2% at 8% 55%);
+    clip-path: circle(65.2% at -3% 56%);
+  }
+  .studentlifeback {
+    width: 90%;
   }
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 943px) {
   .studentlifebottomheading {
     height: 210px;
-    font-size: 75%;
+    font-size: 70%;
+  }
+  .studentlifebottomheading h1 {
+    letter-spacing: 0px;
   }
   .studentlifefont {
     font-size: 40%;
@@ -128,7 +159,7 @@
   }
   .studentlifebottomheading {
     height: 210px;
-    font-size: 85%;
+    font-size: 70%;
   }
 }
 @media only screen and (max-width: 690px) {
@@ -136,12 +167,10 @@
     font-size: 35%;
   }
   .studentlifebottomheading {
-    height: 210px;
-    font-size: 80%;
+    height: 180px;
+    font-size: 65%;
   }
-  .studentlifeback {
-    margin-top: 150px;
-  }
+
   .studentliferight {
     width: 45%;
   }
@@ -152,13 +181,11 @@
 @media only screen and (max-width: 625px) {
   .studentlifebottomheading {
     height: 170px;
-    font-size: 70%;
+    font-size: 60%;
   }
-  .studentlifeback {
-    margin-top: 100px;
-  }
+
   .studentlifesection:before {
-    clip-path: circle(65.2% at -17% 53%);
+    clip-path: circle(65.2% at -13% 53%);
   }
 }
 @media only screen and (max-width: 555px) {
@@ -197,9 +224,15 @@
     font-size: 40%;
   }
 }
+@media only screen and (max-width: 430px) {
+  .studentlifebottomheading {
+    height: 120px;
+    font-size: 35%;
+  }
+}
 @media only screen and (max-width: 380px) {
   .studentlifebottomheading {
-    height: 140px;
-    font-size: 45%;
+    height: 100px;
+    font-size: 30%;
   }
 }

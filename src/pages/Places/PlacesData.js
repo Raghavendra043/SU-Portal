@@ -1,6 +1,6 @@
 import backimage from "./Union4.jpg";
 export const places = {
-  leftheading: "Place For You",
+  leftheading: "Places For You",
   rightheading: [
     {
       heading: "Academic Blocks",
