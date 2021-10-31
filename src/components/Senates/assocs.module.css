@@ -1,41 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 .outer{
-    font-family: Montserrat;
-    background-color: #F5F5F5;
-    padding-top: 100px;
+    background-color: rgb(239,236,235);
 }
 .heading{
-    font-weight: bold;
-    font-size: 36px;
-    margin-left:150px;
-    margin-bottom:50px;
+    display: inline-block;
+    margin: 1vh 4vw;
+    margin-top: 20vh;
+    margin-bottom: 8vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 2.2rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.heading::after{
+    content: '';
+    height: 5px;
+    width: 55%;
+    background: linear-gradient(90deg, #CE19C9, #DA544F) ;
+    position: absolute;
+    left: 4px;
+    border-radius: 1px;
+    bottom: -4px;
+    transition: 0.3s;
 }
 .assocs{
     display: flex;
-    font-weight:900;
-    font-size: 28px;
-    margin-left: 200px;
-    margin-right: 200px;
-    justify-content: space-evenly;
+    flex-direction: row;
     flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+    margin: auto;
 }
 .assoc{
-    margin: 25px;
+    margin: 2rem 4rem;
 }
 .logo{
-    height: 200px;
-    width: 200px;
-    background-color: white;
-    border-radius: 40px;
+    height: 120px;
+    width: 120px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 20px 1px rgba(0,0,0,0.1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 .logoimg{
-    max-height: 200px;
+    width: 100px;
+    max-height: 100px;
 }
 .assoc_title{
-    margin: auto;
-    margin-top: 25px;
+    width: 120px;
     text-align: center;
-    width: 200px;
+    padding: 10px 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
