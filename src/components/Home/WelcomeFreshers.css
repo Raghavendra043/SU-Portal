@@ -14,6 +14,21 @@
     font-size: 0.9rem;
 }
 
+.explore-btn {
+    margin: 2vh auto;
+    padding: 1.2vh 1.8vw;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    background-color: #da544f;
+    border-radius: 30px;
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    top: 40vh;
+    width: 8%;
+    left: 10vw;
+}
+
 .group_photo {
     position: absolute;
     right: 10vw;
