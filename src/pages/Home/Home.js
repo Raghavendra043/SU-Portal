@@ -3,8 +3,10 @@
 import React, { useState } from "react";
 import path1 from "../../assets/home/hero/path1.svg";
 import heroImg from "../../assets/home/hero/heroImg.svg";
+import dp from '../../assets/home/hero/a.jpg'
 import { motion, AnimatePresence } from "framer-motion";
-
+import Footer from '../../components/Footer/Footer'
+import footer from '../../assets/images/footer.png'
 import Text from "./Text";
 
 import CampusEvents from "../../components/Home/CampusEvents";
@@ -42,31 +44,31 @@ function Home() {
   const Event = [
     {
       title: "Campus Headlines",
-      width: 350,
+      width: 400,
       month: "Sept",
       day: "23",
     },
     {
       title: "Campus Headlines",
-      width: 430,
+      width: 450,
       month: "Sept",
       day: "03",
     },
     {
       title: "Campus Headlines",
-      width: 430,
+      width: 450,
       month: "Aug",
       day: "19",
     },
     {
       title: "Campus Headlines",
-      width: 350,
+      width: 400,
       month: "Aug",
       day: "20",
     },
     {
       title: "Campus Headlines",
-      width: 350,
+      width: 600,
       month: "Aug",
       day: "20",
     },
@@ -97,11 +99,20 @@ function Home() {
     <div>
       <div style={{ position: "relative" }}>
         <img src={path1} alt="path1" style={{ width: "100%" }} />
-        <img
+        {/* <img 
+          src={dp}
+          alt=" heroimg1"
+          style={{ position: "absolute", top: 4, right: 20, width: "40vw" }}
+        /> */}
+         <object type="image/svg+xml" data={heroImg} style={{ position: "absolute", top:30, right: 20, width: "50vw" }}>
+            <param name="param1" value={dp} />
+         </object>
+        {/* <img
           src={heroImg}
           alt=" heroimg"
           style={{ position: "absolute", top: 4, right: 20, width: "50vw" }}
-        />
+        /> */}
+        
 
         <div style={{ position: "absolute", top: 100, paddingLeft: 30 }}>
           <Text />
@@ -345,6 +356,7 @@ function Home() {
           <button className="contri-btn">Contributors</button>
         </div>
       </div>
+      <Footer background={footer}/>
     </div>
   );
 }

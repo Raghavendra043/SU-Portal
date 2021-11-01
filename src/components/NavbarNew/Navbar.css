@@ -52,13 +52,15 @@ nav {
 }
 
 .bits-logo-img {
-  height: 13vh;
+  height: 15vh;
   min-height: 60px;
   width: 15vw;
+  padding-top: 5px;
   min-width: 60px;
   min-width: 150px;
   margin-right: 0.2em;
   transition: 0.2s ease;
+  align-self: center;
 }
 
 #main-nav .contaier-fluid {

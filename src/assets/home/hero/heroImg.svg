@@ -2,6 +2,7 @@
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1028.156" height="539.028" viewBox="0 0 1028.156 539.028">
   <defs>
+    <ref id="img1" param="color" default="blue"/>
     <style>
       .cls-1 {
         fill: none;
@@ -31,7 +32,8 @@
     </style>
     <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 2048 1365">
       
-      <image width="2048" height="1365" href="a.jpg"/>
+      <!-- <image width="2048" height="1365"/> src="https://firebasestorage.googleapis.com/v0/b/doctor-web-b9c47.appspot.com/o/images%2Fa.jpg?alt=media&token=a57faf57-d20b-4808-b160-937db96abc5f"/> -->
+      <image width="2048" height="1365" xlink:href="https://firebasestorage.googleapis.com/v0/b/doctor-web-b9c47.appspot.com/o/images%2Fa.jpg?alt=media&amp;token=a57faf57-d20b-4808-b160-937db96abc5f"/>
     </pattern>
     <clipPath id="clip-path">
       <rect class="cls-1" width="114.037" height="159.736"/>

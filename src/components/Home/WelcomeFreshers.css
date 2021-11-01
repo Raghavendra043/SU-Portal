@@ -7,7 +7,7 @@
 .welcome-freshers-text {
 
     position: absolute;
-    top: 13vh;
+    top: 15vh;
     width: 40%;
     left: 10vw;
     color: white;
@@ -24,7 +24,7 @@
     border-radius: 30px;
     font-family: "Montserrat", sans-serif;
     position: absolute;
-    top: 40vh;
+    top: 45vh;
     width: 8%;
     left: 10vw;
 }
