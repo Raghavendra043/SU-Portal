@@ -1,5 +1,5 @@
 .navbar {
-  /* background-color: black; */
+  background-color: white;
   min-height: 60px;
 }
 
@@ -10,16 +10,17 @@ nav {
 
 .nav-item {
   min-height: 30px;
+  color: black;
 }
 
 .nav-des-top {
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   --nav-col: black;
   --nav-hov-col: purple;
 }
 
 .nav-des-free {
-  background-color: rgba(255, 255, 255, 0.842);
+  /* background-color: rgba(255, 255, 255, 0.842); */
   --nav-col: black;
   --nav-hov-col: darkcyan;
 }
@@ -45,7 +46,7 @@ nav {
   transform: translateY(-15%);
 }
 .navbar-dark .navbar-nav .navbar-login:hover {
-  color: white;
+  /* color: white; */
   border: 2.5px solid red;
   background-color: red;
 }
@@ -84,11 +85,12 @@ nav {
   }
 
   .navbar-dark .navbar-nav .nav-link {
-    color: white;
+    color: red;
     padding: 0.5em 1em;
   }
 
   .navbar-dark .navbar-nav .navbar-login {
     margin: 0;
+    color: red;
   }
 }

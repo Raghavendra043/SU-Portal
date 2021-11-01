@@ -68,7 +68,9 @@ function Navbar() {
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" to="/notice" exact>
+                                    {/* <NavLink className="nav-link" to="/notice" exact> */}
+                                    <NavLink className="nav-link" to="/places" exact>
+                                    
                                         General Noticeboard
                                     </NavLink>
                                 </li>

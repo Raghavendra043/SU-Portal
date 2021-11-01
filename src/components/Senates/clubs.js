@@ -18,57 +18,57 @@ function Clubs() {
     {
       id: 1,
       url: aeolus,
-      club: "Aeolous",
+      name: "Aeolous",
     },
     {
       id: 2,
       url: adastra,
-      club: "Ad Astra",
+      name: "Ad Astra",
     },
     {
       id: 3,
       url: sae,
-      club: "SAE",
+      name: "SAE",
     },
     {
       id: 4,
       url: arc,
-      club: "ARC",
+      name: "ARC",
     },
     {
       id: 5,
       url: crux,
-      club: "Crux",
+      name: "Crux",
     },
     {
       id: 6,
       url: wsc,
-      club: "Wall Street Club",
+      name: "Wall Street Club",
     },
     {
       id: 7,
       url: ieee,
-      club: "IEEE",
+      name: "IEEE",
     },
     {
       id: 8,
       url: hyperloop,
-      club: "Hyperloop",
+      name: "Hyperloop",
     },
     {
       id: 9,
       url: seds,
-      club: "SEDS",
+      name: "SEDS",
     },
     {
       id: 10,
       url: acm,
-      club: "ACM",
+      name: "ACM",
     },
     {
       id: 11,
       url: bhcg,
-      club: "BHCG",
+      name: "BHCG",
     },
   ];
   return (

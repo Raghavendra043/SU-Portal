@@ -30,7 +30,7 @@ function DisplayBox(props) {
             className={styles.logoimg}
           ></img>
         </div>
-        <h6 className={styles.assoc_title}>{props.data.assoc}</h6>
+        <h6 className={styles.assoc_title}>{props.data.name}</h6>
       </motion.div>
     </div>
   );

@@ -210,13 +210,13 @@ function Home() {
 
       {/* Campus News */}
 
-      <h5 style={{ margin: "50px", marginTop: "15px" }}>
+      <h5 style={{ margin: "50px", marginTop: "30px" }}>
         <b
           style={{
             position: "absolute",
             zIndex: "100",
             backgroundColor: "white",
-            padding: "0 1px 0 8px",
+            padding: "0 1px 0 8px"
           }}
         >
           Campus News:{" "}

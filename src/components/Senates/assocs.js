@@ -17,57 +17,57 @@ function Assocs() {
     {
       id: 1,
       url: csa,
-      assoc: "Computer Science Association",
+      name: "Computer Science Association",
     },
     {
       id: 2,
       url: phoenix,
-      assoc: "Phoenix Association",
+      name: "Phoenix Association",
     },
     {
       id: 3,
       url: mech,
-      assoc: "Mechanical Engineer's Association",
+      name: "Mechanical Engineer's Association",
     },
     {
       id: 4,
       url: civil,
-      assoc: "Civil Engineer's Association",
+      name: "Civil Engineer's Association",
     },
     {
       id: 5,
       url: chem,
-      assoc: "Association of Chemical Engineers",
+      name: "Association of Chemical Engineers",
     },
     {
       id: 6,
       url: synapsis,
-      assoc: "Synapsis Association",
+      name: "Synapsis Association",
     },
     {
       id: 7,
       url: panacea,
-      assoc: "Panacea Association",
+      name: "Panacea Association",
     },
     {
       id: 8,
       url: axiom,
-      assoc: "Axiom Association",
+      name: "Axiom Association",
     },
     {
       id: 9,
       url: alchemy,
-      assoc: "Alchemy Association",
+      name: "Alchemy Association",
     },
     {
       id: 10,
       url: spectrum,
-      assoc: "Spectrum Association",
+      name: "Spectrum Association",
     },
     {
       id: 11,
       url: eco,
-      assoc: "Economics Association",
+      name: "Economics Association",
     },
   ];
 
