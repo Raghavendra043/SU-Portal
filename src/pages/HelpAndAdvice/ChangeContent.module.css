@@ -1,8 +1,7 @@
-.studentlifefont {
+.changefont {
   font-size: 8px;
 }
-
-.studentlifecontent {
+.changecontent {
   display: flex;
   justify-content: space-between;
   width: 80%;
@@ -12,15 +11,13 @@
   min-height: 60vh;
   align-items: center;
 }
-
-.studentlifeleft {
+.changeleft {
   display: flex;
   flex-direction: column;
   width: 40%;
   /* border: 2px solid red; */
 }
-
-.studentlifebottomheading {
+.changebottomheading {
   margin: auto;
   width: 100%;
   max-height: 350px;
@@ -30,26 +27,22 @@
   /* border: 2px solid red; */
   z-index: -1;
 }
-
 .link {
   text-decoration: none;
   color: white;
 }
-
 .link:hover {
   color: #d1c5c5;
 }
-
-.studentlifebottomheading h1 {
+.changebottomheading h1 {
   font-family: "Montserrat";
-  font-size: 55em;
+  font-size: 60em;
   text-align: center;
   opacity: 0.1;
   font-weight: bold;
-  letter-spacing: 2vw;
+  letter-spacing: 0.1vw;
 }
-
-.studentliferight {
+.changeright {
   display: flex;
   flex-direction: column;
   width: 37%;
@@ -58,44 +51,36 @@
   padding-left: 3.8em;
   /* border: 2px solid red; */
 }
-
-.studentliferight h1 {
+.changeright h1 {
   font-size: 2.9em;
   font-family: "Montserrat";
   padding-bottom: 0.9em;
   font-weight: 500;
 }
-
-.studentlifeleft p {
+.changeleft p {
   font-size: 1.6em;
 }
-
-.studentlifeleft h1 {
+.changeleft h1 {
   font-weight: bolder;
   font-family: "Montserrat";
 }
-
-.studentlifeback {
+.changeback {
   display: flex;
   width: 79%;
   align-items: center;
   margin: auto;
   margin-top: 14vh;
 }
-
-.studentlifeback i {
+.changeback i {
   cursor: pointer;
 }
-
-.studentlifeback h6 {
+.changeback h6 {
   cursor: pointer;
 }
-
 #padding {
   margin-bottom: 10px;
 }
-
-.studentlifesection:before {
+.changesection:before {
   content: "";
   position: absolute;
   top: 0px;
@@ -103,19 +88,16 @@
   left: 0px;
   width: 100%;
   height: 100%;
-  background: rgb(206, 24, 201);
+  background: rgb(206,24,201);
   z-index: -1;
   clip-path: circle(65.2% at -2% 53%);
-
 }
-
 @media only screen and (max-width: 1450px) {
-  .studentlifebottomheading {
+  .changebottomheading {
     height: 270px;
     font-size: 76%;
   }
-
-  .studentlifecontent {
+  .changecontent {
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -126,156 +108,129 @@
     align-items: none;
   }
 }
-
 @media only screen and (max-width: 1180px) {
-  .studentlifefont {
+  .changefont {
     font-size: 7px;
   }
-
-  .studentlifebottomheading {
+  .changebottomheading {
     height: 250px;
     font-size: 75%;
   }
 }
-
 @media only screen and (max-height: 560px) {
-  .studentlifebottomheading {
+  .changebottomheading {
     max-height: 200px;
   }
 }
-
 @media only screen and (max-width: 993px) {
-  .studentlifebottomheading {
+  .changebottomheading {
     height: 230px;
     font-size: 5px;
   }
-
-  .studentlifecontent {
+  .changecontent {
     width: 90%;
   }
-
-  .studentlifeback {
+  .changeback {
     margin-top: 130px;
   }
-
-  .studentlifesection:before {
+  .changesection:before {
     clip-path: circle(65.2% at -3% 56%);
   }
-
-  .studentlifeback {
+  .changeback {
     width: 90%;
   }
 }
-
 @media only screen and (max-width: 943px) {
-  .studentlifebottomheading {
+  .changebottomheading {
     height: 210px;
     font-size: 70%;
   }
-
-  .studentlifebottomheading h1 {
+  .changebottomheading h1 {
     letter-spacing: 0px;
   }
-
-  .studentlifefont {
+  .changefont {
     font-size: 40%;
   }
 }
-
 @media only screen and (max-width: 770px) {
-  .studentlifefont {
+  .changefont {
     font-size: 35%;
   }
-
-  .studentlifebottomheading {
+  .changebottomheading {
     height: 210px;
     font-size: 70%;
   }
 }
-
 @media only screen and (max-width: 690px) {
-  .studentlifefont {
+  .changefont {
     font-size: 35%;
   }
-
-  .studentlifebottomheading {
+  .changebottomheading {
     height: 180px;
     font-size: 65%;
   }
 
-  .studentliferight {
+  .changeright {
     width: 45%;
   }
-
-  .studentlifeleft {
+  .changeleft {
     width: 45%;
   }
 }
-
 @media only screen and (max-width: 625px) {
-  .studentlifebottomheading {
+  .changebottomheading {
     height: 170px;
     font-size: 60%;
   }
 
-  .studentlifesection:before {
+  .changesection:before {
     clip-path: circle(65.2% at -13% 53%);
   }
 }
-
 @media only screen and (max-width: 555px) {
-  .studentlifefont {
+  .changefont {
     font-size: 25%;
   }
-
-  .studentlifebottomheading {
+  .changebottomheading {
     height: 140px;
     font-size: 70%;
   }
 }
-
 @media only screen and (max-width: 555px) {
-  .studentlifecontent {
+  .changecontent {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     /* margin: 0px; */
     margin-top: 20px;
   }
-
-  .studentliferight {
+  .changeright {
     width: 80%;
     margin-top: 30px;
   }
-
-  .studentlifeleft {
+  .changeleft {
     width: 80%;
   }
-
-  .studentlifefont {
+  .changefont {
     font-size: 40%;
   }
-
-  .studentlifebottomheading {
+  .changebottomheading {
     height: 140px;
     font-size: 60%;
   }
-
-  .studentlifebottomheading {
+  .changebottomheading {
     height: 140px;
     font-size: 40%;
   }
 }
-
 @media only screen and (max-width: 430px) {
-  .studentlifebottomheading {
+  .changebottomheading {
     height: 120px;
     font-size: 35%;
   }
 }
-
 @media only screen and (max-width: 380px) {
-  .studentlifebottomheading {
+  .changebottomheading {
     height: 100px;
     font-size: 30%;
   }

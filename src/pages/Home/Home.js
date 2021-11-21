@@ -3,8 +3,10 @@
 import React, { useState } from "react";
 import path1 from "../../assets/home/hero/path1.svg";
 import heroImg from "../../assets/home/hero/heroImg.svg";
+import dp from '../../assets/home/hero/a.jpg'
 import { motion, AnimatePresence } from "framer-motion";
-
+import Footer from '../../components/Footer/Footer'
+import footer from '../../assets/images/footer.png'
 import Text from "./Text";
 
 import CampusEvents from "../../components/Home/CampusEvents";
@@ -42,31 +44,31 @@ function Home() {
   const Event = [
     {
       title: "Campus Headlines",
-      width: 350,
+      width: 400,
       month: "Sept",
       day: "23",
     },
     {
       title: "Campus Headlines",
-      width: 430,
+      width: 450,
       month: "Sept",
       day: "03",
     },
     {
       title: "Campus Headlines",
-      width: 430,
+      width: 450,
       month: "Aug",
       day: "19",
     },
     {
       title: "Campus Headlines",
-      width: 350,
+      width: 400,
       month: "Aug",
       day: "20",
     },
     {
       title: "Campus Headlines",
-      width: 350,
+      width: 600,
       month: "Aug",
       day: "20",
     },
@@ -82,17 +84,35 @@ function Home() {
     {
       title: "The heading and heading",
     },
+    {
+      title: "The heading and heading part2",
+    },
+    {
+      title: "The heading and heading part2",
+    },
+    {
+      title: "The heading and heading part2",
+    },
   ];
 
   return (
     <div>
       <div style={{ position: "relative" }}>
         <img src={path1} alt="path1" style={{ width: "100%" }} />
-        <img
+        {/* <img 
+          src={dp}
+          alt=" heroimg1"
+          style={{ position: "absolute", top: 4, right: 20, width: "40vw" }}
+        /> */}
+         <object type="image/svg+xml" data={heroImg} style={{ position: "absolute", top:30, right: 20, width: "50vw" }}>
+            <param name="param1" value={dp} />
+         </object>
+        {/* <img
           src={heroImg}
           alt=" heroimg"
           style={{ position: "absolute", top: 4, right: 20, width: "50vw" }}
-        />
+        /> */}
+        
 
         <div style={{ position: "absolute", top: 100, paddingLeft: 30 }}>
           <Text />
@@ -166,6 +186,10 @@ function Home() {
                 color: "#DF456A",
                 opacity: "1",
                 paddingRight: 10,
+                width: "150px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
               variants={counterV}
               initial={"state1"}
@@ -197,21 +221,33 @@ function Home() {
 
       {/* Campus News */}
 
-      <h5 style={{ marginTop: "15px" }}>
+      <h5 style={{ margin: "50px", marginTop: "30px" }}>
         <b
           style={{
             position: "absolute",
             zIndex: "100",
             backgroundColor: "white",
-            padding: "0 1px 0 8px",
+            padding: "0 1px 0 8px"
           }}
         >
           Campus News:{" "}
         </b>
-        <div className="scroll-text">
-          Lorem ipsum dolor sit | Lorem ipsum dolor sit | Lorem ipsum dolor sit
-          | Lorem ipsum dolor sit | Lorem ipsum dolor sit | Lorem ipsum dolor
-          sit
+        <div className="hwrap">
+          <div className="scroll-text">
+            <div className="hitem">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit........
+            </div>
+            <div className="hitem">
+              Aliquam consequat varius consequat.......
+            </div>
+            <div className="hitem">
+              Fusce dapibus turpis vel nisi malesuada sollicitudin.......
+            </div>
+            <div className="hitem">
+              Pellentesque auctor molestie orci ut blandit.......
+            </div>
+            {/* can have many elements */}
+          </div>
         </div>
       </h5>
 
@@ -285,7 +321,9 @@ function Home() {
 
           <button
             disabled={
-              count === 3 * (Math.ceil(Event.length / 3) - 1) ? true : false
+              count === 3 * (Math.ceil(Initiatives.length / 3) - 1)
+                ? true
+                : false
             }
             className="more"
             style={{ right: "5vw" }}
@@ -318,6 +356,7 @@ function Home() {
           <button className="contri-btn">Contributors</button>
         </div>
       </div>
+      <Footer background={footer}/>
     </div>
   );
 }

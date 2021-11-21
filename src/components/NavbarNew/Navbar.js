@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
-import logo from "./logo.png";
+//import logo from "./logo.png";
+import logo from '../../assets/images/logo.svg'
 
 function Navbar() {
 //   useEffect(() => {
@@ -68,7 +69,9 @@ function Navbar() {
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" to="/notice" exact>
+                                    {/* <NavLink className="nav-link" to="/notice" exact> */}
+                                    <NavLink className="nav-link" to="/places" exact>
+                                    
                                         General Noticeboard
                                     </NavLink>
                                 </li>

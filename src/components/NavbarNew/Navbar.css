@@ -1,0 +1,98 @@
+.navbar {
+  background-color: white;
+  min-height: 60px;
+}
+
+nav {
+  height: 10vh;
+  min-height: 100px;
+}
+
+.nav-item {
+  min-height: 30px;
+  color: black;
+}
+
+.nav-des-top {
+  /* background-color: rgb(255, 255, 255); */
+  --nav-col: black;
+  --nav-hov-col: purple;
+}
+
+.nav-des-free {
+  /* background-color: rgba(255, 255, 255, 0.842); */
+  --nav-col: black;
+  --nav-hov-col: darkcyan;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 50ms linear 0s;
+  padding: 1vh 2vw;
+  font-size: 2.5vh;
+  color: var(--nav-col);
+  transition: 0.2s ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--nav-hov-col);
+}
+
+.navbar-dark .navbar-nav .navbar-login {
+  margin: 0 2em;
+  color: red;
+  border: 2px solid red;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transform: translateY(-15%);
+}
+.navbar-dark .navbar-nav .navbar-login:hover {
+  /* color: white; */
+  border: 2.5px solid red;
+  background-color: red;
+}
+
+.bits-logo-img {
+  height: 15vh;
+  min-height: 60px;
+  width: 15vw;
+  padding-top: 5px;
+  min-width: 60px;
+  min-width: 150px;
+  margin-right: 0.2em;
+  transition: 0.2s ease;
+  align-self: center;
+}
+
+#main-nav .contaier-fluid {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (min-width: 1080px) {
+  #navbarSupportedContent {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 993px) {
+  .navbar {
+    background-color: black;
+  }
+
+  nav {
+    height: auto;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: red;
+    padding: 0.5em 1em;
+  }
+
+  .navbar-dark .navbar-nav .navbar-login {
+    margin: 0;
+    color: red;
+  }
+}

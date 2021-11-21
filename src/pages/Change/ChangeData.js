@@ -1,4 +1,4 @@
-import backimage from "./bitscampusdark.jpg";
+import backimage from "./Union3.png";
 export const change = {
   leftheading: "Make A Change",
   rightheading: [
