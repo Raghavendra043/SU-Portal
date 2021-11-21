@@ -4,31 +4,31 @@ import { NavLink } from "react-router-dom";
 import logo from "./logo.png";
 
 function Navbar() {
-  useEffect(() => {
-    const handleScroll = () => {
-      var navbar = document.getElementsByClassName("navbar");
-      const size = window.scrollY > 10;
-      const isWhite = navbar[0].classList.contains("nav-des-free");
-      if (size && !isWhite) {
-        navbar[0].classList.remove("nav-des-top");
-        navbar[0].classList.add("nav-des-free");
-      } else if (window.scrollY <= 10) {
-        navbar[0].classList.remove("nav-des-free");
-        navbar[0].classList.add("nav-des-top");
-      }
-    };
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       var navbar = document.getElementsByClassName("navbar");
+//       const size = window.scrollY > 10;
+//       const isWhite = navbar[0].classList.contains("nav-des-free");
+//       if (size && !isWhite) {
+//         navbar[0].classList.remove("nav-des-top");
+//         navbar[0].classList.add("nav-des-free");
+//       } else if (window.scrollY <= 10) {
+//         navbar[0].classList.remove("nav-des-free");
+//         navbar[0].classList.add("nav-des-top");
+//       }
+//     };
 
-    document.addEventListener("scroll", handleScroll);
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+//     document.addEventListener("scroll", handleScroll);
+//     return () => {
+//       document.removeEventListener("scroll", handleScroll);
+//     };
+//   }, []);
 
 
     
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-dark fixed-top py-0" id='main-nav'>
+            <nav className="navbar navbar-expand-lg  fixed-top py-0 nav-des-free" id='main-nav'>
                 <div className='container-fluid'>
                     <a className="navbar-brand" href="/">
                         <div className='bits-logo'>

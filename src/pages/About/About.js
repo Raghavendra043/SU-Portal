@@ -20,10 +20,10 @@ export default function About() {
           background: `linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(${about.backimage}) no-repeat center center/cover`,
           backgroundSize: "cover",
           position: `absolute`,
-          top: `0px`,
+          top: `10vh`,
           zIndex: -2,
           width: `100%`,
-          minHeight: `100vh`,
+          minHeight: `90vh`,
           color: `white`,
         }}
       >
