@@ -1,0 +1,37 @@
+section {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+section .scroll {
+    width: 100%;
+    display: flex;
+}
+
+section .scroll div{
+    overflow: hidden;
+    animation: animate 40s linear infinite;
+    animation-delay: -40s;
+}
+section .scroll div:nth-child(2) {
+    animation: animate2 40s linear infinite;
+    animation-delay: -20s;
+}
+@keyframes animate {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate2 {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}

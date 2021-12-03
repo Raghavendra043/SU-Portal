@@ -13,7 +13,7 @@ nav {
 }
 
 .navbar .navbar-nav .nav-link {
-  padding: 1vh 2vw;
+  padding: 1vh 1.7vw;
   font-size: 1.2vw;
   color: var(--nav-col);
 }

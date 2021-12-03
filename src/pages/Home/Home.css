@@ -257,10 +257,16 @@
 
 .scroll-text {
   display: flex;
-  animation: tickerh linear 30s infinite;
+  animation: tickerh linear 40s infinite;
+  animation-delay: -40s;
+  
   /* overflow: hidden;
   flex-direction: row;
   animation: scroll 25s linear infinite; */
+}
+.scroll-text div:nth-child(4){
+  animation: tickerh1 linear 40s infinite;
+  animation-delay: -20s;
 }
 
 .hitem {
@@ -292,6 +298,15 @@
   }
 
   100% {
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-30%, 0, 0);
+  }
+}
+@keyframes tickerh1 {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-200%, 0, 0);
   }
 }

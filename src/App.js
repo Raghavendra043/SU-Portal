@@ -24,12 +24,15 @@ import Signin from "./pages/signin/Signin";
 import Footer from "./components/Footer/Footer";
 import footer from "./assets/images/footer.png";
 import { Section } from "./assets/home/scroll";
+//import Footer from './components/Footer/Footer'
+//import footer from './assets/images/footer.png'
+import Typing1 from './assets/home/scroll'
 const App = () => {
   return (
     <>
       <Router>
-        <Navbar />
-        <div style={{ height: "10vh", width: "100%" }}></div>
+        {/* <Navbar /> */}
+        {/* <div style={{ height: "10vh", width: "100%" }}></div> */}
         <main>
           <Switch>
             <Route exact path="/club">
@@ -53,7 +56,8 @@ const App = () => {
 
             {/* <Redirect to="/" /> */}
             <Route exact path="/" component={Home} />
-            <Route exact path="/test" component={Section} />
+            <Route exact path="/test" component={Typing1} />
+              
           </Switch>
         </main>
       </Router>
