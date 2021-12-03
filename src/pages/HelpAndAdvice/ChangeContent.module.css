@@ -1,8 +1,7 @@
-.aboutfont {
+.changefont {
   font-size: 8px;
 }
-
-.aboutcontent {
+.changecontent {
   display: flex;
   justify-content: space-between;
   width: 80%;
@@ -12,15 +11,13 @@
   min-height: 60vh;
   align-items: center;
 }
-
-.aboutleft {
+.changeleft {
   display: flex;
   flex-direction: column;
   width: 40%;
   /* border: 2px solid red; */
 }
-
-.aboutbottomheading {
+.changebottomheading {
   margin: auto;
   width: 100%;
   max-height: 350px;
@@ -30,17 +27,14 @@
   /* border: 2px solid red; */
   z-index: -1;
 }
-
 .link {
   text-decoration: none;
   color: white;
 }
-
 .link:hover {
   color: #d1c5c5;
 }
-
-.aboutbottomheading h1 {
+.changebottomheading h1 {
   font-family: "Montserrat";
   font-size: 60em;
   text-align: center;
@@ -48,8 +42,7 @@
   font-weight: bold;
   letter-spacing: 0.1vw;
 }
-
-.aboutright {
+.changeright {
   display: flex;
   flex-direction: column;
   width: 37%;
@@ -58,44 +51,36 @@
   padding-left: 3.8em;
   /* border: 2px solid red; */
 }
-
-.aboutright h1 {
+.changeright h1 {
   font-size: 2.9em;
   font-family: "Montserrat";
   padding-bottom: 0.9em;
   font-weight: 500;
 }
-
-.aboutleft p {
+.changeleft p {
   font-size: 1.6em;
 }
-
-.aboutleft h1 {
+.changeleft h1 {
   font-weight: bolder;
   font-family: "Montserrat";
 }
-
-.aboutback {
+.changeback {
   display: flex;
   width: 79%;
   align-items: center;
   margin: auto;
   margin-top: 14vh;
 }
-
-.aboutback i {
+.changeback i {
   cursor: pointer;
 }
-
-.aboutback h6 {
+.changeback h6 {
   cursor: pointer;
 }
-
 #padding {
   margin-bottom: 10px;
 }
-
-.aboutsection:before {
+.changesection:before {
   content: "";
   position: absolute;
   top: 0px;
@@ -103,18 +88,16 @@
   left: 0px;
   width: 100%;
   height: 100%;
-  background: rgb(266, 84, 80);
+  background: rgb(206,24,201);
   z-index: -1;
   clip-path: circle(65.2% at -2% 53%);
 }
-
 @media only screen and (max-width: 1450px) {
-  .aboutbottomheading {
+  .changebottomheading {
     height: 270px;
     font-size: 76%;
   }
-
-  .aboutcontent {
+  .changecontent {
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -125,156 +108,129 @@
     align-items: none;
   }
 }
-
 @media only screen and (max-width: 1180px) {
-  .aboutfont {
+  .changefont {
     font-size: 7px;
   }
-
-  .aboutbottomheading {
+  .changebottomheading {
     height: 250px;
     font-size: 75%;
   }
 }
-
 @media only screen and (max-height: 560px) {
-  .aboutbottomheading {
+  .changebottomheading {
     max-height: 200px;
   }
 }
-
 @media only screen and (max-width: 993px) {
-  .aboutbottomheading {
+  .changebottomheading {
     height: 230px;
     font-size: 5px;
   }
-
-  .aboutcontent {
+  .changecontent {
     width: 90%;
   }
-
-  .aboutback {
+  .changeback {
     margin-top: 130px;
   }
-
-  .aboutsection:before {
+  .changesection:before {
     clip-path: circle(65.2% at -3% 56%);
   }
-
-  .aboutback {
+  .changeback {
     width: 90%;
   }
 }
-
 @media only screen and (max-width: 943px) {
-  .aboutbottomheading {
+  .changebottomheading {
     height: 210px;
     font-size: 70%;
   }
-
-  .aboutbottomheading h1 {
+  .changebottomheading h1 {
     letter-spacing: 0px;
   }
-
-  .aboutfont {
+  .changefont {
     font-size: 40%;
   }
 }
-
 @media only screen and (max-width: 770px) {
-  .aboutfont {
+  .changefont {
     font-size: 35%;
   }
-
-  .aboutbottomheading {
+  .changebottomheading {
     height: 210px;
     font-size: 70%;
   }
 }
-
 @media only screen and (max-width: 690px) {
-  .aboutfont {
+  .changefont {
     font-size: 35%;
   }
-
-  .aboutbottomheading {
+  .changebottomheading {
     height: 180px;
     font-size: 65%;
   }
 
-  .aboutright {
+  .changeright {
     width: 45%;
   }
-
-  .aboutleft {
+  .changeleft {
     width: 45%;
   }
 }
-
 @media only screen and (max-width: 625px) {
-  .aboutbottomheading {
+  .changebottomheading {
     height: 170px;
     font-size: 60%;
   }
 
-  .aboutsection:before {
+  .changesection:before {
     clip-path: circle(65.2% at -13% 53%);
   }
 }
-
 @media only screen and (max-width: 555px) {
-  .aboutfont {
+  .changefont {
     font-size: 25%;
   }
-
-  .aboutbottomheading {
+  .changebottomheading {
     height: 140px;
     font-size: 70%;
   }
 }
-
 @media only screen and (max-width: 555px) {
-  .aboutcontent {
+  .changecontent {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     /* margin: 0px; */
     margin-top: 20px;
   }
-
-  .aboutright {
+  .changeright {
     width: 80%;
     margin-top: 30px;
   }
-
-  .aboutleft {
+  .changeleft {
     width: 80%;
   }
-
-  .aboutfont {
+  .changefont {
     font-size: 40%;
   }
-
-  .aboutbottomheading {
+  .changebottomheading {
     height: 140px;
     font-size: 60%;
   }
-
-  .aboutbottomheading {
+  .changebottomheading {
     height: 140px;
     font-size: 40%;
   }
 }
-
 @media only screen and (max-width: 430px) {
-  .aboutbottomheading {
+  .changebottomheading {
     height: 120px;
     font-size: 35%;
   }
 }
-
 @media only screen and (max-width: 380px) {
-  .aboutbottomheading {
+  .changebottomheading {
     height: 100px;
     font-size: 30%;
   }

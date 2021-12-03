@@ -93,13 +93,13 @@
   margin-top: 8px;
 }
 
-.card:hover > p:first-of-type {
+.card:hover>p:first-of-type {
   position: absolute;
   padding-top: 25px;
   transition: 0.5s ease;
 }
 
-.card:hover > p:nth-of-type(2n) {
+.card:hover>p:nth-of-type(2n) {
   position: relative;
   display: none;
 }
@@ -114,7 +114,7 @@
   transition: 0.5s ease;
 }
 
-.slide > button {
+.slide>button {
   border: none;
   position: absolute;
   margin-left: 45%;
@@ -127,12 +127,12 @@
   transition: 0.5s ease;
 }
 
-.card:hover .overlay > h2 {
+.card:hover .overlay>h2 {
   transform: translate(5%, 130%);
   transition: 0.5s ease;
 }
 
-.card:hover .overlay > .Date {
+.card:hover .overlay>.Date {
   transform: translate(5%, 150%);
   transition: 0.5s ease;
 }
@@ -210,9 +210,11 @@
   .container {
     width: 100vw;
   }
+
   .more {
     right: 3vw !important;
   }
+
   .more-left {
     left: 3vw !important;
   }
@@ -229,9 +231,11 @@
     padding: 0.5em;
     margin-bottom: -5em;
   }
+
   .card {
     width: 500px !important;
   }
+
   .more {
     right: 0;
     position: relative;
@@ -258,6 +262,7 @@
   flex-direction: row;
   animation: scroll 25s linear infinite; */
 }
+
 .hitem {
   flex-shrink: 0;
   width: auto;
@@ -265,8 +270,10 @@
   /* padding: 10px; */
   text-align: center;
 }
+
 .hwrap {
-  overflow: hidden; /* HIDE SCROLL BAR */
+  overflow: hidden;
+  /* HIDE SCROLL BAR */
 }
 
 /* @keyframes scroll {
@@ -283,6 +290,7 @@
   0% {
     transform: translate3d(100%, 0, 0);
   }
+
   100% {
     transform: translate3d(-100%, 0, 0);
   }

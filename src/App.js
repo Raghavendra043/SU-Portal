@@ -21,6 +21,9 @@ import tech_senate from "./components/Senates/tech_senate";
 import cult_senate from "./components/Senates/cult_senate";
 import sports_senate from "./components/Senates/sports_senate";
 import Signin from "./pages/signin/Signin";
+import Footer from "./components/Footer/Footer";
+import footer from "./assets/images/footer.png";
+import { Section } from "./assets/home/scroll";
 const App = () => {
   return (
     <>
@@ -35,7 +38,6 @@ const App = () => {
             <Route exact path="/feg">
               <FegComponent />
             </Route>
-            <Route exact path="/" component={Home} />
 
             <Route path="/about" exact component={About} />
             <Route path="/change" exact component={Change} />
@@ -49,7 +51,9 @@ const App = () => {
             <Route path="/sportssenate" exact component={sports_senate} />
             <Route path="/login" exact component={Signin} />
 
-            <Redirect to="/" />
+            {/* <Redirect to="/" /> */}
+            <Route exact path="/" component={Home} />
+            <Route exact path="/test" component={Section} />
           </Switch>
         </main>
       </Router>

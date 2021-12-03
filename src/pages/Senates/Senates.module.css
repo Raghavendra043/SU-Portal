@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
-.heading{
+.heading {
     display: inline-block;
     margin: 1vh 4vw;
     margin-top: 20vh;
@@ -12,11 +12,11 @@
     cursor: pointer;
 }
 
-.heading::after{
+.heading::after {
     content: '';
     height: 5px;
     width: 55%;
-    background: linear-gradient(90deg, #CE19C9, #DA544F) ;
+    background: linear-gradient(90deg, #CE19C9, #DA544F);
     position: absolute;
     left: 4px;
     border-radius: 1px;
@@ -24,12 +24,12 @@
     transition: 0.3s;
 }
 
-.heading:hover::after{
+.heading:hover::after {
     width: 98%;
     transition: 0.3s ease-in;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -38,7 +38,7 @@
     margin: auto;
 }
 
-.main{
+.main {
     margin: 2rem 4rem;
 }
 
@@ -46,13 +46,13 @@
     height: 120px;
     width: 120px;
     border-radius: 15px;
-    box-shadow: 2px 2px 20px 1px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.1);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.name{
+.name {
     width: 120px;
     text-align: center;
     padding: 10px 5px;

@@ -5,14 +5,14 @@ export default function Campus_Events(props) {
   const { Event, index } = props;
   return Event.map((element, i) => {
     if (index <= i && i < index + 4) {
-      return <div className="card" key={i} style={{ width: element.width }}>
+      return <div className="card" key={i} style={{ width: element.width, height:"35vh" }}>
         <p
           style={{
             lineHeight: "30px",
             margin: "10px 30%",
             fontWeight: "bold",
             zIndex: "100",
-            width: "65%",
+            width: "50%",
           }}
         >
           {element.title}
@@ -21,7 +21,7 @@ export default function Campus_Events(props) {
           style={{
             fontSize: "0.7rem",
             margin: "0 30%",
-            maxHeight: "50%",
+            maxHeight: "70%",
             overflow: "hidden",
             width: "65%",
           }}

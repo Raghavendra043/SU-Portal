@@ -16,6 +16,7 @@ export default function Signin() {
           color: "white",
           fontSize: "50px",
           marginTop: "-10px",
+          fontWeight: "bold",
         }}
       >
         Sign in

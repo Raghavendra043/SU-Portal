@@ -5,7 +5,7 @@ import { data } from "./logos";
 
 export default function senates() {
   return (
-    <div>
+    <div>  
       <p
         className={senatescss.heading}
         style={{ marginTop: "8rem", marginLeft: "5rem" }}

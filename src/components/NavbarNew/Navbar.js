@@ -1,33 +1,68 @@
 import React, { useEffect } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
-import logo from "./logo.png";
+//import logo from "./logo.png";
+import logo from "../../assets/images/logo.svg";
 
 function Navbar() {
-  useEffect(() => {
-    const handleScroll = () => {
-      var navbar = document.getElementsByClassName("navbar");
-      const size = window.scrollY > 10;
-      const isWhite = navbar[0].classList.contains("nav-des-free");
-      if (size && !isWhite) {
-        navbar[0].classList.remove("nav-des-top");
-        navbar[0].classList.add("nav-des-free");
-      } else if (window.scrollY <= 10) {
-        navbar[0].classList.remove("nav-des-free");
-        navbar[0].classList.add("nav-des-top");
-      }
-    };
+  //   useEffect(() => {
+  //     const handleScroll = () => {
+  //       var navbar = document.getElementsByClassName("navbar");
+  //       const size = window.scrollY > 10;
+  //       const isWhite = navbar[0].classList.contains("nav-des-free");
+  //       if (size && !isWhite) {
+  //         navbar[0].classList.remove("nav-des-top");
+  //         navbar[0].classList.add("nav-des-free");
+  //       } else if (window.scrollY <= 10) {
+  //         navbar[0].classList.remove("nav-des-free");
+  //         navbar[0].classList.add("nav-des-top");
+  //       }
+  //     };
 
-    document.addEventListener("scroll", handleScroll);
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //     document.addEventListener("scroll", handleScroll);
+  //     return () => {
+  //       document.removeEventListener("scroll", handleScroll);
+  //     };
+  //   }, []);
+
+  //   return (
+  // <div>
+  //   <nav
+  //     className="navbar navbar-expand-lg navbar-dark fixed-top py-0"
+  //     id="main-nav"
+  //   >
+  //     <div className="container-fluid">
+  //       <a className="navbar-brand" href="/">
+  //         <div className="bits-logo">
+  //           <img src={logo} alt="Bits SU" className="bits-logo-img" />
+  //         </div>
+  //       </a>
+  //       <button
+  //         className="navbar-toggler"
+  //         type="button"
+  //         data-bs-toggle="collapse"
+  //         data-bs-target="#navbarSupportedContent"
+  //         aria-controls="navbarSupportedContent"
+  //         aria-expanded="false"
+  //         aria-label="Toggle navigation"
+  //       >
+  //         <span className="navbar-toggler-icon"></span>
+  //       </button>
+  //       <div
+  //         className="collapse navbar-collapse ms-lg-2 pt-2"
+  //         id="navbarSupportedContent"
+  //       >
+  //         <ul className="navbar-nav ml-auto ">
+  //           <li className="nav-item">
+  //             <NavLink className="nav-link" to="/about" exact>
+  //               About Us
+  //             </NavLink>
+  //           </li>
 
   return (
     <div>
       <nav
-        className="navbar navbar-expand-lg navbar-dark fixed-top py-0"
+        className="navbar navbar-expand-lg  fixed-top py-0 nav-des-free"
         id="main-nav"
       >
         <div className="container-fluid">
@@ -79,7 +114,8 @@ function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/notice" exact>
+                {/* <NavLink className="nav-link" to="/notice" exact> */}
+                <NavLink className="nav-link" to="/places" exact>
                   General Noticeboard
                 </NavLink>
               </li>
@@ -93,6 +129,8 @@ function Navbar() {
         </div>
       </nav>
     </div>
+    //   </nav>
+    // </div>
   );
 }
 

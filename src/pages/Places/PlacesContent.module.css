@@ -1,6 +1,7 @@
 .placesfont {
   font-size: 8px;
 }
+
 .placescontent {
   display: flex;
   justify-content: space-between;
@@ -8,37 +9,46 @@
   margin: auto;
   margin-top: 40px;
   /* border: 2px solid red; */
+  min-height: 60vh;
+  align-items: center;
 }
+
 .placesleft {
   display: flex;
   flex-direction: column;
   width: 40%;
   /* border: 2px solid red; */
 }
+
 .placesbottomheading {
   margin: auto;
   width: 100%;
-  max-height: 275px;
+  max-height: 350px;
   overflow: hidden;
   position: absolute;
   bottom: 0px;
   /* border: 2px solid red; */
   z-index: -1;
 }
+
 .link {
   text-decoration: none;
   color: white;
 }
+
 .link:hover {
   color: #d1c5c5;
 }
+
 .placesbottomheading h1 {
   font-family: "Montserrat";
-  font-size: 42em;
+  font-size: 60em;
   text-align: center;
-  opacity: 0.3;
+  opacity: 0.1;
   font-weight: bold;
+  letter-spacing: 2vw;
 }
+
 .placesright {
   display: flex;
   flex-direction: column;
@@ -48,30 +58,43 @@
   padding-left: 3.8em;
   /* border: 2px solid red; */
 }
+
 .placesright h1 {
   font-size: 2.9em;
   font-family: "Montserrat";
   padding-bottom: 0.9em;
   font-weight: 500;
 }
+
 .placesleft p {
   font-size: 1.6em;
 }
+
 .placesleft h1 {
   font-weight: bolder;
   font-family: "Montserrat";
 }
+
 .placesback {
   display: flex;
-  width: 94%;
+  width: 79%;
   align-items: center;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 14vh;
+}
+
+.placesback i {
   cursor: pointer;
 }
+
+.placesback h6 {
+  cursor: pointer;
+}
+
 #padding {
   margin-bottom: 10px;
 }
+
 .placessection:before {
   content: "";
   position: absolute;
@@ -82,94 +105,135 @@
   height: 100%;
   background: rgb(222, 84, 79);
   z-index: -1;
-  clip-path: circle(51.8% at 12% 50%);
+  clip-path: circle(65.2% at -2% 53%);
+
 }
-@media only screen and (max-width: 1390px) {
-  .placesbottomheading h1 {
-    font-size: 38em;
-  }
+
+@media only screen and (max-width: 1450px) {
   .placesbottomheading {
-    height: 300px;
+    height: 270px;
+    font-size: 76%;
+  }
+
+  .placescontent {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+
+    min-height: 0vh;
+    align-items: none;
   }
 }
+
 @media only screen and (max-width: 1180px) {
   .placesfont {
     font-size: 7px;
   }
+
   .placesbottomheading {
     height: 250px;
-    font-size: 80%;
+    font-size: 75%;
   }
 }
+
+@media only screen and (max-height: 560px) {
+  .placesbottomheading {
+    max-height: 200px;
+  }
+}
+
 @media only screen and (max-width: 993px) {
   .placesbottomheading {
     height: 230px;
-    font-size: 6px;
+    font-size: 5px;
   }
+
   .placescontent {
     width: 90%;
   }
+
+  .placesback {
+    margin-top: 130px;
+  }
+
   .placessection:before {
-    clip-path: circle(51.2% at 8% 55%);
+    clip-path: circle(65.2% at -3% 56%);
+  }
+
+  .placesback {
+    width: 90%;
   }
 }
-@media only screen and (max-width: 860px) {
+
+@media only screen and (max-width: 943px) {
   .placesbottomheading {
     height: 210px;
-    font-size: 75%;
+    font-size: 70%;
   }
+
+  .placesbottomheading h1 {
+    letter-spacing: 0px;
+  }
+
   .placesfont {
     font-size: 40%;
   }
 }
+
 @media only screen and (max-width: 770px) {
   .placesfont {
     font-size: 35%;
   }
+
   .placesbottomheading {
     height: 210px;
-    font-size: 85%;
+    font-size: 70%;
   }
 }
+
 @media only screen and (max-width: 690px) {
   .placesfont {
     font-size: 35%;
   }
+
   .placesbottomheading {
-    height: 210px;
-    font-size: 80%;
+    height: 180px;
+    font-size: 65%;
   }
-  .placesback {
-    margin-top: 150px;
-  }
+
   .placesright {
     width: 45%;
   }
+
   .placesleft {
     width: 45%;
   }
 }
+
 @media only screen and (max-width: 625px) {
   .placesbottomheading {
     height: 170px;
-    font-size: 70%;
+    font-size: 60%;
   }
-  .placesback {
-    margin-top: 100px;
-  }
+
   .placessection:before {
-    clip-path: circle(65.2% at -17% 53%);
+    clip-path: circle(65.2% at -13% 53%);
   }
 }
+
 @media only screen and (max-width: 555px) {
   .placesfont {
     font-size: 25%;
   }
+
   .placesbottomheading {
     height: 140px;
     font-size: 70%;
   }
 }
+
 @media only screen and (max-width: 555px) {
   .placescontent {
     flex-direction: column;
@@ -178,28 +242,41 @@
     /* margin: 0px; */
     margin-top: 20px;
   }
+
   .placesright {
     width: 80%;
     margin-top: 30px;
   }
+
   .placesleft {
     width: 80%;
   }
+
   .placesfont {
     font-size: 40%;
   }
+
   .placesbottomheading {
     height: 140px;
     font-size: 60%;
   }
+
   .placesbottomheading {
     height: 140px;
     font-size: 40%;
   }
 }
+
+@media only screen and (max-width: 430px) {
+  .placesbottomheading {
+    height: 120px;
+    font-size: 35%;
+  }
+}
+
 @media only screen and (max-width: 380px) {
   .placesbottomheading {
-    height: 140px;
-    font-size: 45%;
+    height: 100px;
+    font-size: 30%;
   }
 }
