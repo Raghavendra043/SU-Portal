@@ -20,7 +20,7 @@ import Senates from "./pages/Senates/Senates";
 import tech_senate from "./components/Senates/tech_senate";
 import cult_senate from "./components/Senates/cult_senate";
 import sports_senate from "./components/Senates/sports_senate";
-
+import Signin from "./pages/signin/Signin";
 const App = () => {
   return (
     <>
@@ -47,6 +47,7 @@ const App = () => {
             <Route path="/techsenate" exact component={tech_senate} />
             <Route path="/cultsenate" exact component={cult_senate} />
             <Route path="/sportssenate" exact component={sports_senate} />
+            <Route path="/login" exact component={Signin} />
 
             <Redirect to="/" />
           </Switch>
