@@ -31,8 +31,8 @@ const App = () => {
   return (
     <>
       <Router>
-        {/* <Navbar /> */}
-        {/* <div style={{ height: "10vh", width: "100%" }}></div> */}
+        <Navbar />
+        <div style={{ height: "10vh", width: "100%" }}></div>
         <main>
           <Switch>
             <Route exact path="/club">

@@ -24,7 +24,7 @@
     display: inline-block;
     position: relative;
     animation-duration: 15s;
-    animation-timing-function: steps(40, end);
+    animation-timing-function: steps(30, end);
     animation-iteration-count: infinite;
   }
   
