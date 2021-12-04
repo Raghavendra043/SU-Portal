@@ -26,7 +26,7 @@ import footer from "./assets/images/footer.png";
 import { Section } from "./assets/home/scroll";
 //import Footer from './components/Footer/Footer'
 //import footer from './assets/images/footer.png'
-import Typing1 from './assets/home/scroll'
+import Typing1 from "./assets/home/scroll";
 const App = () => {
   return (
     <>
@@ -57,7 +57,6 @@ const App = () => {
             {/* <Redirect to="/" /> */}
             <Route exact path="/" component={Home} />
             <Route exact path="/test" component={Typing1} />
-              
           </Switch>
         </main>
       </Router>

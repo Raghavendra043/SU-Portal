@@ -2,13 +2,16 @@ import React from "react";
 import "./signin.css";
 import Gogglesvg from "../../assets/images/Group52.svg";
 import logo from "../../assets/images/Group 51.svg";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export default function Signin() {
   return (
     <div
       className="mainbox"
       style={{ display: "flex", flexDirection: "column" }}
     >
-      <img src={logo} alt="" width="300px" />
+      <Link to="/">
+        <img src={logo} alt="" width="300px" style={{ cursor: "pointer" }} />
+      </Link>
       <h1
         style={{
           display: "inline-block",
@@ -21,13 +24,13 @@ export default function Signin() {
       >
         Sign in
       </h1>
-      <div style={{ display: "flex", marginTop: "14vh" }}>
+      <div style={{ display: "flex", marginTop: "13vh" }}>
         <div
           className="leftblock"
           style={{
             color: "white",
             fontSize: "20vw",
-            maxWidth: "43%",
+            minWidth: "43%",
           }}
         >
           <h1
@@ -36,9 +39,32 @@ export default function Signin() {
               fontSize: "4vw",
               fontWeight: "bold",
               marginLeft: "90px",
+              marginTop: "10px",
             }}
           >
-            BITS PILANI HYDERABAD STUDENT'S UNION
+            Bits Pilani
+          </h1>
+          <h1
+            style={{
+              color: "white",
+              fontSize: "4vw",
+              fontWeight: "bold",
+              marginLeft: "90px",
+              marginTop: "15px",
+            }}
+          >
+            Hyderabad
+          </h1>
+          <h1
+            style={{
+              color: "white",
+              fontSize: "4vw",
+              fontWeight: "bold",
+              marginLeft: "90px",
+              marginTop: "15px",
+            }}
+          >
+            Students' Union
           </h1>
         </div>
         <div className="rightblock">
@@ -48,6 +74,7 @@ export default function Signin() {
             srcset=""
             style={{
               width: "15vw",
+              cursor: "pointer",
             }}
           />
         </div>
