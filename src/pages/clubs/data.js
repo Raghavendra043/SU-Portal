@@ -90,6 +90,14 @@ export const dota = {
       color: "rgb(218, 37, 29)",
       para: "     Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptates, ipsa earum? Magni cumque quis ex minus, eveniet ametprovident quas ratione cum aperiam, dolor velit impedit facerequisquam? Quos, error.",
     },
+    {
+      id: "eleventh",
+      date: 1,
+      month: "August",
+      heading: "Campus Event Headline",
+      color: "rgb(218, 37, 29)",
+      para: "     Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptates, ipsa earum? Magni cumque quis ex minus, eveniet ametprovident quas ratione cum aperiam, dolor velit impedit facerequisquam? Quos, error.",
+    },
   ],
 };
 export const PorHolders = {
