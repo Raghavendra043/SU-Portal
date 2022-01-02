@@ -43,10 +43,15 @@
 .studentlifebottomheading h1 {
   font-family: "Montserrat";
   font-size: 55em;
-  text-align: center;
+
   opacity: 0.1;
   font-weight: bold;
-  letter-spacing: 2vw;
+  letter-spacing: 3vw;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
 }
 
 .studentliferight {
@@ -106,7 +111,6 @@
   background: rgb(206, 24, 201);
   z-index: -1;
   clip-path: circle(65.2% at -2% 53%);
-
 }
 
 @media only screen and (max-width: 1450px) {

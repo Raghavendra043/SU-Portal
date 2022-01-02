@@ -42,11 +42,16 @@
 
 .placesbottomheading h1 {
   font-family: "Montserrat";
-  font-size: 60em;
-  text-align: center;
+  font-size: 55em;
+
   opacity: 0.1;
   font-weight: bold;
-  letter-spacing: 2vw;
+  letter-spacing: 3vw;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
 }
 
 .placesright {
@@ -106,7 +111,6 @@
   background: rgb(222, 84, 79);
   z-index: -1;
   clip-path: circle(65.2% at -2% 53%);
-
 }
 
 @media only screen and (max-width: 1450px) {
