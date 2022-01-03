@@ -3,9 +3,12 @@ import React from "react";
 
 export default function Campus_Events(props) {
   const { Event, index } = props;
+  const length = Event.length - index;
+  let card_width = 0;
   return Event.map((element, i) => {
     if (index <= i && i < index + 4) {
-      return <div className="card" key={i} style={{ width: element.width, height:"35vh" }}>
+      i == index || i == index + 3 ? card_width=450 : (length == 3 && i == index + 2 ? card_width = 600 : card_width=400);
+      return <div className="card" key={i} style={{ width: card_width}}>
         <p
           style={{
             lineHeight: "30px",

@@ -44,34 +44,39 @@ function Home() {
   const Event = [
     {
       title: "Campus Headlines",
-      width: 400,
       month: "Sept",
       day: "23",
     },
     {
       title: "Campus Headlines",
-      width: 450,
       month: "Sept",
       day: "03",
     },
     {
       title: "Campus Headlines",
-      width: 450,
+      month: "Sept",
+      day: "03",
+    },
+    {
+      title: "Campus Headlines",
+      month: "Sept",
+      day: "03",
+    },
+    {
+      title: "Campus Headlines",
+      month: "Sept",
+      day: "03",
+    },
+    {
+      title: "Campus Headlines",
+      month: "Sept",
+      day: "03",
+    },
+    {
+      title: "Campus Headlines",
       month: "Aug",
       day: "19",
-    },
-    {
-      title: "Campus Headlines",
-      width: 400,
-      month: "Aug",
-      day: "20",
-    },
-    {
-      title: "Campus Headlines",
-      width: 600,
-      month: "Aug",
-      day: "20",
-    },
+    }
   ];
 
   const Initiatives = [
