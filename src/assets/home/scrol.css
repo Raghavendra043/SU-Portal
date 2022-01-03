@@ -1,0 +1,75 @@
+  
+  h1 {
+    font-size: 30px;
+    color: "#FFFFFF";
+    opacity: 1;
+    padding-right: 10;
+    font: normal normal 800 30px/49px Montserrat;
+  }
+  
+  .text_1 {
+    animation: text1;
+  }
+  
+  .text_2 {
+    animation: text2;
+  }
+  .text_3 {
+    animation: text3;
+  }
+  
+  .text_1, .text_2, .text_3 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 15s;
+    animation-timing-function: steps(30, end);
+    animation-iteration-count: infinite;
+  }
+  
+  .text_1::after, .text_2::after , .text_3::after{
+    content: " | ";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  }
+  @keyframes text3 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 12em;
+    }
+  }
+
+  @keyframes text2 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 13em;
+    }
+  }
+  
+  @keyframes text1 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    10%, 40% {
+      width: 13em;
+    }
+  }
+  
+  @keyframes caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }

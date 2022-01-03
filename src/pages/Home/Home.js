@@ -15,6 +15,8 @@ import SUInitiatives from "../../components/Home/SUInitiatives";
 import "./Home.css";
 import WelcomeFreshers from "../../components/Home/WelcomeFreshers";
 import KnowYourSUC from "../../components/Home/KnowYourSUC";
+import Typing1 from "../../assets/home/scroll";
+import News from "../../assets/home/news";
 
 function Home() {
   const [index, setIndex] = useState(0);
@@ -133,15 +135,15 @@ function Home() {
           >
             Students' Union
           </div>
-          <div
+          {/* <div
             style={{
               display: "flex",
               flexDirection: "row",
               // justifyContent: "center",
               alignItems: "center",
             }}
-          >
-            <div
+          > */}
+            {/* <div
               style={{
                 font: "normal normal 800 30px/49px Montserrat",
                 letterSpacing: "0px",
@@ -151,7 +153,7 @@ function Home() {
               }}
             >
               Let's
-            </div>
+            </div> */}
             {/* {counter ? (
               <motion.div
                 style={{
@@ -184,7 +186,7 @@ function Home() {
                 Panda
               </motion.div>
             )} */}
-            <motion.div
+            {/* <motion.div
               style={{
                 font: "normal normal 800 30px/49px Montserrat",
                 letterSpacing: "0.16px",
@@ -200,7 +202,7 @@ function Home() {
               initial={"state1"}
               animate={"state2"}
             >
-              {counterText}
+              {counterText} */}
               {/* <AnimatePresence>
                 {counter ? (
                   <motion.span exit={{ y: -100 }}>Innovate</motion.span>
@@ -209,7 +211,7 @@ function Home() {
                 )}
                 
               </AnimatePresence> */}
-            </motion.div>
+            {/* </motion.div>
             <div
               style={{
                 font: "normal normal 800 30px/49px Montserrat",
@@ -220,12 +222,14 @@ function Home() {
             >
               together
             </div>
-          </div>
+          </div> */}
+          <Typing1/>
         </div>
+        
       </div>
-
+      {/* <News/> */}
       {/* Campus News */}
-
+      
       <h5 style={{ margin: "50px", marginTop: "30px" }}>
         <b
           style={{
@@ -240,16 +244,10 @@ function Home() {
         <div className="hwrap">
           <div className="scroll-text">
             <div className="hitem">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit........
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit........nerionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
             </div>
             <div className="hitem">
               Aliquam consequat varius consequat.......
-            </div>
-            <div className="hitem">
-              Fusce dapibus turpis vel nisi malesuada sollicitudin.......
-            </div>
-            <div className="hitem">
-              Pellentesque auctor molestie orci ut blandit.......
             </div>
             {/* can have many elements */}
           </div>

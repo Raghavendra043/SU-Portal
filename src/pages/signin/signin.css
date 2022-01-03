@@ -1,0 +1,10 @@
+.mainbox::before {
+  content: "";
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../assets/images/5athjl.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
