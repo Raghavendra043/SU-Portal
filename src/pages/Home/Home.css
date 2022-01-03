@@ -243,11 +243,14 @@
   .overlay h2{
     color: white;
     text-align: center;
-    margin-top: 50%;
+    margin-top: 40%;
+    margin-right: 15%;
   }
   
   .Date {
     color: white;
+    text-align: center;
+    margin-right: 10%;
   }
 
   .more {

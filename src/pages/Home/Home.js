@@ -17,6 +17,7 @@ import WelcomeFreshers from "../../components/Home/WelcomeFreshers";
 import KnowYourSUC from "../../components/Home/KnowYourSUC";
 import Typing1 from "../../assets/home/scroll";
 import News from "../../assets/home/news";
+import Media from "react-media";
 
 function Home() {
   const [index, setIndex] = useState(0);
@@ -274,8 +275,11 @@ function Home() {
           >
             <i className="fa fa-lg fa-chevron-left" aria-hidden="true"></i>
           </button>
-
-          <CampusEvents Event={Event} index={index} />
+          <Media query="(max-width: 1000px)">
+            {matches => {
+              return matches ? <CampusEvents Event={Event} index={index} temp={[0,2]}/> : <CampusEvents Event={Event} index={index} temp={[50,4]} />
+            }}
+          </Media>
 
           <button
             disabled={
@@ -308,7 +312,7 @@ function Home() {
         >
           SU Initiatives
         </p>
-        <div className="container" style={{ width: "100vw" }}>
+        <div className="container" style={{ width: "100vw", flexDirection: "row !important"}}>
           <button
             disabled={count <= 0 ? true : false}
             className="more more-left"
@@ -320,7 +324,11 @@ function Home() {
             <i className="fa fa-lg fa-chevron-left" aria-hidden="true"></i>
           </button>
 
-          <SUInitiatives Event={Initiatives} index={count} />
+          <Media query="(max-width: 1000px)">
+            {matches => {
+              return matches ? <SUInitiatives Event={Initiatives} index={count} temp={2} /> : <SUInitiatives Event={Initiatives} index={count} temp={3} />
+            }}
+          </Media>
 
           <button
             disabled={

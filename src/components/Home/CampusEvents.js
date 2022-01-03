@@ -2,12 +2,12 @@
 import React from "react";
 
 export default function Campus_Events(props) {
-  const { Event, index } = props;
+  const { Event, index, temp } = props;
   const length = Event.length - index;
-  let card_width = 0;
+  let card_width = 400;
   return Event.map((element, i) => {
-    if (index <= i && i < index + 4) {
-      i == index || i == index + 3 ? card_width=450 : (length == 3 && i == index + 2 ? card_width = 600 : card_width=400);
+    if (index <= i && i < index + temp[1]) {
+      i == index || i == index + 3 ? card_width = 400 + temp[0] : (length === 3 && i === index + 2 ? card_width = 600 : card_width = 400);
       return <div className="card" key={i} style={{ width: card_width}}>
         <p
           style={{
