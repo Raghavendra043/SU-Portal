@@ -48,7 +48,7 @@ export default function About() {
               <Fade direction="left" delay={300} triggerOnce>
                 <div className={aboutcss.aboutleftheading}>
                   <h1>{about.leftheading}</h1>
-                  <p style={{ marginTop: "3rem" }}>{about.leftpara}</p>
+                  <p style={{ marginTop: "1rem" }}>{about.leftpara}</p>
                 </div>
               </Fade>
             </div>

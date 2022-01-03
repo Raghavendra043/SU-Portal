@@ -1,12 +1,12 @@
 .fgp-container{
     max-width: 80%;
-    margin: 4em auto;
+    margin: 0em auto;
     padding: 0 0;
     text-align: justify;
 }
 
 .content{
-    padding:2em 0;
+    padding:0em 0;
 }
 
 .fgp-titles{
@@ -15,7 +15,7 @@
 }
 
 .fgp-text{
-    margin:2em 0;
+    margin:1em 0;
 }
 
 .fgp-button-cover{

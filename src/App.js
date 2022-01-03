@@ -32,7 +32,7 @@ const App = () => {
     <>
       <Router>
         <Navbar />
-        <div style={{ height: "10vh", width: "100%" }}></div>
+        <div style={{ height: "10vh", width: "100%", background:"white"}}></div>
         <main>
           <Switch>
             <Route exact path="/club">
@@ -52,11 +52,13 @@ const App = () => {
             <Route path="/techsenate" exact component={tech_senate} />
             <Route path="/cultsenate" exact component={cult_senate} />
             <Route path="/sportssenate" exact component={sports_senate} />
-            <Route path="/login" exact component={Signin} />
+            
 
             {/* <Redirect to="/" /> */}
             <Route exact path="/" component={Home} />
             <Route exact path="/test" component={Typing1} />
+
+            <Route path="/login" exact component={Signin} />
           </Switch>
         </main>
       </Router>
