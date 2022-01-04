@@ -67,16 +67,6 @@ function Home() {
     },
     {
       title: "Campus Headlines",
-      month: "Sept",
-      day: "03",
-    },
-    {
-      title: "Campus Headlines",
-      month: "Sept",
-      day: "03",
-    },
-    {
-      title: "Campus Headlines",
       month: "Aug",
       day: "19",
     }
