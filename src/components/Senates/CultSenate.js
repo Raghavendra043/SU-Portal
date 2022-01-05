@@ -1,6 +1,6 @@
 import React from 'react'
-import Page1 from './Page1'
-import CultClubs from './CultClubs'
+import Page1 from './page1'
+import CultClubs from './cultclubs'
 import leftImage from '../../assets/images/SenateSvgs/Group\ 184.svg'
 import rightImage from '../../assets/images/SenateSvgs/Group\ 183.svg'
 import Footer from "./../../components/Footer/Footer"

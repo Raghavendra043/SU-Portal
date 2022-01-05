@@ -1,6 +1,6 @@
 import React from "react";
 import senatescss from "./Senates.module.css";
-import Logo from "../../components/Senates/Logo";
+import Logo from "../../components/Senates/logo";
 import { data } from "./logos";
 
 export default function senates() {
