@@ -67,16 +67,6 @@ function Home() {
     },
     {
       title: "Campus Headlines",
-      month: "Sept",
-      day: "03",
-    },
-    {
-      title: "Campus Headlines",
-      month: "Sept",
-      day: "03",
-    },
-    {
-      title: "Campus Headlines",
       month: "Aug",
       day: "19",
     }
@@ -112,15 +102,15 @@ function Home() {
           alt=" heroimg1"
           style={{ position: "absolute", top: 4, right: 20, width: "40vw" }}
         /> */}
-         <object type="image/svg+xml" data={heroImg} style={{ position: "absolute", top:30, right: 20, width: "50vw" }}>
-            <param name="param1" value={dp} />
-         </object>
+        <object type="image/svg+xml" data={heroImg} style={{ position: "absolute", top: 30, right: 20, width: "50vw" }}>
+          <param name="param1" value={dp} />
+        </object>
         {/* <img
           src={heroImg}
           alt=" heroimg"
           style={{ position: "absolute", top: 4, right: 20, width: "50vw" }}
         /> */}
-        
+
 
         <div style={{ position: "absolute", top: 100, paddingLeft: 30 }}>
           <Text />
@@ -144,7 +134,7 @@ function Home() {
               alignItems: "center",
             }}
           > */}
-            {/* <div
+          {/* <div
               style={{
                 font: "normal normal 800 30px/49px Montserrat",
                 letterSpacing: "0px",
@@ -155,7 +145,7 @@ function Home() {
             >
               Let's
             </div> */}
-            {/* {counter ? (
+          {/* {counter ? (
               <motion.div
                 style={{
                   font: "normal normal 800 30px/49px Montserrat",
@@ -187,7 +177,7 @@ function Home() {
                 Panda
               </motion.div>
             )} */}
-            {/* <motion.div
+          {/* <motion.div
               style={{
                 font: "normal normal 800 30px/49px Montserrat",
                 letterSpacing: "0.16px",
@@ -204,7 +194,7 @@ function Home() {
               animate={"state2"}
             >
               {counterText} */}
-              {/* <AnimatePresence>
+          {/* <AnimatePresence>
                 {counter ? (
                   <motion.span exit={{ y: -100 }}>Innovate</motion.span>
                 ) : (
@@ -212,7 +202,7 @@ function Home() {
                 )}
                 
               </AnimatePresence> */}
-            {/* </motion.div>
+          {/* </motion.div>
             <div
               style={{
                 font: "normal normal 800 30px/49px Montserrat",
@@ -224,13 +214,13 @@ function Home() {
               together
             </div>
           </div> */}
-          <Typing1/>
+          <Typing1 />
         </div>
-        
+
       </div>
       {/* <News/> */}
       {/* Campus News */}
-      
+
       <h5 style={{ margin: "50px", marginTop: "30px" }}>
         <b
           style={{
@@ -245,7 +235,7 @@ function Home() {
         <div className="hwrap">
           <div className="scroll-text">
             <div className="hitem">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit........nerionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit........
             </div>
             <div className="hitem">
               Aliquam consequat varius consequat.......
@@ -277,7 +267,11 @@ function Home() {
           </button>
           <Media query="(max-width: 1000px)">
             {matches => {
-              return matches ? <CampusEvents Event={Event} index={index} temp={[0,2]}/> : <CampusEvents Event={Event} index={index} temp={[50,4]} />
+<<<<<<< HEAD
+              return matches ? <CampusEvents Event={Event} index={index} temp={[0, 2]} /> : <CampusEvents Event={Event} index={index} temp={[50, 4]} />
+=======
+              return matches ? <CampusEvents Event={Event} index={index} temp={[0,1]}/> : <CampusEvents Event={Event} index={index} temp={[50,4]} />
+>>>>>>> 13ad04fa2dd01ae59eb776b32cf74184e6fe267a
             }}
           </Media>
 
@@ -312,7 +306,7 @@ function Home() {
         >
           SU Initiatives
         </p>
-        <div className="container" style={{ width: "100vw", flexDirection: "row !important"}}>
+        <div className="container" style={{ width: "100vw", flexDirection: "row !important" }}>
           <button
             disabled={count <= 0 ? true : false}
             className="more more-left"
@@ -326,7 +320,7 @@ function Home() {
 
           <Media query="(max-width: 1000px)">
             {matches => {
-              return matches ? <SUInitiatives Event={Initiatives} index={count} temp={2} /> : <SUInitiatives Event={Initiatives} index={count} temp={3} />
+              return matches ? <SUInitiatives Event={Initiatives} index={count} temp={1} /> : <SUInitiatives Event={Initiatives} index={count} temp={3} />
             }}
           </Media>
 
@@ -363,11 +357,17 @@ function Home() {
             textAlign: "center",
           }}
         >
-          <p>SUC LOGO</p>
-          <button className="contri-btn">Contributors</button>
+          <div class="flex-container-contri">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+
+          <button className="contri-btn">Contributors To This Page</button>
         </div>
       </div>
-      <Footer background={footer}/>
+      <Footer background={footer} />
     </div>
   );
 }
