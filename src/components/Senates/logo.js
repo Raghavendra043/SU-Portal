@@ -1,7 +1,7 @@
 import React from 'react'
 import senatescss from '../../pages/Senates/Senates.module.css'
 
-export default function logo(props) {
+export default function Logo(props) {
     return (
         <div className= {senatescss.main}>
             <div className={senatescss.background} style={{background: `url(${props.logo}) no-repeat center center/cover`}}>

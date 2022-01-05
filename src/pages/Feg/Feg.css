@@ -4,7 +4,26 @@
     padding: 0 0;
     text-align: justify;
 }
-
+.fgp-headerimg{
+    transform: scale(2.5);
+    position: absolute;
+    right: 15%;
+    /* bottom: 20%; */
+    top:30%;
+    opacity: 80%;
+    z-index: 15;
+    /* background-color: aqua; */
+}
+.fgp-headerimage{
+    position: absolute;
+    transform: scale(0.8);
+    top:0%;
+    right:-10%;
+    /* bottom: 20%; */
+    opacity: 50%;
+    z-index: 15;
+    /* background-color: aqua; */
+}
 .content{
     padding:0em 0;
 }

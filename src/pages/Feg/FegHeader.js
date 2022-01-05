@@ -1,5 +1,6 @@
 import React from 'react'
 import "./FegHeader.css"
+
 // import Footer from './Footer/Footer'
 // import background from "../../assets/images/footer.png"
 function FegHeader() {
