@@ -17,9 +17,6 @@ import Navbar from "./components/NavbarNew/Navbar";
 import Clubs from "./pages/clubs/clubs";
 import Studentlife from "./pages/Studentlife/Studentlife";
 import Senates from "./pages/Senates/Senates";
-import tech_senate from "./components/Senates/tech_senate";
-import cult_senate from "./components/Senates/cult_senate";
-import sports_senate from "./components/Senates/sports_senate";
 import Signin from "./pages/signin/Signin";
 import Footer from "./components/Footer/Footer";
 import footer from "./assets/images/footer.png";
@@ -27,12 +24,15 @@ import { Section } from "./assets/home/scroll";
 //import Footer from './components/Footer/Footer'
 //import footer from './assets/images/footer.png'
 import Typing1 from "./assets/home/scroll";
+import TechSenate from "./components/Senates/TechSenate";
+import CultSenate from "./components/Senates/CultSenate";
+import SportsSenate from "./components/Senates/SportsSenate";
 const App = () => {
   return (
     <>
       <Router>
         <Navbar />
-        <div style={{ height: "10vh", width: "100%" }}></div>
+        <div style={{ height: "10vh", width: "100%", background:"white"}}></div>
         <main>
           <Switch>
             <Route exact path="/club">
@@ -49,14 +49,16 @@ const App = () => {
             <Route path="/helpandadvice" exact component={HelpAndAdvice} />
             <Route path="/contact" exact component={Contact} />
             <Route path="/senates" exact component={Senates} />
-            <Route path="/techsenate" exact component={tech_senate} />
-            <Route path="/cultsenate" exact component={cult_senate} />
-            <Route path="/sportssenate" exact component={sports_senate} />
-            <Route path="/login" exact component={Signin} />
+            <Route path="/techsenate" exact component={TechSenate} />
+            <Route path="/cultsenate" exact component={CultSenate} />
+            <Route path="/sportssenate" exact component={SportsSenate} />
+            
 
             {/* <Redirect to="/" /> */}
             <Route exact path="/" component={Home} />
             <Route exact path="/test" component={Typing1} />
+
+            <Route path="/login" exact component={Signin} />
           </Switch>
         </main>
       </Router>

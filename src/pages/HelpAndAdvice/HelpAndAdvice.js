@@ -1,6 +1,6 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
-import changecss from "./ChangeContent.module.css";
+import helpcss from "./HelpContent.module.css";
 import { Link } from "react-router-dom";
 import { help } from "./Help";
 
@@ -10,9 +10,9 @@ export default function HelpAndAdvice() {
   };
 
   return (
-    <div className={changecss.changefont}>
+    <div className={helpcss.helpfont}>
       <div
-        className={changecss.changesection}
+        className={helpcss.helpsection}
         style={{
           display: `flex`,
           flexDirection: `column`,
@@ -27,9 +27,9 @@ export default function HelpAndAdvice() {
           color: `white`,
         }}
       >
-        <div className={changecss.changebackimage}></div>
-        <div className={changecss.changemain}>
-          <div className={changecss.changeback}>
+        <div className={helpcss.helpbackimage}></div>
+        <div className={helpcss.helpmain}>
+          <div className={helpcss.helpback}>
             <i
               className="fa fa-chevron-left"
               style={{ fontSize: "2em" }}
@@ -43,20 +43,20 @@ export default function HelpAndAdvice() {
               Back
             </h6>
           </div>
-          <div className={changecss.changecontent}>
-            <div className={changecss.changeleft}>
+          <div className={helpcss.helpcontent}>
+            <div className={helpcss.helpleft}>
               <Fade direction="left" delay={300} triggerOnce>
-                <div className={changecss.changeleftheading}>
+                <div className={helpcss.helpleftheading}>
                   <h1>{help.leftheading}</h1>
                   <p style={{ marginTop: "3rem" }}>{help.leftpara}</p>
                 </div>
               </Fade>
             </div>
-            <div className={changecss.changeright}>
+            <div className={helpcss.helpright}>
               <Fade direction="right" delay={300} triggerOnce>
                 {help.rightheading.map(event => {
                   return (
-                    <Link to="#" className={changecss.link}>
+                    <Link to="#" className={helpcss.link}>
                       <h1>{event.heading}</h1>
                     </Link>
                   );
@@ -64,7 +64,7 @@ export default function HelpAndAdvice() {
               </Fade>
             </div>
           </div>
-          <div className={changecss.changebottomheading}>
+          <div className={helpcss.helpbottomheading}>
             <h1>{help.bottomheading}</h1>
           </div>
         </div>

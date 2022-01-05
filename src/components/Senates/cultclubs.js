@@ -20,97 +20,97 @@ import elas from "../../assets/images/LogosSenates/cultsenate/elas.png";
 import safl from "../../assets/images/LogosSenates/cultsenate/safl.png";
 import DisplayBox from "./DisplayBox";
 
-function Cultclubs() {
+function CultClubs() {
   const clubsList = [
     {
       id: 1,
       url: drama,
-      club: "Dramatics Club",
+      name: "Dramatics Club",
     },
     {
       id: 2,
       url: music,
-      club: "Music Club",
+      name: "Music Club",
     },
     {
       id: 3,
       url: dance,
-      club: "Dance Club",
+      name: "Dance Club",
     },
     {
       id: 4,
       url: shades,
-      club: "Shades",
+      name: "Shades",
     },
     {
       id: 5,
       url: comedy,
-      club: "Comedy Club",
+      name: "Comedy Club",
     },
     {
       id: 6,
       url: fashion,
-      club: "Fashion Club",
+      name: "Fashion Club",
     },
     {
       id: 7,
       url: swar,
-      club: "Swaranjali",
+      name: "Swaranjali",
     },
     {
       id: 8,
       url: journal,
-      club: "Journal Club",
+      name: "Journal Club",
     },
     {
       id: 9,
       url: photog,
-      club: "Photog",
+      name: "Photog",
     },
     {
       id: 10,
       url: hindi,
-      club: "Hindi Tarang",
+      name: "Hindi Tarang",
     },
     {
       id: 11,
       url: quiz,
-      club: "Quiz  Club",
+      name: "Quiz  Club",
     },
     {
       id: 12,
       url: vfx,
-      club: "VFX  Club",
+      name: "VFX  Club",
     },
     {
       id: 13,
       url: movie,
-      club: "Movie  Club",
+      name: "Movie  Club",
     },
     {
       id: 14,
       url: esp,
-      club: "Esports  Club",
+      name: "Esports  Club",
     },
     {
       id: 15,
       url: cook,
-      club: "Cooking  Club",
+      name: "Cooking  Club",
     },
     {
       id: 16,
       url: da,
-      club: "Designers Anonymous",
+      name: "Designers Anonymous",
     },
     {
       id: 17,
       url: elas,
-      club: "ELAS",
+      name: "ELAS",
     },
     {
       id: 18,
       url: safl,
-      club: "SAFL",
+      name: "SAFL",
     },
   ];
   return (
@@ -130,4 +130,4 @@ function Cultclubs() {
   );
 }
 
-export default Cultclubs;
+export default CultClubs;

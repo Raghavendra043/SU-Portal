@@ -12,7 +12,7 @@ export default function WelcomeFreshers() {
         <div className="welcome-freshers-container" style={{ position: "relative" }}>
           <img src={welfreshersbg} alt="freshers-bg" style={{ position: "absolute", top: "1vh", width: "99vw", margin: "5vh 1vw 0 0" }} />
           <p className="welcome-freshers-text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tenetur nemo ex quo a dolorum laboriosam vel quidem neque perferendis non harum aliquid velit provident modi sequi, eius alias porro temporibus magnam odio dignissimos cupiditate. Molestiae similique mollitia dignissimos earum dolores nostrum, vitae assumenda blanditiis architecto. Quo quam hic eligendi quos dolores vitae maxime modi iusto explicabo distinctio placeat, consequatur asperiores minus, accusamus saepe ipsa. Ipsam aut fugiat itaque ab unde modi natus cupiditate, doloribus vitae.
+          Congratulations! And once again, a warm welcome to the BITS family. We are very eager to meet you at the institute. We hope it will be a very remarkable place for you, where you will learn various subjects, activities and cherish every moment of your part of life here. We wish you a happy 4-5 years, four deciding years of life. Wishing you luck with your dreams, work hard and live your dreams! Have fun!Congratulations! And once again, a warm welcome to the BITS family. We are very eager to meet you at the institute. We hope it will be a very remarkable place for you, where you will learn various subjects, activities and cherish every moment of your part of life here. 
           </p>
           <button className="explore-btn" onClick={()=>{
             history.push('/feg');

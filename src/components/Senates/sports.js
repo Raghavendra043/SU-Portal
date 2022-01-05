@@ -28,111 +28,111 @@ function Sports() {
     {
       id: 1,
       url: cricket,
-      sport: "Cricket",
+      name: "Cricket",
     },
     {
       id: 2,
       url: basketball,
-      sport: "Basketball",
+      name: "Basketball",
     },
     {
       id: 3,
       url: volleyball,
-      sport: "Volleyball",
+      name: "Volleyball",
     },
     {
       id: 4,
       url: football,
-      sport: "Football",
+      name: "Football",
     },
     {
       id: 5,
       url: hockey,
-      sport: "Hockey",
+      name: "Hockey",
     },
     {
       id: 6,
       url: frisbee,
-      sport: "Frisbee",
+      name: "Frisbee",
     },
     {
       id: 7,
       url: snooker,
-      sport: "Snooker",
+      name: "Snooker",
     },
   ];
   const sportsList2 = [
     {
       id: 1,
       url: badminton,
-      sport: "Badminton ",
+      name: "Badminton ",
     },
     {
       id: 2,
       url: lawn,
-      sport: "Lawn Tennis",
+      name: "Lawn Tennis",
     },
     {
       id: 3,
       url: squash,
-      sport: "Squash",
+      name: "Squash",
     },
     {
       id: 4,
       url: table,
-      sport: "Table Tennis",
+      name: "Table Tennis",
     },
     {
       id: 5,
       url: body,
-      sport: "Bodybuilding",
+      name: "Bodybuilding",
     },
     {
       id: 6,
       url: power,
-      sport: "Powerlifting",
+      name: "Powerlifting",
     },
     {
       id: 7,
       url: throwball,
-      sport: "Throwball",
+      name: "Throwball",
     },
   ];
   const sportsList3 = [
     {
       id: 1,
       url: khokho,
-      sport: "Kho Kho",
+      name: "Kho Kho",
     },
     {
       id: 2,
       url: kabaddi,
-      sport: "Kabaddi",
+      name: "Kabaddi",
     },
     {
       id: 3,
       url: chess,
-      sport: "Chess",
+      name: "Chess",
     },
     {
       id: 4,
       url: carrom,
-      sport: "Carrom",
+      name: "Carrom",
     },
     {
       id: 5,
       url: duathlon,
-      sport: "Duathlon",
+      name: "Duathlon",
     },
     {
       id: 6,
       url: athletics,
-      sport: "Athletics",
+      name: "Athletics",
     },
     {
       id: 7,
       url: skating,
-      sport: "Skating",
+      name: "Skating",
     },
   ];
   return (

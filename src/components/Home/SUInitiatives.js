@@ -2,9 +2,9 @@
 import React from 'react'
 
 export default function SU_Initiatives(props) {
-  const { Event, index } = props;
+  const { Event, index, temp} = props;
   return Event.map((element, i) => {
-    if (index <= i && i < index + 3) {
+    if (index <= i && i < index + temp) {
       return (
         <div key={i}>
           <div className="image-card">

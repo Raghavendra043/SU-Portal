@@ -77,7 +77,7 @@ function Assocs() {
       <div className={styles.assocs}>
         {assocsList.map((x) => {
           return (
-            <DisplayBox data={x} />
+            <DisplayBox data={x} className={styles.dispbox}/>
             // <div className={styles.assoc}>
             //     <div className={styles.logo}><img src={x.url} width={150} className={styles.logoimg}></img></div>
             //     <h6 className={styles.assoc_title}>{x.assoc}</h6>

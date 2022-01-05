@@ -48,7 +48,7 @@ export default function Studentlife() {
               <Fade direction="left" delay={300} triggerOnce>
                 <div className={studentlifecss.studentlifeleftheading}>
                   <h1>{studentlife.leftheading}</h1>
-                  <p style={{ marginTop: "3rem" }}>{studentlife.leftpara}</p>
+                  <p style={{ marginTop: "1rem" }}>{studentlife.leftpara}</p>
                 </div>
               </Fade>
             </div>

@@ -10,7 +10,7 @@ export default function Signin() {
       style={{ display: "flex", flexDirection: "column" }}
     >
       <Link to="/">
-        <img src={logo} alt="" width="300px" style={{ cursor: "pointer" }} />
+        <img src={logo} alt="" width="250px" style={{ cursor: "pointer" }} />
       </Link>
       <h1
         style={{
@@ -73,7 +73,7 @@ export default function Signin() {
             alt=""
             srcset=""
             style={{
-              width: "15vw",
+              width: "11vw",
               cursor: "pointer",
             }}
           />

@@ -48,7 +48,7 @@ export default function Change() {
               <Fade direction="left" delay={300} triggerOnce>
                 <div className={changecss.changeleftheading}>
                   <h1>{change.leftheading}</h1>
-                  <p style={{ marginTop: "3rem" }}>{change.leftpara}</p>
+                  <p style={{ marginTop: "1rem" }}>{change.leftpara}</p>
                 </div>
               </Fade>
             </div>

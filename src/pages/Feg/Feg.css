@@ -1,12 +1,31 @@
 .fgp-container{
     max-width: 80%;
-    margin: 4em auto;
+    margin: 0em auto;
     padding: 0 0;
     text-align: justify;
 }
-
+.fgp-headerimg{
+    transform: scale(2.5);
+    position: absolute;
+    right: 15%;
+    /* bottom: 20%; */
+    top:30%;
+    opacity: 80%;
+    z-index: 15;
+    /* background-color: aqua; */
+}
+.fgp-headerimage{
+    position: absolute;
+    transform: scale(0.8);
+    top:0%;
+    right:-10%;
+    /* bottom: 20%; */
+    opacity: 50%;
+    z-index: 15;
+    /* background-color: aqua; */
+}
 .content{
-    padding:2em 0;
+    padding:0em 0;
 }
 
 .fgp-titles{
@@ -15,7 +34,7 @@
 }
 
 .fgp-text{
-    margin:2em 0;
+    margin:1em 0;
 }
 
 .fgp-button-cover{

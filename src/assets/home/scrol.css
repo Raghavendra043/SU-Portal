@@ -24,7 +24,7 @@
     display: inline-block;
     position: relative;
     animation-duration: 15s;
-    animation-timing-function: steps(30, end);
+    animation-timing-function: steps(30, end);  
     animation-iteration-count: infinite;
   }
   
@@ -42,7 +42,7 @@
     }
     
     60%, 90% {
-      width: 12em;
+      width: 14em;
     }
   }
 
@@ -52,7 +52,7 @@
     }
     
     60%, 90% {
-      width: 13em;
+      width: 14em;
     }
   }
   
@@ -61,7 +61,7 @@
       width: 0;
     }
     10%, 40% {
-      width: 13em;
+      width: 14em;
     }
   }
   
