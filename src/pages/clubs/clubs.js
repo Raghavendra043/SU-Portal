@@ -1,5 +1,5 @@
 import React from "react";
-import Clubname from "./clubname";
+import Clubname from "./Clubname";
 import Clubevents from "./Clubevents";
 import ClubPOR from "./ClubPOR";
 import Activities from "./activities";
