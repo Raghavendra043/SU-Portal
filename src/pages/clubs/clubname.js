@@ -1,3 +1,4 @@
+/* eslint-disable no-lone-blocks */
 import React from "react";
 import { useState } from "react";
 import image from "./images/clubimage.png";
