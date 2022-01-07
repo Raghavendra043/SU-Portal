@@ -59,8 +59,8 @@
 }
 
 .welcome-text {
-  margin-top: 5vh;
-  font-size: 1rem;
+  margin-top: 4vh;
+  font-size: 1.3rem;
   position: absolute;
   color: white;
   top: 25vh;
@@ -70,27 +70,33 @@
 
 @media all and (max-width: 1440px) {
   .welcome-title {
-    font-weight: 500;
+    font-weight: 700;
   }
 
   .welcome-subtitle {
     font-weight: 100;
+    top: 12vh;
   }
 
   .image1 {
     margin-right: 1vh;
     left: 10vh;
+    height: 45vh;
+    top: 27.5vh;
   }
 
   .image2 {
     margin-left: 1vh;
     left: 35vh;
+    height: 45vh;
+    top: 20vh;
   }
 
   .welcome-text {
     margin-top: 3vh;
-    top: 20vh;
+    top: 16vh;
     width: 50%;
+
   }
 }
 
@@ -213,11 +219,11 @@
     border: 0.2rem solid whitesmoke;
   }
 
-  .welcome-text {
+  /* .welcome-text {
     margin-top: -1.5vh;
     top: 10vh;
     font-size: 5px;
-  }
+  } */
 
   .welcome-text-1 {
     left: 5%;

@@ -17,12 +17,12 @@ export default function WelcomeOnBoard() {
           <img className="image2" alt="" />
 
           <p className="welcome-text">
-            <p className='welcome-text-1'>
+            <span className='welcome-text-1'>
               <b>Birla Institute of Technology and Science, Pilani - Hyderabad Campus</b> is one of the leading engineering and scientific institutes of higher learning in India. The newest campus of the BITS family is equipped with eye-catching lush floral greenery, accompanied by state-of-the-art infrastructure constituting modern laboratories, well-furnished classrooms, a student activity center and many more essential establishments.
-            </p>
-            <p className='welcome-text-2'>
+            </span>
+            <span className='welcome-text-2'>
               Some of the brightest minds from all over our country undertake their tutelage here, exposing themselves to a vibrant campus life along with a bundle of extracurricular activities that ensures the holistic development of their personalities. The culture of freedom to explore various domains and walks of life at BITS enables students to become the global leaders of the next generation.
-            </p>
+            </span>
           </p>
         </div>
       </div>

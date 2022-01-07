@@ -267,7 +267,7 @@ function Home() {
           </button>
           <Media query="(max-width: 1000px)">
             {matches => {
-              return matches ? <CampusEvents Event={Event} index={index} temp={[0,1]}/> : <CampusEvents Event={Event} index={index} temp={[50,4]} />
+              return matches ? <CampusEvents Event={Event} index={index} temp={[0, 1]} /> : <CampusEvents Event={Event} index={index} temp={[50, 4]} />
             }}
           </Media>
 
@@ -357,7 +357,7 @@ function Home() {
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>
-            <div class="dot"></div>
+            <div class="dot" id="dot4"></div>
           </div>
 
           <button className="contri-btn">Contributors To This Page</button>
