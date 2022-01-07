@@ -356,7 +356,7 @@ function Home() {
           <div class="flex-container-contri">
             <div class="dot"></div>
             <div class="dot"></div>
-            <div class="dot"></div>
+            <div class="dot" id="dot3"></div>
             <div class="dot" id="dot4"></div>
           </div>
 

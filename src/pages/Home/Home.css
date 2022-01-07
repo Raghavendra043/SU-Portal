@@ -200,6 +200,7 @@
 .flex-container-contri {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   /* background-color: rgb(214, 229, 245); */
   margin: auto;
   width: 60%;
@@ -217,8 +218,6 @@
   line-height: 10vh;
   /* font-size: 30px; */
   margin: auto;
-  display: flex;
-
 }
 
 .dot {
@@ -249,13 +248,33 @@
 
 @media all and (max-width: 425px) {
 
+  .flex-container-contri {
+
+  }
+
   .flex-container-contri>div {
+    margin-bottom: 5vh;
     margin-right: 5vh;
     flex-wrap: wrap;
+    overflow: none;
+  }
+
+
+}
+
+@media all and (max-width: 375px) {
+
+  .flex-container-contri>div:last-child {
+    margin-bottom: -5vh;
+  }
+
+
+  #dot3 {
+    /* visibility: hidden; */
   }
 
   #dot4 {
-    visibility: hidden;
+    /* visibility: hidden; */
   }
 }
 
