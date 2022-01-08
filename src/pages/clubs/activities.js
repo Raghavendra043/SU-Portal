@@ -15,25 +15,26 @@ export default function activities() {
         Current Activities
       </h1>
       <div
+        className="activitydiv"
         style={{
           display: "flex",
-          marginLeft: "20vw",
-          width: "70%",
         }}
       >
         <div
+          className="activityparadiv"
           style={{
             width: "80%",
             boxShadow: "3px 6px 20px #00000029",
-            height: "200px",
+
             borderRadius: "20px",
           }}
         >
           <p
+            className="activitypara"
             style={{
               width: "90%",
               overflowY: "scroll",
-              height: "200px",
+
               padding: "20px",
             }}
           >
@@ -47,33 +48,35 @@ export default function activities() {
           </p>
         </div>
         <img
+          className="activityimage"
           src={Svg1}
           alt="knowursucbg2"
-          style={{ height: "250px", marginLeft: "-50px", marginTop: "-20px" }}
+          style={{ marginLeft: "-50px", marginTop: "-20px" }}
         />
       </div>
       <div
+        className="activitydiv"
         style={{
           display: "flex",
-          marginLeft: "50px",
-          width: "70%",
-          marginLeft: "20vw",
+
           marginTop: "50px",
         }}
       >
         <div
+          className="activityparadiv"
           style={{
             width: "90%",
             boxShadow: "3px 6px 20px #00000029",
-            height: "200px",
+
             borderRadius: "20px",
           }}
         >
           <p
+            className="activitypara"
             style={{
               width: "90%",
               overflowY: "scroll",
-              height: "200px",
+
               padding: "20px",
               WebkitOverflowScrolling: "none",
             }}
@@ -88,9 +91,10 @@ export default function activities() {
           </p>
         </div>
         <img
+          className="activityimage"
           src={Svg1}
           alt="knowursucbg2"
-          style={{ height: "250px", marginLeft: "-50px", marginTop: "-20px" }}
+          style={{ marginLeft: "-50px", marginTop: "-20px" }}
         />
       </div>
     </div>
