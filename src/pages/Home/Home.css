@@ -167,13 +167,14 @@
   background: rgba(59, 56, 56, 0.6);
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
+  transition: 0.4s ease ;
 }
 
 .btn {
   position: absolute;
   background-color: #da544f;
   padding: 0.2rem 1.2rem;
-  height: 23%;
+  height: 30px;
   right: 0;
   bottom: 0;
   border-radius: 16px;
