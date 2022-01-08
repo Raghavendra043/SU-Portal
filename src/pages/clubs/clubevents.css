@@ -1,7 +1,31 @@
 .por {
   font-family: "Montserrat";
 }
-
+.bell {
+  font-size: 3vw;
+}
+.contentbox {
+  width: 70%;
+}
+.porbox {
+  width: 65%;
+  margin: auto;
+}
+.activitydiv {
+  margin-left: 20vw;
+  width: 70%;
+}
+.activitypara,
+.activityparadiv {
+  height: 200px;
+}
+.activityimage {
+  height: 250px;
+}
+.porsvg {
+  width: 20vw;
+  height: 20vw;
+}
 .events_main {
   /* width: 500px; */
   height: 230px;
@@ -214,7 +238,7 @@
     margin-top: -40px;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 710px) {
   .box {
     flex-direction: column;
   }
@@ -222,14 +246,17 @@
     margin-top: -712px;
   }
   #second {
-    width: 79%;
+    max-width: 99%;
+    width: 80%;
   }
   #first {
-    width: 79%;
+    max-width: 99%;
+    width: 80%;
   }
   #third,
   #fourth {
-    width: 79%;
+    max-width: 99%;
+    width: 80%;
   }
   .events_right h1 {
     font-size: 30px;
@@ -243,9 +270,66 @@
     width: 40%;
   }
 }
+@media only screen and (max-width: 600px) {
+  .activitydiv {
+    margin-left: 10vw;
+    width: 90%;
+  }
+  .activitypara {
+    font-size: 3vw;
+  }
+  .activitypara,
+  .activityparadiv {
+    height: 150px;
+  }
+  .activityimage {
+    height: 170px;
+  }
+}
 @media only screen and (max-width: 512px) {
   #events_heading {
-    font-size: 33px;
+    font-size: 25px;
+    margin-top: 12px;
+  }
+  .clubname div {
+    max-width: 70%;
+    transform: translateY(70px);
+    font-size: 6vw;
+  }
+  .mobile {
+    display: flex;
+    transform: translateY(26px);
+  }
+  .image {
+    height: 100px;
+  }
+  .porbox {
+    width: 90%;
+  }
+  .bell {
+    transform: translateY(70px);
+    font-size: 6vw;
+  }
+  #clubvideodiv {
+    height: 200px;
+  }
+  #svg3,
+  #svg4,
+  #svg1,
+  #svg2 {
+    display: none;
+  }
+  .contentbox {
+    width: 95%;
+  }
+  .porsvg {
+    width: 44vw;
+    height: 25vh;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .events_right h1 {
+    font-size: 24px;
   }
 }
 @media only screen and (max-width: 407px) {
@@ -276,9 +360,22 @@
     width: 58%;
   }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 375px) {
   #events_heading {
     font-size: 25px;
     margin-top: 0px;
+  }
+  .mobile {
+    flex-direction: column;
+  }
+  .bell,
+  .clubname div {
+    transform: translate(0px);
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .events_right h1 {
+    font-size: 20px;
   }
 }

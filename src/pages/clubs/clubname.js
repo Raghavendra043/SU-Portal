@@ -23,36 +23,35 @@ export default function Clubname() {
       <div>
         <img src={image} alt="" srcset="" className="image" />
       </div>
-      <div>
-        <img src={dota.Name.logo} alt="" srcset="" className="clublogo" />
-      </div>
-      <div className="clubname" style={{ display: "flex" }}>
-        <div>{dota.Name.name}</div>
-        <i
-          class="fa fa-bell-o"
-          aria-hidden="true"
-          style={{
-            fontSize: "3vw",
-            marginLeft: "30px",
-            display: `${display1}`,
-            cursor: "pointer",
-          }}
-          onClick={subscribefun}
-        ></i>
-        <i
-          class="fa fa-bell"
-          aria-hidden="true"
-          style={{
-            fontSize: "3vw",
-            marginLeft: "30px",
-            display: `${display2}`,
+      <div className="mobile">
+        <div>
+          <img src={dota.Name.logo} alt="" srcset="" className="clublogo" />
+        </div>
+        <div className="clubname" style={{ display: "flex" }}>
+          <div>{dota.Name.name}</div>
+          <i
+            class="fa fa-bell-o bell"
+            aria-hidden="true"
+            style={{
+              marginLeft: "30px",
+              display: `${display1}`,
+              cursor: "pointer",
+            }}
+            onClick={subscribefun}
+          ></i>
+          <i
+            class="fa fa-bell bell"
+            aria-hidden="true"
+            style={{
+              marginLeft: "30px",
+              display: `${display2}`,
 
-            cursor: "pointer",
-          }}
-          onClick={notsubscribefun}
-        ></i>
+              cursor: "pointer",
+            }}
+            onClick={notsubscribefun}
+          ></i>
+        </div>
       </div>
-
       <div className="club_aboutus">
         <h5>{dota.Name.aboutHeading}</h5>
         <p>{dota.Name.aboutPara}</p>
