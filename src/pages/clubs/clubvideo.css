@@ -22,17 +22,11 @@
 }
 
 #svg3 {
-  /* transform: translateY(-270px); */
   margin-top: -270px;
   width: 30%;
   margin-left: 20px;
 }
 #svg4 {
-  /* border: 2px solid red; */
-  /* float: right; */
-  /* padding-right: 100px; */
-  /* width: 28%; */
-  /* transform: translateY(-174px); */
   margin-top: -86px;
   margin-left: 253px;
   width: 30%;
@@ -73,6 +67,15 @@
     /* transform: translateY(-270px); */
     margin-top: -100px;
     width: 33%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #clubvideodiv {
+    height: 250px;
+    width: 88%;
+  }
+  #clubvideo {
+    height: 250px;
   }
 }
 @media only screen and (max-width: 429px) {

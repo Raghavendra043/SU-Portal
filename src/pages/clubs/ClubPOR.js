@@ -2,7 +2,6 @@ import Svg from "./svg";
 import { PorHolders } from "./data";
 import "../Feg/Feg.css";
 import { useEffect } from "react";
-
 export default function ClubPOR() {
   useEffect(() => {
     const accordion = document.getElementsByClassName("context-box");
@@ -17,11 +16,10 @@ export default function ClubPOR() {
       <h1 id="events_heading" className="mt-4">
         POR Holders
       </h1>
-      <div style={{ width: "65%", margin: "auto" }}>
-        <Svg PorHolders={PorHolders.first} />
-
-        <Svg PorHolders={PorHolders.second} />
-        <Svg PorHolders={PorHolders.third} />
+      <div className="porbox">
+        {PorHolders.map(element => {
+          return <Svg porHolders={element} />;
+        })}
       </div>
       <div>
         <div className="accordion">
@@ -35,8 +33,8 @@ export default function ClubPOR() {
             FAQS
           </div>
           <div
-            className="context-box "
-            style={{ width: "70%", margin: "auto", marginTop: "20px" }}
+            className="context-box contentbox"
+            style={{ margin: "auto", marginTop: "20px" }}
           >
             <div className="accordion-label">What does SU do?</div>
             <div className="accordion-text">
@@ -49,8 +47,8 @@ export default function ClubPOR() {
             </div>
           </div>
           <div
-            className="context-box"
-            style={{ width: "70%", margin: "auto", marginTop: "20px" }}
+            className="context-box contentbox"
+            style={{ margin: "auto", marginTop: "20px" }}
           >
             <div className="accordion-label">
               How do I contribute to the tech?
@@ -65,8 +63,8 @@ export default function ClubPOR() {
             </div>
           </div>
           <div
-            className="context-box"
-            style={{ width: "70%", margin: "auto", marginTop: "20px" }}
+            className="context-box contentbox"
+            style={{ margin: "auto", marginTop: "20px" }}
           >
             <div className="accordion-label">
               What are the pre-requisites to contest in SU elections?
@@ -81,8 +79,8 @@ export default function ClubPOR() {
             </div>
           </div>
           <div
-            className="context-box"
-            style={{ width: "70%", margin: "auto", marginTop: "20px" }}
+            className="context-box contentbox"
+            style={{ margin: "auto", marginTop: "20px" }}
           >
             <div className="accordion-label">
               How to get the customised merch?
