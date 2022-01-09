@@ -1,18 +1,17 @@
-.hero_fo{
-    height: 20vh;
+.hero_fo {
+  height: 20vh;
 }
 
-
-.part1{
-    position: relative;
-    float: left;
-    margin: 3vh 0;
-    padding: 2vh 4vw;
-    width: 60%;
-    box-shadow: 1px 0.5px 10px 1px rgba(0,0,0,0.2);
+.part1 {
+  position: relative;
+  float: left;
+  margin: 3vh 0;
+  padding: 2vh 4vw;
+  width: 60%;
+  box-shadow: 1px 0.5px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
-.part2{
-    width: 40%;
-    float: right;
+.part2 {
+  width: 40%;
+  float: right;
 }
