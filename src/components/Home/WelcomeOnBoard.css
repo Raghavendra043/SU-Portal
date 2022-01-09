@@ -75,27 +75,128 @@
 
   .welcome-subtitle {
     font-weight: 100;
-    top: 12vh;
+    top: 10vh;
   }
 
   .image1 {
     margin-right: 1vh;
-    left: 10vh;
-    height: 45vh;
-    top: 27.5vh;
+    left: 5vh;
+    height: 38vh;
+    top: 20vh;
   }
 
   .image2 {
     margin-left: 1vh;
-    left: 35vh;
-    height: 45vh;
-    top: 20vh;
+    left: 25vh;
+    height: 38vh;
+    top: 15vh;
   }
 
   .welcome-text {
-    margin-top: 3vh;
+    margin-top: -1vh;
     top: 16vh;
-    width: 50%;
+    width: 52%;
+
+  }
+}
+
+@media all and (max-width: 1350px) {
+  .welcome-title {
+    font-weight: 700;
+  }
+
+  .welcome-subtitle {
+    font-weight: 100;
+    top: 10vh;
+  }
+
+  .image1 {
+    margin-right: 1vh;
+    left: 5vh;
+    height: 38vh;
+    top: 20vh;
+  }
+
+  .image2 {
+    margin-left: 1vh;
+    left: 25vh;
+    height: 38vh;
+    top: 15vh;
+  }
+
+  .welcome-text {
+    margin-top: -1vh;
+    top: 16vh;
+    width: 52%;
+    font-size: 1.7vh;
+
+  }
+}
+
+@media all and (max-width: 1250px) {
+  .welcome-title {
+    font-weight: 700;
+    top: 5vh;
+  }
+
+  .welcome-subtitle {
+    font-weight: 100;
+    top: 9vh;
+  }
+
+  .image1 {
+    margin-right: 1vh;
+    left: 5vh;
+    height: 32.5vh;
+    top: 18vh;
+  }
+
+  .image2 {
+    margin-left: 1vh;
+    left: 22.5vh;
+    height: 32.5vh;
+    top: 13vh;
+  }
+
+  .welcome-text {
+    margin-top: -1vh;
+    top: 16vh;
+    width: 52%;
+    font-size: 1.5vh;
+
+  }
+}
+
+@media all and (max-width: 1150px) {
+  .welcome-title {
+    font-weight: 700;
+    top: 5vh;
+  }
+
+  .welcome-subtitle {
+    font-weight: 100;
+    top: 9vh;
+  }
+
+  .image1 {
+    margin-right: 1vh;
+    left: 5vh;
+    height: 35vh;
+    top: 18vh;
+  }
+
+  .image2 {
+    margin-left: 1vh;
+    left: 25vh;
+    height: 35vh;
+    top: 13vh;
+  }
+
+  .welcome-text {
+    margin-top: -1vh;
+    top: 16vh;
+    width: 52%;
+    font-size: 1.6vh;
 
   }
 }
@@ -103,32 +204,32 @@
 @media all and (max-width: 1024px) {
   .welcome-title {
     font-weight: 500;
-    top: 6vh;
+    top: 5vh;
   }
 
   .welcome-subtitle {
     font-weight: 100;
-    top: 12vh;
+    top: 9vh;
   }
 
   .image1 {
     margin-right: 1vh;
     left: 5vh;
-    height: 45vh;
-    top: 20vh;
+    height: 40vh;
+    top: 16vh;
   }
 
   .image2 {
     margin-left: 1vh;
-    left: 30vh;
-    height: 45vh;
-    top: 16vh;
+    left: 25vh;
+    height: 40vh;
+    top: 12vh;
   }
 
   .welcome-text {
-    margin-top: 3vh;
+    margin-top: -2vh;
     top: 17vh;
-    width: 50%;
+    width: 52%;
     font-size: 0.85rem;
   }
 }
