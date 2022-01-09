@@ -1,23 +1,25 @@
-import svg1 from "./Mask Group 12.svg";
-import svg2 from "./Mask Group 13.svg";
-import svg3 from "./Mask Group 14.svg";
-import svg4 from "./Mask Group 15.svg";
-import svg5 from "./Mask Group 16.svg";
-import svg6 from "./Mask Group 17.svg";
-import svg7 from "./Mask Group 18.svg";
+import svg1 from "./mask_group_12.png";
+import svg6 from "./mask_group_13.png";
+import svg3 from "./mask_group_14.png";
+import svg2 from "./mask_group_15.png";
+import svg7 from "./mask_group_16.png";
+import svg4 from "./mask_group_17.png";
+import svg8 from "./mask_group_18.png";
+import svg5 from "./mask_group_19.png";
+
 export const fooddata = {
   first: {
     name: "C3 - Chai Coffee Company",
     content:
       "A cafe of sorts, C3 is a place where you'd sometimes find music practices and midnight birthday celebrations. C3 opens up in the evening and has a nice atmosphere with the lights as decoration. They serve Indian snacks like pav bhaji and chole bhature, sandwiches as well as Chinese dishes like fried rice, noodles, honey chicken. They also offer different, exciting food options in their special menus which are updated regularly, They keep a stock of brownies, pastries, cakes, and different types of iced teas and mojitos. You can always turn to Cold Lab, which is an extension of C3. for a vast range of sundaes, brownies and other delectable desserts.",
-    svg: `${svg2}`,
+    svg: `${svg1}`,
     backcolor: " #ed8f72",
   },
   second: {
     name: "Wich Please",
     content:
       "As the name suggests, this is your stop shop for a quick bite. Known for its sandwiches, this place offers snacks at an average affordable price of around ₹40. While you are here, don't forget to try their famous pasta sandwich. Want to eat something different yet cheap and light? They do serve the all-loved classic Maggi which is also available in 2-3 variations; their timings being 5 PM-2 AM on a regular day.",
-    svg: `${svg1}`,
+    svg: `${svg2}`,
     backcolor: " #FFD60A",
   },
   third: {
@@ -59,7 +61,7 @@ export const fooddata = {
     name: "SFC Burger Shop",
     content:
       "A recent addition to the BPHC food scene, SFC has already carved its place in BITSians’ bellies. Located close to Mess 2, this food outlet opens from 2 PM to 2 AM every single day, and has an extremely diverse menu. Yearning for burgers and fries and can't wait until the weekend to crash at McDonald's? You can fancy your cravings at this store, with combos available at an average price of 100 bucks. Apart from the burgers and fries, this place also serves nuggets, pizzas along with regular special menus, SFC also stocks up on ice-creams from Baskin Robbins and offers homemade chocolates at their store regularly.",
-    svg: `${svg7}`,
+    svg: `${svg8}`,
     backcolor: "#EC3B7F",
   },
 };
