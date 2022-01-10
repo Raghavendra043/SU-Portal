@@ -24,7 +24,7 @@ export default function revoutlet(props) {
           </p>
         </div>
         <div className="revoutletrightbox">
-          {/* <img src={props.fooddata.svg} alt="" className="revoutletimg" /> */}
+          <img src={props.fooddata.svg} alt="" className="revoutletimg" />
         </div>
       </div>
     </div>
