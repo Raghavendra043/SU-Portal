@@ -5,6 +5,7 @@ import "./FoodOutlets.css";
 import Footer from "../../components/Footer/Footer";
 import footer from "../../assets/images/footer.png";
 import { fooddata } from "./fooddata.js";
+// import backsvg from "./Group 99.svg";
 export default function FoodOutlets() {
   return (
     <div>
@@ -21,14 +22,17 @@ export default function FoodOutlets() {
         omnis, modi numquam at nemo, totam reprehenderit aliquam, assumenda iste
         minus nihil cumque eveniet.
       </div> */}
-      <Outlet fooddata={fooddata.first} />;
-      <Revoutlet fooddata={fooddata.second} />;
-      <Outlet fooddata={fooddata.third} />;
-      <Revoutlet fooddata={fooddata.fourth} />;
-      <Outlet fooddata={fooddata.fivth} />;
-      <Revoutlet fooddata={fooddata.sixth} />;
-      <Outlet fooddata={fooddata.seventh} />;
-      <Revoutlet fooddata={fooddata.eight} />;
+      <div className="backsvg">
+        <Outlet fooddata={fooddata.first} />;
+        <Revoutlet fooddata={fooddata.second} />;
+        <Outlet fooddata={fooddata.third} />;
+        <Revoutlet fooddata={fooddata.fourth} />;
+        <Outlet fooddata={fooddata.fivth} />;
+        <Revoutlet fooddata={fooddata.sixth} />;
+        <Outlet fooddata={fooddata.seventh} />;
+        <Revoutlet fooddata={fooddata.eight} />;
+      </div>
+
       <div>
         <Footer background={footer} />
       </div>

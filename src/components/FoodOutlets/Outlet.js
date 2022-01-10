@@ -23,7 +23,7 @@ export default function Outlet(props) {
           </p>
         </div>
         <div className="outletrightbox">
-          {/* <img src={props.fooddata.svg} alt="" className="outletimg" /> */}
+          <img src={props.fooddata.svg} alt="" className="outletimg" />
         </div>
       </div>
     </div>
