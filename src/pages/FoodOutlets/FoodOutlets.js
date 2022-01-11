@@ -23,14 +23,14 @@ export default function FoodOutlets() {
         minus nihil cumque eveniet.
       </div> */}
       <div className="backsvg">
-        <Outlet fooddata={fooddata.first} />;
-        <Revoutlet fooddata={fooddata.second} />;
-        <Outlet fooddata={fooddata.third} />;
-        <Revoutlet fooddata={fooddata.fourth} />;
-        <Outlet fooddata={fooddata.fivth} />;
-        <Revoutlet fooddata={fooddata.sixth} />;
-        <Outlet fooddata={fooddata.seventh} />;
-        <Revoutlet fooddata={fooddata.eight} />;
+        <Outlet fooddata={fooddata.first} />
+        <Revoutlet fooddata={fooddata.second} />
+        <Outlet fooddata={fooddata.third} />
+        <Revoutlet fooddata={fooddata.fourth} />
+        <Outlet fooddata={fooddata.fivth} />
+        <Revoutlet fooddata={fooddata.sixth} />
+        <Outlet fooddata={fooddata.seventh} />
+        <Revoutlet fooddata={fooddata.eight} />
       </div>
 
       <div>
