@@ -3,10 +3,10 @@
 import React, { useState } from "react";
 import path1 from "../../assets/home/hero/path1.svg";
 import heroImg from "../../assets/home/hero/heroImg.svg";
-import dp from '../../assets/home/hero/a.jpg'
+import dp from "../../assets/home/hero/a.jpg";
 import { motion, AnimatePresence } from "framer-motion";
-import Footer from '../../components/Footer/Footer'
-import footer from '../../assets/images/footer.png'
+import Footer from "../../components/Footer/Footer";
+import footer from "../../assets/images/footer.png";
 import Text from "./Text";
 
 import CampusEvents from "../../components/Home/CampusEvents";
@@ -69,7 +69,7 @@ function Home() {
       title: "Campus Headlines",
       month: "Aug",
       day: "19",
-    }
+    },
   ];
 
   const Initiatives = [
@@ -102,7 +102,11 @@ function Home() {
           alt=" heroimg1"
           style={{ position: "absolute", top: 4, right: 20, width: "40vw" }}
         /> */}
-        <object type="image/svg+xml" data={heroImg} style={{ position: "absolute", top: 30, right: 20, width: "50vw" }}>
+        <object
+          type="image/svg+xml"
+          data={heroImg}
+          style={{ position: "absolute", top: 30, right: 20, width: "50vw" }}
+        >
           <param name="param1" value={dp} />
         </object>
         {/* <img
@@ -110,7 +114,6 @@ function Home() {
           alt=" heroimg"
           style={{ position: "absolute", top: 4, right: 20, width: "50vw" }}
         /> */}
-
 
         <div style={{ position: "absolute", top: 100, paddingLeft: 30 }}>
           <Text />
@@ -216,7 +219,6 @@ function Home() {
           </div> */}
           <Typing1 />
         </div>
-
       </div>
       {/* <News/> */}
       {/* Campus News */}
@@ -227,20 +229,46 @@ function Home() {
             position: "absolute",
             zIndex: "100",
             backgroundColor: "white",
-            padding: "0 1px 0 8px"
+            padding: "0 1px 0 8px",
           }}
         >
           Campus News:{" "}
         </b>
         <div className="hwrap">
           <div className="scroll-text">
-            <div className="hitem">
+            {/* <div className="hitem">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit........
             </div>
             <div className="hitem">
-              Aliquam consequat varius consequat.......
+              Aliquam consequat varius consequat....... Aliquam consequat varius
+              consequat....... Aliquam consequat varius consequat....... Aliquam
+              consequat varius consequat....... Aliquam consequat varius
+              consequat....... Aliquam consequat varius consequat....... Aliquam
+              consequat varius consequat....... Aliquam consequat varius
+              consequat....... Aliquam consequat varius consequat....... Aliquam
+              consequat varius consequat....... Aliquam consequat varius
+              consequat.......
+            </div> */}
+
+            {/* trial 2 */}
+            {/* for the animation to work the content inside the following 2 divs must be same so just copy the same news twice  */}
+            <div className="hitem">
+              News1<span>Campus Reopening.....</span>
+              <span>Campus Reopening.....</span>
+              <span>Campus Reopening.....</span>
+              <span>Campus Reopening.....</span>
+              <span>Campus Reopening.....</span>
+              <span>Campus Reopening.....</span>
             </div>
-            {/* can have many elements */}
+
+            <div className="hitem">
+              News1<span>Campus Reopening.....</span>
+              <span>Campus Reopening.....</span>
+              <span>Campus Reopening.....</span>
+              <span>Campus Reopening.....</span>
+              <span>Campus Reopening.....</span>
+              <span>Campus Reopening.....</span>
+            </div>
           </div>
         </div>
       </h5>
@@ -266,8 +294,12 @@ function Home() {
             <i className="fa fa-lg fa-chevron-left" aria-hidden="true"></i>
           </button>
           <Media query="(max-width: 1000px)">
-            {matches => {
-              return matches ? <CampusEvents Event={Event} index={index} temp={[0,1]}/> : <CampusEvents Event={Event} index={index} temp={[50,4]} />
+            {(matches) => {
+              return matches ? (
+                <CampusEvents Event={Event} index={index} temp={[0, 1]} />
+              ) : (
+                <CampusEvents Event={Event} index={index} temp={[50, 4]} />
+              );
             }}
           </Media>
 
@@ -302,7 +334,10 @@ function Home() {
         >
           SU Initiatives
         </p>
-        <div className="container" style={{ width: "100vw", flexDirection: "row !important" }}>
+        <div
+          className="container"
+          style={{ width: "100vw", flexDirection: "row !important" }}
+        >
           <button
             disabled={count <= 0 ? true : false}
             className="more more-left"
@@ -315,8 +350,12 @@ function Home() {
           </button>
 
           <Media query="(max-width: 1000px)">
-            {matches => {
-              return matches ? <SUInitiatives Event={Initiatives} index={count} temp={1} /> : <SUInitiatives Event={Initiatives} index={count} temp={3} />
+            {(matches) => {
+              return matches ? (
+                <SUInitiatives Event={Initiatives} index={count} temp={1} />
+              ) : (
+                <SUInitiatives Event={Initiatives} index={count} temp={3} />
+              );
             }}
           </Media>
 
@@ -356,8 +395,8 @@ function Home() {
           <div class="flex-container-contri">
             <div class="dot"></div>
             <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+            <div class="dot" id="dot3"></div>
+            <div class="dot" id="dot4"></div>
           </div>
 
           <button className="contri-btn">Contributors To This Page</button>

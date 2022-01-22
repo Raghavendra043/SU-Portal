@@ -1,5 +1,5 @@
 import React from 'react'
-import Page1 from './Page1'
+import Page1 from './page1'
 // import sportsclubs from './sportsclubs'
 import leftImage from '../../assets/images/SenateSvgs/Group\ 198.svg'
 // import { ReactComponent as ArcSvg } from "./../../assets/images/SenateSvgs/technological.svg"
@@ -7,7 +7,7 @@ import rightImage from '../../assets/images/SenateSvgs/Group\ 197.svg'
 import Footer from "./../../components/Footer/Footer"
 import background from "../../assets/images/footer.png"
 import sportsBg from '../../assets/images/Senates/sports_bg.svg'
-import Sports from './Sports'
+import Sports from './sports'
 import styles from './senatesvgs.module.css'
 import { ReactComponent as CricketSvg } from "./../../assets/images/SenateSvgs/cricket-stump.svg"
 import { ReactComponent as FootballSvg } from "./../../assets/images/SenateSvgs/clay.svg"

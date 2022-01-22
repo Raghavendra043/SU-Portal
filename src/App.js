@@ -27,12 +27,15 @@ import Typing1 from "./assets/home/scroll";
 import TechSenate from "./components/Senates/TechSenate";
 import CultSenate from "./components/Senates/CultSenate";
 import SportsSenate from "./components/Senates/SportsSenate";
+import FoodOutlets from "./pages/FoodOutlets/FoodOutlets";
 const App = () => {
   return (
     <>
       <Router>
         <Navbar />
-        <div style={{ height: "10vh", width: "100%", background:"white"}}></div>
+        <div
+          style={{ height: "10vh", width: "100%", background: "white" }}
+        ></div>
         <main>
           <Switch>
             <Route exact path="/club">
@@ -52,6 +55,7 @@ const App = () => {
             <Route path="/techsenate" exact component={TechSenate} />
             <Route path="/cultsenate" exact component={CultSenate} />
             <Route path="/sportssenate" exact component={SportsSenate} />
+            <Route path="/foodoutlets" exact component={FoodOutlets} />
             
 
             {/* <Redirect to="/" /> */}

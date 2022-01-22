@@ -1,0 +1,79 @@
+
+.backsvg {
+  background: url("./Group99.svg") no-repeat center center/cover;
+
+  /* background-size: cover; */
+}
+.part1 {
+  position: relative;
+  float: left;
+  margin: 3vh 0;
+  padding: 2vh 4vw;
+  width: 60%;
+  box-shadow: 1px 0.5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.part2 {
+  width: 40%;
+  float: right;
+}
+
+.hero_div{
+    height: 80vh;
+}
+
+.img_div{
+    margin-top: 10vh;
+    margin-left: 3vw;
+}
+
+/* .write_up{
+    width: 450px; */
+    /* position: absolute;
+    right: 80px;
+    top: 280px; */
+    /* font-weight: bold;
+    font-family: Montserrat;
+    float: right;
+    margin-right: 100px;
+    margin-top: 100px;
+} */
+
+.write_up{
+    position: absolute;
+    font-family: Montserrat;
+    width: 450px;
+    left: 1000px;
+    top: 250px;
+    font-weight:normal;
+}
+
+.svg_1 {
+    position: absolute;
+    left: 400px;
+    top: 470px;
+    z-index: -3;
+    width: 300px;
+}
+
+.svg_2{
+    position: absolute;
+    left: 50px;
+    z-index: -1;
+    width: 800px;
+}
+
+.svg_3{
+    position: absolute;
+    left: 50px;
+    z-index: -2;
+    width: 800px;
+}
+
+.svg_4{
+    position: absolute;
+    left: 430px;
+    top: 400px;
+    width: 450px;
+    z-index: -4;
+}

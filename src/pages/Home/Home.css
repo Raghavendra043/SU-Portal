@@ -93,13 +93,13 @@
   margin-top: 8px;
 }
 
-.card:hover>p:first-of-type {
+.card:hover > p:first-of-type {
   position: absolute;
   padding-top: 25px;
   transition: 0.5s ease;
 }
 
-.card:hover>p:nth-of-type(2n) {
+.card:hover > p:nth-of-type(2n) {
   position: relative;
   display: none;
 }
@@ -114,7 +114,7 @@
   transition: 0.5s ease;
 }
 
-.slide>button {
+.slide > button {
   border: none;
   position: absolute;
   margin-left: 45%;
@@ -127,12 +127,12 @@
   transition: 0.5s ease;
 }
 
-.card:hover .overlay>h2 {
+.card:hover .overlay > h2 {
   transform: translate(5%, 130%);
   transition: 0.5s ease;
 }
 
-.card:hover .overlay>.Date {
+.card:hover .overlay > .Date {
   transform: translate(5%, 150%);
   transition: 0.5s ease;
 }
@@ -167,13 +167,14 @@
   background: rgba(59, 56, 56, 0.6);
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
+  transition: 0.4s ease;
 }
 
 .btn {
   position: absolute;
   background-color: #da544f;
   padding: 0.2rem 1.2rem;
-  height: 23%;
+  height: 30px;
   right: 0;
   bottom: 0;
   border-radius: 16px;
@@ -200,23 +201,24 @@
 .flex-container-contri {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   /* background-color: rgb(214, 229, 245); */
   margin: auto;
   width: 60%;
   position: relative;
   padding-top: 3vh;
-  left: 3%
+  padding-bottom: -2vh;
+  /* left: 3% */
+  width: 75%;
 }
 
-.flex-container-contri>div {
+.flex-container-contri > div {
   background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
+  width: 15vh;
   text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+  line-height: 10vh;
+  /* font-size: 30px; */
   margin: auto;
-
 }
 
 .dot {
@@ -226,9 +228,48 @@
   /* background-color: #bbb; */
   border-radius: 50%;
   display: inline-block;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   opacity: 1;
+}
+
+@media all and (max-width: 1024px) {
+  .contri-btn {
+    margin: 15vh auto -25vh;
+  }
+
+  .flex-container-contri {
+    margin-top: 5vh;
+  }
+}
+
+@media all and (max-width: 768px) {
+}
+
+@media all and (max-width: 425px) {
+  .flex-container-contri {
+  }
+
+  .flex-container-contri > div {
+    margin-bottom: 5vh;
+    margin-right: 5vh;
+    flex-wrap: wrap;
+    overflow: none;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .flex-container-contri > div:last-child {
+    margin-bottom: -5vh;
+  }
+
+  #dot3 {
+    /* visibility: hidden; */
+  }
+
+  #dot4 {
+    /* visibility: hidden; */
+  }
 }
 
 .bottom h5 {
@@ -292,19 +333,15 @@
     display: none;
   }
 
-  .card:hover .overlay>h2 {
+  .card:hover .overlay > h2 {
     transform: translate(-150px, -140px);
     transition: 0.5s ease;
-    }
-  
-    .card:hover .overlay>.Date {
+  }
+
+  .card:hover .overlay > .Date {
     transform: translate(-160px, -138px);
     transition: 0.5s ease;
-    }
-  
-  
-  
-
+  }
 }
 
 @media (max-width: 700px) {
@@ -316,15 +353,15 @@
     display: none;
   }
 
-  .card:hover .overlay>h2 {
+  .card:hover .overlay > h2 {
     transform: translate(-100px, -85px);
     transition: 0.5s ease;
-    }
-  
-    .card:hover .overlay>.Date {
+  }
+
+  .card:hover .overlay > .Date {
     transform: translate(-105px, -85px);
     transition: 0.5s ease;
-    }
+  }
 }
 
 @media (min-width: 1600px) {
@@ -334,17 +371,23 @@
 }
 
 .scroll-text {
+  width: 100%;
   display: flex;
-  animation: tickerh linear 40s infinite;
-  animation-delay: -40s;
+  /* animation: tickerh linear 40s infinite;
+  animation-delay: -40s; */
 
   /* overflow: hidden;
   flex-direction: row;
   animation: scroll 25s linear infinite; */
 }
 
-.scroll-text div:nth-child(4) {
-  animation: tickerh1 linear 40s infinite;
+.scroll-text div {
+  animation: animate 40s linear infinite;
+  animation-delay: -40s;
+}
+
+.scroll-text div:nth-child(2) {
+  animation: animate2 40s linear infinite;
   animation-delay: -20s;
 }
 
@@ -371,7 +414,7 @@
   }
 } */
 
-@keyframes tickerh {
+/* @keyframes tickerh {
   0% {
     transform: translate3d(100%, 0, 0);
   }
@@ -388,5 +431,25 @@
 
   100% {
     transform: translate3d(-200%, 0, 0);
+  }
+} */
+
+@keyframes animate {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateX(40%);
+  }
+
+  100% {
+    transform: translateX(-200%);
   }
 }
