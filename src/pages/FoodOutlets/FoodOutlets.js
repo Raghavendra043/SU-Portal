@@ -20,27 +20,27 @@ export default function FoodOutlets() {
           <img src={svg_3} alt="photo" className="svg_3" />
           <img src={svg_4} alt="photo" className="svg_4" />
           <div className="write_up">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum
-        </div>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum
+          </div>
         </div>
       </div>
       <div className="backsvg">
-        <Outlet fooddata={fooddata.first} />;
-        <Revoutlet fooddata={fooddata.second} />;
-        <Outlet fooddata={fooddata.third} />;
-        <Revoutlet fooddata={fooddata.fourth} />;
-        <Outlet fooddata={fooddata.fivth} />;
-        <Revoutlet fooddata={fooddata.sixth} />;
-        <Outlet fooddata={fooddata.seventh} />;
-        <Revoutlet fooddata={fooddata.eight} />;
+        <Outlet fooddata={fooddata.first} id={"one"} />
+        <Revoutlet fooddata={fooddata.second} />
+        <Outlet fooddata={fooddata.third} />
+        <Revoutlet fooddata={fooddata.fourth} />
+        <Outlet fooddata={fooddata.fivth} />
+        <Revoutlet fooddata={fooddata.sixth} />
+        <Outlet fooddata={fooddata.seventh} />
+        <Revoutlet fooddata={fooddata.eight} />
       </div>
 
       <div>
