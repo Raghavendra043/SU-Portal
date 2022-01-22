@@ -2,12 +2,18 @@
 /* eslint-disable react/jsx-pascal-case */
 import React, { useState } from "react";
 import path1 from "../../assets/home/hero/path1.svg";
+import path2 from "../../assets/images/video/Coverup.svg";
 import heroImg from "../../assets/home/hero/heroImg.svg";
 import dp from "../../assets/home/hero/a.jpg";
 import { motion, AnimatePresence } from "framer-motion";
 import Footer from "../../components/Footer/Footer";
+import bgvideo from '../../assets/images/video/movie.mp4'
 import footer from "../../assets/images/footer.png";
+import Footerdark from '../../assets/images/Footerdark.svg'
+
 import Text from "./Text";
+
+import overlay from '../../assets/images/video/Overlay.svg'
 
 import CampusEvents from "../../components/Home/CampusEvents";
 import WelcomeOnBoard from "../../components/Home/WelcomeOnBoard";
@@ -18,6 +24,10 @@ import KnowYourSUC from "../../components/Home/KnowYourSUC";
 import Typing1 from "../../assets/home/scroll";
 import News from "../../assets/home/news";
 import Media from "react-media";
+import Navbar from "../../components/NavbarNew/Navbar";
+import SU from '../../assets/home/hero/su.jpeg'
+// import SU1 from '../../assets/home/hero/su1.jpeg'
+// import SU2 from '../../assets/home/hero/su2.jpeg'
 
 function Home() {
   const [index, setIndex] = useState(0);
@@ -46,41 +56,53 @@ function Home() {
 
   const Event = [
     {
-      title: "Campus Headlines",
-      month: "Sept",
-      day: "23",
+      title: "Inter Bhawan Sports",
+      month: "January",
+      day: "12",
+      sub:"We are ecstatic to announce the first sports activity of the current academic year -INTER-BHAWAN SPORTS TOURNAMENT 2022. The registrations are now open for everyone, including HD & FD students. The schedule will be announced soon."
     },
     {
-      title: "Campus Headlines",
-      month: "Sept",
-      day: "03",
+      title: "TechWeek 2022",
+      month: "January",
+      day: "20",
+      sub:"We would also like to announce that due to the escalation in the number of COVID cases, the TechWeek will be organized completely online from 24th to 30th January.Stay healthy, stay safe"
     },
     {
-      title: "Campus Headlines",
-      month: "Sept",
-      day: "03",
+      title: "Economics Association Inductions",
+      month: "January",
+      day: "14",
+      sub:"We are ecstatic to announce the first sports activity of the current academic year -INTER-BHAWAN SPORTS TOURNAMENT 2022."
     },
     {
-      title: "Campus Headlines",
-      month: "Sept",
-      day: "03",
+      title: "Campus Arrival",
+      month: "January",
+      day: "18",
+      sub:"We are ecstatic to announce the first sports activity of the current academic year -INTER-BHAWAN SPORTS TOURNAMENT 2022."
     },
     {
-      title: "Campus Headlines",
-      month: "Aug",
-      day: "19",
+      title: "Comedy Club Inductions",
+      month: "January",
+      day: "16",
+      sub:"We are ecstatic to announce the first sports activity of the current academic year -INTER-BHAWAN SPORTS TOURNAMENT 2022."
     },
   ];
 
   const Initiatives = [
     {
-      title: "The heading and heading",
+      title: "Adobe Suit Access",
+      sub:"The SU arranged and procured the Adobe premium license which will helps clubs edit videos...",
+      sub1:"The SU arranged and procured the Adobe premium license which will helps clubs edit videos and designs with ease without needing to pay exorbitant amounts of money for Adobe premium."
+
     },
     {
-      title: "The heading and heading",
+      title: "GitHub",
+      sub:"The SU has got the Github student packs for all BPHC students...",
+      sub1:"The SU has got the Github student packs for all BPHC students. The benefits of this are multifold as the pack acts as a subscription making multiple acclaimed GitHub courses free for 6 months in various in-demand course topics and level up on the coding skills as well."
     },
     {
-      title: "The heading and heading",
+      title: "Campus Reopening",
+      sub:"The SU has successfully reopened college for all batches (except the 2021 batch)....",
+      sub1:"The SU has successfully reopened college for all batches (except the 2021 batch) through staggered slots of arrival. COVID protocols have been abided and all precautions have been taken for isolations if need be."
     },
     {
       title: "The heading and heading part2",
@@ -95,13 +117,30 @@ function Home() {
 
   return (
     <div>
+      <Navbar />
+        {/* <div
+          style={{ height: "10vh", width: "100%", background: "white" }}
+        ></div> */}
+        {/* <img src={path1} alt="path1" style={{ width: "100%", position:"absolute" }} /> */}
+        {/* <div style={{width:"100%", height:"500px", background:"black", opacity:"0.5",position:"absolute"}}></div> */}
+        {/* <video alt="path1" style={{ width: "100%"}} autoPlay loop muted>
+          <source src={bgvideo} type="video/mp4"/>
+        </video>
+        <object
+          type="image/svg+xml"
+          data={heroImg}
+          style={{ position: "absolute", top: 30, right: 20, width: "50vw" }}
+        >
+          <param name="param1" value={dp} />
+        </object> */}
       <div style={{ position: "relative" }}>
-        <img src={path1} alt="path1" style={{ width: "100%" }} />
-        {/* <img 
-          src={dp}
-          alt=" heroimg1"
-          style={{ position: "absolute", top: 4, right: 20, width: "40vw" }}
-        /> */}
+      {/* <img src={path1} alt="path1" style={{ width: "100%", position:"absolute" }} /> */}
+        {/* <div style={{width:"100%", height:"500px", background:"blue", opacity:"0.5",position:"relative"}}></div> */}
+        <video alt="path1" style={{ width: "100%", position:"absolute"}} autoPlay loop muted>
+          <source src={bgvideo} type="video/mp4"/>
+        </video>
+        <img src={overlay} alt="path1" style={{ width: "100%", position:"absolute" }} />
+        {/* <img src={path2} alt="path1" style={{ width: "100%", position:"relative" }} /> */}
         <object
           type="image/svg+xml"
           data={heroImg}
@@ -109,13 +148,29 @@ function Home() {
         >
           <param name="param1" value={dp} />
         </object>
+        
+        {/* <video alt="path1" style={{ width: "100%"}} autoPlay loop muted>
+          <source src={bgvideo} type="video/mp4"/>
+        </video> */}
+        {/* <img 
+          src={dp}
+          alt=" heroimg1"
+          style={{ position: "absolute", top: 4, right: 20, width: "40vw" }}
+        /> */}
+        {/* <object
+          type="image/svg+xml"
+          data={heroImg}
+          style={{ position: "absolute", top: 30, right: 20, width: "50vw" }}
+        >
+          <param name="param1" value={dp} />
+        </object> */}
         {/* <img
           src={heroImg}
           alt=" heroimg"
           style={{ position: "absolute", top: 4, right: 20, width: "50vw" }}
         /> */}
 
-        <div style={{ position: "absolute", top: 100, paddingLeft: 30 }}>
+        <div style={{ position: "relative", top: 100, paddingLeft: 30 }}>
           <Text />
           <div
             style={{
@@ -129,101 +184,13 @@ function Home() {
           >
             Students' Union
           </div>
-          {/* <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              // justifyContent: "center",
-              alignItems: "center",
-            }}
-          > */}
-          {/* <div
-              style={{
-                font: "normal normal 800 30px/49px Montserrat",
-                letterSpacing: "0px",
-                color: "#FFFFFF",
-                opacity: "1",
-                paddingRight: 10,
-              }}
-            >
-              Let's
-            </div> */}
-          {/* {counter ? (
-              <motion.div
-                style={{
-                  font: "normal normal 800 30px/49px Montserrat",
-                  letterSpacing: "0.16px",
-                  color: "#DF456A",
-                  opacity: "1",
-                  paddingRight: 10,
-                }}
-                variants={counterV}
-                initial={"state1"}
-                animate={"state2"}
-                exit={{ y: -100 }}
-              >
-                Innovate
-              </motion.div>
-            ) : (
-              <motion.div
-                style={{
-                  font: "normal normal 800 30px/49px Montserrat",
-                  letterSpacing: "0.16px",
-                  color: "#DF456A",
-                  opacity: "1",
-                  paddingRight: 10,
-                }}
-                variants={counterV}
-                initial={"state1"}
-                animate={"state2"}
-              >
-                Panda
-              </motion.div>
-            )} */}
-          {/* <motion.div
-              style={{
-                font: "normal normal 800 30px/49px Montserrat",
-                letterSpacing: "0.16px",
-                color: "#DF456A",
-                opacity: "1",
-                paddingRight: 10,
-                width: "150px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-              variants={counterV}
-              initial={"state1"}
-              animate={"state2"}
-            >
-              {counterText} */}
-          {/* <AnimatePresence>
-                {counter ? (
-                  <motion.span exit={{ y: -100 }}>Innovate</motion.span>
-                ) : (
-                  <motion.span>Achieve</motion.span>
-                )}
-                
-              </AnimatePresence> */}
-          {/* </motion.div>
-            <div
-              style={{
-                font: "normal normal 800 30px/49px Montserrat",
-                letterSpacing: "0px",
-                color: "#FFFFFF",
-                opacity: "1",
-              }}
-            >
-              together
-            </div>
-          </div> */}
           <Typing1 />
         </div>
       </div>
       {/* <News/> */}
       {/* Campus News */}
-
-      <h5 style={{ margin: "50px", marginTop: "30px" }}>
+      <div style={{width:"100%", height:"38vh"}}></div>
+      <h5 style={{ margin: "50px", marginTop: "30px", position:"absolute", marginBottom:"20vh" }}>
         <b
           style={{
             position: "absolute",
@@ -253,21 +220,21 @@ function Home() {
             {/* trial 2 */}
             {/* for the animation to work the content inside the following 2 divs must be same so just copy the same news twice  */}
             <div className="hitem">
-              News1<span>Campus Reopening.....</span>
-              <span>Campus Reopening.....</span>
-              <span>Campus Reopening.....</span>
-              <span>Campus Reopening.....</span>
-              <span>Campus Reopening.....</span>
-              <span>Campus Reopening.....</span>
+              News1<span>Hyderabad Campus opening from 20th January. {"   "}</span>
+              <span> Goa Branch Closed </span>
+              <span> Pilani Branch Closed </span>
+              <span> Hyderabad Campus opening from 20th January. </span>
+              <span> Goa Branch Closed </span>
+              <span> Pilani Branch Closed </span>
             </div>
 
             <div className="hitem">
-              News1<span>Campus Reopening.....</span>
-              <span>Campus Reopening.....</span>
-              <span>Campus Reopening.....</span>
-              <span>Campus Reopening.....</span>
-              <span>Campus Reopening.....</span>
-              <span>Campus Reopening.....</span>
+              News1<span>Hyderabad Campus opening from 20th January. {"   "}</span>
+              <span> Goa Branch Closed </span>
+              <span> Pilani Branch Closed </span>
+              <span> Hyderabad Campus opening from 20th January. </span>
+              <span> Goa Branch Closed </span>
+              <span> Pilani Branch Closed </span>
             </div>
           </div>
         </div>
@@ -275,7 +242,7 @@ function Home() {
 
       {/* Welcome On Board */}
 
-      <div>
+      <div style={{marginTop:"100px"}}>
         <WelcomeOnBoard />
       </div>
 
@@ -379,7 +346,7 @@ function Home() {
       {/* Know Your SUC */}
 
       <div>
-        <p className="header">Know Your SUC</p>
+        <p className="header">Students Union Council 21-22</p>
         <KnowYourSUC />
       </div>
 
@@ -393,16 +360,27 @@ function Home() {
           }}
         >
           <div class="flex-container-contri">
-            <div class="dot"></div>
-            <div class="dot"></div>
+            <div class="dot">
+              <img src={SU} style={{width:"125%", height:"125%"}}/>
+            </div>
+            <div class="dot">
+              <img src={SU} style={{width:"125%", height:"125%"}}/>
+            </div>
+            <div class="dot">
+              <img src={SU} style={{width:"125%", height:"125%"}}/>
+            </div>
+            <div class="dot">
+              <img src={SU} style={{width:"125%", height:"125%"}}/>
+            </div>
+            {/* <div class="dot"></div>
             <div class="dot" id="dot3"></div>
-            <div class="dot" id="dot4"></div>
+            <div class="dot" id="dot4"></div> */}
           </div>
 
           <button className="contri-btn">Contributors To This Page</button>
         </div>
       </div>
-      <Footer background={footer} />
+      <Footer background={Footerdark} />
     </div>
   );
 }

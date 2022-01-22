@@ -184,3 +184,8 @@
     bottom: -255%;
     right: 5%;
 }
+@media only screen and (max-width:600px){
+    .svgg{
+        transform: scale(0.25);
+    }
+}
