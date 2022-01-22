@@ -1,7 +1,7 @@
 import React from 'react'
-import Page1 from './Page1'
-import Assocs from './Assocs'
-import Clubs from './Clubs'
+import Page1 from './page1'
+import Assocs from './assocs'
+import Clubs from './clubs'
 import leftImage from '../../assets/images/SenateSvgs/Group\ 131.svg'
 import rightImage from '../../assets/images/SenateSvgs/Group\ 199.svg'
 import Footer from "./../../components/Footer/Footer"
