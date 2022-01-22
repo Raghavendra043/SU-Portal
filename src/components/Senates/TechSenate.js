@@ -34,17 +34,17 @@ function TechSenate() {
             <Assocs />
             <Clubs />
             <Footer background={background} />
-            <HyperloopSvg className={styles.hyperloopsvg}/>
-            <AeolusSvg className={styles.aeolussvg}/>
-            <ChemicalSvg className={styles.chemicalsvg}/> 
-            <AlchemySvg className={styles.alchemysvg}/> 
-            <AxiomSvg className={styles.axiomsvg}/> 
-            <BhcgSvg className={styles.bhcgsvg}/> 
-            <SedsSvg className={styles.sedssvg}/> 
-            <CivilSvg className={styles.civilsvg}/> 
-            <CsaSvg className={styles.csasvg}/> 
-            <CruxSvg className={styles.cruxsvg}/> 
-            <ArcSvg className={styles.arcsvg}/> 
+            <HyperloopSvg className={`${styles.hyperloopsvg} ${styles.svgg}`}/>
+            <AeolusSvg className={`${styles.aeolussvg} ${styles.svgg}`}/>
+            <ChemicalSvg className={`${styles.chemicalsvg} ${styles.svgg}`}/> 
+            <AlchemySvg className={`${styles.alchemysvg} ${styles.svgg}`}/> 
+            <AxiomSvg className={`${styles.axiomsvg} ${styles.svgg}`}/> 
+            <BhcgSvg className={`${styles.bhcgsvg} ${styles.svgg}`}/> 
+            <SedsSvg className={`${styles.sedssvg} ${styles.svgg}`}/> 
+            <CivilSvg className={`${styles.civilsvg} ${styles.svgg}`}/> 
+            <CsaSvg className={`${styles.csasvg} ${styles.svgg}`}/> 
+            <CruxSvg className={`${styles.cruxsvg} ${styles.svgg}`}/> 
+            <ArcSvg className={`${styles.arcsvg} ${styles.svgg}`}/> 
         </div>
     )
 }

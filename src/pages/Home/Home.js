@@ -267,11 +267,7 @@ function Home() {
           </button>
           <Media query="(max-width: 1000px)">
             {matches => {
-<<<<<<< HEAD
-              return matches ? <CampusEvents Event={Event} index={index} temp={[0, 2]} /> : <CampusEvents Event={Event} index={index} temp={[50, 4]} />
-=======
               return matches ? <CampusEvents Event={Event} index={index} temp={[0,1]}/> : <CampusEvents Event={Event} index={index} temp={[50,4]} />
->>>>>>> 13ad04fa2dd01ae59eb776b32cf74184e6fe267a
             }}
           </Media>
 
