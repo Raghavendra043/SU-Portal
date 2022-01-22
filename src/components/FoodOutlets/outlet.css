@@ -8,12 +8,21 @@
   filter: drop-shadow(8px 16px 40px #6d8dad33);
   transform: scale(1.2);
 }
+#one {
+  width: 352px;
+  height: 130%;
+  position: relative;
+  top: 0px;
+  z-index: -1;
+  margin-top: -52px;
+  margin-left: 18px;
+}
 .outletouterbox {
   content: "";
   position: relative;
   width: 100%;
   filter: drop-shadow(8px 16px 40px #6d8dad33);
-  /* height: 200px; */
+  height: 250px;
   background-color: #ed8f72;
   top: 0px;
   z-index: -1;
@@ -35,7 +44,7 @@
 .revoutletleftbox {
   width: 65%;
   /* border: 2px solid red; */
-
+  /* height: 250px; */
   clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
   padding: 1% 10%;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -47,7 +56,7 @@
   position: relative;
   width: 100%;
   filter: drop-shadow(8px 16px 40px #6d8dad33);
-  /* height: 250px; */
+  height: 250px;
   background-color: #ed8f72;
   top: 0px;
   z-index: -1;
