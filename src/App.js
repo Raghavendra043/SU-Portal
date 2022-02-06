@@ -5,7 +5,7 @@ import {
   Redirect,
   Switch,
 } from "react-router-dom";
-
+import Academic from "./pages/academic/Academic";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
@@ -58,7 +58,7 @@ const App = () => {
             <Route path="/sportssenate" exact component={SportsSenate} />
             <Route path="/foodoutlets" exact component={FoodOutlets} />
             <Route path="/fests" exact component={Fests} />
-            
+            <Route path="/academic" exact component={Academic} />
 
             {/* <Redirect to="/" /> */}
             <Route exact path="/" component={Home} />
