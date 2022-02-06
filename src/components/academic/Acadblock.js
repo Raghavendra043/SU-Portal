@@ -15,8 +15,8 @@ export default function () {
             marginTop: "85px",
           }}
         >
-          <h1>The Academic Block</h1>
-          <p>
+          <h1 className="acadinnerleftboxh1">The Academic Block</h1>
+          <p className="acadinnerleftboxp">
             Situated in the backdrop of the famous Rock Garden, this site is
             divided into two parts: the Old Academic Blocks and the New Academic
             Blocks. The Old Academic Blocks, consisting of 7 beige and
@@ -37,10 +37,15 @@ export default function () {
           </p>
         </div>
         <div className="acadinnerrightbox">
-          <img src={img2} alt="" id="img1" />
+          <img src={img2} alt="" id="acadblockimg1" />
         </div>
       </div>
-      <img src={img1} alt="" style={{ marginTop: "-70px" }} id="img2" />
+      <img
+        src={img1}
+        alt=""
+        style={{ marginTop: "-70px" }}
+        id="acadblockimg2"
+      />
     </div>
   );
 }

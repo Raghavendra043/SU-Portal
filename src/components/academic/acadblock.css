@@ -7,22 +7,20 @@
   width: 60%;
   /* border: 2px solid red; */
 }
-.acadinnerrightbox {
-  /* border: 2px solid red; */
-}
-#img1 {
+
+#acadblockimg1 {
   width: 100%;
   /* height: 900px; */
 }
-#img2 {
+#acadblockimg2 {
   width: 100%;
 }
-.acadinnerleftbox p {
+.acadinnerleftboxp {
   width: 70%;
   font-size: 1.4vw;
   font: normal normal normal 18px/30px Montserrat;
 }
-.acadinnerleftbox h1 {
+.acadinnerleftboxh1 {
   width: 70%;
   color: #2f497c;
 }
