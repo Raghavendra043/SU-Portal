@@ -28,6 +28,7 @@ import TechSenate from "./components/Senates/TechSenate";
 import CultSenate from "./components/Senates/CultSenate";
 import SportsSenate from "./components/Senates/SportsSenate";
 import FoodOutlets from "./pages/FoodOutlets/FoodOutlets";
+import Fests from "./pages/Fests/Fests";
 const App = () => {
   return (
     <>
@@ -56,6 +57,7 @@ const App = () => {
             <Route path="/cultsenate" exact component={CultSenate} />
             <Route path="/sportssenate" exact component={SportsSenate} />
             <Route path="/foodoutlets" exact component={FoodOutlets} />
+            <Route path="/fests" exact component={Fests} />
             
 
             {/* <Redirect to="/" /> */}

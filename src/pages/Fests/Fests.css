@@ -1,0 +1,30 @@
+.hero_fests{
+    height: 100vh;
+}
+
+.fest_desc{
+    margin: 1vh 8vw;
+    margin-top: 5vh;
+    height: 30vh;
+}
+
+.fest_svg{
+    position: relative;
+}
+
+.fest_svg > img{
+    position: relative;
+    margin-left: 5vw;
+    height: 100%;
+}
+
+.fest_btn{
+    margin-top: 10vh;
+    padding: 1.4vh 1.8vw;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    background-color: #da544f;
+    border-radius: 25px;
+    font-family: "Montserrat", sans-serif;
+}

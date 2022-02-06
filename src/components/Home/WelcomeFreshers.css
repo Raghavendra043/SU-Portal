@@ -34,7 +34,7 @@
     position: absolute;
     margin-top: 17.5vh;
     width: 10%;
-    left: 10vh;
+    left: 10%;
 }
 
 .group_photo {
@@ -56,13 +56,14 @@
     }
 
     .explore-btn {
+        left: 10%;
         font-size: 1.5rem;
-        padding: 1vh 1.8vw;
+        padding: 1vh 2vw;
         margin-top: 11vh;
     }
 
     .group_photo {
-        height: 45vh;
+        height: 60vh;
     }
 }
 
@@ -83,7 +84,7 @@
     }
 
     .group_photo {
-        height: 38vh;
+        height: 50vh;
     }
 }
 
