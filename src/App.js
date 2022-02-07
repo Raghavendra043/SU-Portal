@@ -5,7 +5,7 @@ import {
   Redirect,
   Switch,
 } from "react-router-dom";
-
+import Academic from "./pages/academic/Academic";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
@@ -28,6 +28,7 @@ import TechSenate from "./components/Senates/TechSenate";
 import CultSenate from "./components/Senates/CultSenate";
 import SportsSenate from "./components/Senates/SportsSenate";
 import FoodOutlets from "./pages/FoodOutlets/FoodOutlets";
+import Fests from "./pages/Fests/Fests";
 const App = () => {
   return (
     <>
@@ -90,12 +91,18 @@ const App = () => {
                   ></div>
               <Contact/>
             </Route>
-            {/* <Route path="/senates" exact component={Senates} ><Navbar />
+            <Route path="/academic" exact component={Academic} ><Navbar />
                   <div
                     style={{ height: "10vh", width: "100%", background: "white" }}
                   ></div>
-              <Senates/>
-            </Route> */}
+              <Academic/>
+            </Route>
+            <Route path="/fests" exact component={Fests} ><Navbar />
+                  <div
+                    style={{ height: "10vh", width: "100%", background: "white" }}
+                  ></div>
+              <Fests/>
+            </Route>
             <Route path="/techsenate" exact component={TechSenate} ><Navbar />
                   <div
                     style={{ height: "10vh", width: "100%", background: "white" }}

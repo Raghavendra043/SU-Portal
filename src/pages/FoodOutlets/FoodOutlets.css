@@ -40,40 +40,41 @@
 } */
 
 .write_up{
-    position: absolute;
+    display: none;
+    /* position: absolute;
     font-family: Montserrat;
     width: 450px;
     left: 1000px;
     top: 250px;
-    font-weight:normal;
+    font-weight:normal; */
 }
 
 .svg_1 {
     position: absolute;
-    left: 400px;
-    top: 470px;
+    left: 30%;
+    top: 25%;
     z-index: -3;
-    width: 300px;
+    height: 100px;
 }
 
 .svg_2{
     position: absolute;
-    left: 50px;
+    left: 15%;
     z-index: -1;
-    width: 800px;
+    height: 500px;
 }
 
 .svg_3{
     position: absolute;
-    left: 50px;
+    left: 15%;
     z-index: -2;
-    width: 800px;
+    height: 500px;
 }
 
 .svg_4{
     position: absolute;
-    left: 430px;
-    top: 400px;
-    width: 450px;
+    left: 35%;
+    top: 300px;
+    height: 100px;
     z-index: -4;
 }
