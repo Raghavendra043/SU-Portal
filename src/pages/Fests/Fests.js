@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/jsx-pascal-case */
 import React from "react";
 import Fest_comp from "../../components/Fests/Fest_comp";
 import "./Fests.css";

@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react'
 import './Feg.css';
 import { ReactComponent as LeftBoxImage } from "./Group 90.svg"

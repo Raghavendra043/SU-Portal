@@ -1,3 +1,5 @@
+/* eslint-disable array-callback-return */
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import "./clubevents.css";
 import svg1 from "./images/clipart-smooth_zigzag.jpg";

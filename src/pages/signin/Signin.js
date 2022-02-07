@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "./signin.css";
 import Gogglesvg from "../../assets/images/Group52.svg";
