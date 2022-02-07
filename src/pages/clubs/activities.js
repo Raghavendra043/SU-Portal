@@ -1,6 +1,6 @@
 import React from "react";
 import Svg1 from "./clubactivites.svg";
-export default function activities() {
+export default function activities({current}) {
   return (
     <div>
       <h1
@@ -34,17 +34,11 @@ export default function activities() {
             style={{
               width: "90%",
               overflowY: "scroll",
-
+              fontSize:"1.35vw",
               padding: "20px",
             }}
           >
-            Birla Institute of Technology & Science, Pilani (BITS Pilani) is a
-            private deemed university in Pilani, India.[12] It focuses primarily
-            on higher education and research in engineering and sciences.[13]
-            After expansion to a campus in Dubai, it has become the first
-            international deemed university, spearheading in science,
-            engineering and research with 4 established campuses and 15 academic
-            departments.
+            {current[0]}
           </p>
         </div>
         <img
@@ -76,18 +70,12 @@ export default function activities() {
             style={{
               width: "90%",
               overflowY: "scroll",
-
+              fontSize:"1.35vw",
               padding: "20px",
               WebkitOverflowScrolling: "none",
             }}
           >
-            Birla Institute of Technology & Science, Pilani (BITS Pilani) is a
-            private deemed university in Pilani, India.[12] It focuses primarily
-            on higher education and research in engineering and sciences.[13]
-            After expansion to a campus in Dubai, it has become the first
-            international deemed university, spearheading in science,
-            engineering and research with 4 established campuses and 15 academic
-            departments.
+            {current[1]}
           </p>
         </div>
         <img

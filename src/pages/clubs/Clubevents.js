@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import Clubeventsbox from "./clubeventsbox";
 import { dota } from "./data";
-export default function Clubevents() {
+export default function Clubevents({events}) {
   const [clubindex, setclubIndex] = useState(0);
   return (
     <>
@@ -28,7 +28,7 @@ export default function Clubevents() {
             <i className="fa fa-lg fa-chevron-left" aria-hidden="true"></i>
           </button>
 
-          <Clubeventsbox index={clubindex} />
+          <Clubeventsbox {...{clubindex, events}} />
 
           <button
             disabled={

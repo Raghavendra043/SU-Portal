@@ -12,13 +12,15 @@ import seds from "../../assets/images/LogosSenates/techsenate/seds.png";
 import acm from "../../assets/images/LogosSenates/techsenate/acm.png";
 import bhcg from "../../assets/images/LogosSenates/techsenate/bhcg.png";
 import DisplayBox from "./DisplayBox";
+import { useHistory } from "react-router-dom";
 
 function Clubs() {
+  const history = useHistory();
   const clubsList = [
     {
       id: 1,
       url: aeolus,
-      name: "Aeolous",
+      name: "Aeolus",
     },
     {
       id: 2,
@@ -77,11 +79,11 @@ function Clubs() {
       <div className={styles.assocs}>
         {clubsList.map((x) => {
           return (
-            <DisplayBox data={x} />
-            // <div className={styles.assoc}>
-            //     <div className={styles.logo}><img src={x.url} width={150} className={styles.logoimg}></img></div>
-            //     <h6 className={styles.assoc_title}>{x.club}</h6>
-            // </div>
+            <div
+              onClick={()=>{
+                history.push('club', {name:x.name, type:"Clubs"})
+              }}
+            ><DisplayBox data={x} /></div>
           );
         })}
       </div>

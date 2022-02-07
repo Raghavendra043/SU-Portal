@@ -2,12 +2,12 @@ import React from "react";
 import "./clubvideo.css";
 import svg3 from "./images/clipart.png";
 import svg4 from "./images/clipart-sharp_zigzag.jpg";
-export default function clubvideo() {
+export default function clubvideo({link}) {
   return (
     <>
       <div id="clubvideodiv">
         <iframe
-          src="https://www.youtube.com/embed/qKLdItWnVQA"
+          src={link}
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

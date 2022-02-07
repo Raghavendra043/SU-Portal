@@ -56,7 +56,7 @@ export default function Places() {
               <Fade direction="right" delay={300} triggerOnce>
                 {places.rightheading.map(event => {
                   return (
-                    <Link to="#" className={placescss.link}>
+                    <Link to={event.link} className={placescss.link}>
                       <h1>{event.heading}</h1>
                     </Link>
                   );

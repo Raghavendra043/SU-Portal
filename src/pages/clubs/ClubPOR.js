@@ -2,7 +2,7 @@ import Svg from "./svg";
 import { PorHolders } from "./data";
 import "../Feg/Feg.css";
 import { useEffect } from "react";
-export default function ClubPOR() {
+export default function ClubPOR({pors}) {
   useEffect(() => {
     const accordion = document.getElementsByClassName("context-box");
     for (var i = 0; i < accordion.length; i++) {

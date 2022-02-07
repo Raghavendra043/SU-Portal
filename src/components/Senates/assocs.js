@@ -12,7 +12,10 @@ import alchemy from "../../assets/images/LogosSenates/techsenate/alchemy.png";
 import spectrum from "../../assets/images/LogosSenates/techsenate/spectrum.png";
 import eco from "../../assets/images/LogosSenates/techsenate/eco.png";
 import DisplayBox from "./DisplayBox";
+import { useHistory } from "react-router-dom";
 function Assocs() {
+
+  const history = useHistory();
   const assocsList = [
     {
       id: 1,
@@ -77,11 +80,13 @@ function Assocs() {
       <div className={styles.assocs}>
         {assocsList.map((x) => {
           return (
+            <div 
+            onClick={()=>{
+              history.push('/club', {name:x.name, type:"Associations"});
+            }} >
             <DisplayBox data={x} className={styles.dispbox}/>
-            // <div className={styles.assoc}>
-            //     <div className={styles.logo}><img src={x.url} width={150} className={styles.logoimg}></img></div>
-            //     <h6 className={styles.assoc_title}>{x.assoc}</h6>
-            // </div>
+            </div>
+            
           );
         })}
       </div>

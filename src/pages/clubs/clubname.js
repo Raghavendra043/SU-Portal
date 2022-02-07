@@ -4,7 +4,8 @@ import { useState } from "react";
 import image from "./images/clubimage.png";
 import "./clubname.css";
 import { dota } from "./data";
-export default function Clubname() {
+export default function Clubname({name, about}) {
+
   const [subscribe, setSubscribe] = useState(false);
   {
     var display2 = subscribe ? "block" : "none";
@@ -28,7 +29,7 @@ export default function Clubname() {
           <img src={dota.Name.logo} alt="" srcset="" className="clublogo" />
         </div>
         <div className="clubname" style={{ display: "flex" }}>
-          <div>{dota.Name.name}</div>
+          <div>{name}</div>
           <i
             class="fa fa-bell-o bell"
             aria-hidden="true"
@@ -53,8 +54,8 @@ export default function Clubname() {
         </div>
       </div>
       <div className="club_aboutus">
-        <h5>{dota.Name.aboutHeading}</h5>
-        <p>{dota.Name.aboutPara}</p>
+        <h5>About us</h5>
+        <p>{about}</p>
       </div>
     </>
   );

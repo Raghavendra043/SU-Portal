@@ -3,12 +3,25 @@ import "./clubevents.css";
 import svg1 from "./images/clipart-smooth_zigzag.jpg";
 import svg2 from "./images/clipart-sharp_zigzag.png";
 import { dota } from "./data";
-export default function Campus_Events(props) {
-  const { index } = props;
+
+const color = ["rgb(218, 37, 29)",
+"#45b43b",
+" #2d7dd2",
+"#ffc300",
+"#2d7dd2",
+"#ffc300",
+"rgb(218, 37, 29)",
+"#45b43b",
+"#45b43b",
+"rgb(218, 37, 29)",
+"rgb(218, 37, 29)",]
+export default function Campus_Events({clubindex, events}) {
+  const index  = clubindex;
+  console.log(index);
   return (
     <div id="events">
       <div className="box">
-        {dota.events.map((event, i) => {
+        {events.map((event, i) => {
           const leftEvent = `events_main_left_${event.id}`;
           const rightevent = `events_main_right_${event.id}`;
           const rightbutton = `events_button_${event.id}`;
@@ -36,7 +49,7 @@ export default function Campus_Events(props) {
                   left.style.justifyContent = "center";
 
                   right.style.animation = "back 1s forwards";
-                  right.style.backgroundColor = `${event.color}`;
+                  right.style.backgroundColor = `${color[i]}`;
                 }}
                 onMouseLeave={() => {
                   let left = document.getElementById(
@@ -61,7 +74,7 @@ export default function Campus_Events(props) {
                 <div
                   className="events_left"
                   id={leftEvent}
-                  style={{ backgroundColor: `${event.color}` }}
+                  style={{ backgroundColor: `${color[i]}` }}
                 >
                   <h1>{event.date}</h1>
                   <h4>{event.month}</h4>
@@ -75,7 +88,7 @@ export default function Campus_Events(props) {
                 </div>
               </div>
             );
-          }
+          } 
         })}
       </div>
       <img src={svg1} alt="" srcset="" id="svg1" />

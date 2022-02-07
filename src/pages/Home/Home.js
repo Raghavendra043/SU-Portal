@@ -117,30 +117,17 @@ function Home() {
 
   return (
     <div>
+      { true ? (
+      <div>
       <Navbar />
-        {/* <div
-          style={{ height: "10vh", width: "100%", background: "white" }}
-        ></div> */}
-        {/* <img src={path1} alt="path1" style={{ width: "100%", position:"absolute" }} /> */}
-        {/* <div style={{width:"100%", height:"500px", background:"black", opacity:"0.5",position:"absolute"}}></div> */}
-        {/* <video alt="path1" style={{ width: "100%"}} autoPlay loop muted>
-          <source src={bgvideo} type="video/mp4"/>
-        </video>
-        <object
-          type="image/svg+xml"
-          data={heroImg}
-          style={{ position: "absolute", top: 30, right: 20, width: "50vw" }}
-        >
-          <param name="param1" value={dp} />
-        </object> */}
+                  <div
+                    style={{ height: "10vh", width: "100%", background: "white" }}
+                  ></div>
       <div style={{ position: "relative" }}>
-      {/* <img src={path1} alt="path1" style={{ width: "100%", position:"absolute" }} /> */}
-        {/* <div style={{width:"100%", height:"500px", background:"blue", opacity:"0.5",position:"relative"}}></div> */}
         <video alt="path1" style={{ width: "100%", position:"absolute"}} autoPlay loop muted>
           <source src={bgvideo} type="video/mp4"/>
         </video>
         <img src={overlay} alt="path1" style={{ width: "100%", position:"absolute" }} />
-        {/* <img src={path2} alt="path1" style={{ width: "100%", position:"relative" }} /> */}
         <object
           type="image/svg+xml"
           data={heroImg}
@@ -149,27 +136,6 @@ function Home() {
           <param name="param1" value={dp} />
         </object>
         
-        {/* <video alt="path1" style={{ width: "100%"}} autoPlay loop muted>
-          <source src={bgvideo} type="video/mp4"/>
-        </video> */}
-        {/* <img 
-          src={dp}
-          alt=" heroimg1"
-          style={{ position: "absolute", top: 4, right: 20, width: "40vw" }}
-        /> */}
-        {/* <object
-          type="image/svg+xml"
-          data={heroImg}
-          style={{ position: "absolute", top: 30, right: 20, width: "50vw" }}
-        >
-          <param name="param1" value={dp} />
-        </object> */}
-        {/* <img
-          src={heroImg}
-          alt=" heroimg"
-          style={{ position: "absolute", top: 4, right: 20, width: "50vw" }}
-        /> */}
-
         <div style={{ position: "relative", top: 100, paddingLeft: 30 }}>
           <Text />
           <div
@@ -203,20 +169,6 @@ function Home() {
         </b>
         <div className="hwrap">
           <div className="scroll-text">
-            {/* <div className="hitem">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit........
-            </div>
-            <div className="hitem">
-              Aliquam consequat varius consequat....... Aliquam consequat varius
-              consequat....... Aliquam consequat varius consequat....... Aliquam
-              consequat varius consequat....... Aliquam consequat varius
-              consequat....... Aliquam consequat varius consequat....... Aliquam
-              consequat varius consequat....... Aliquam consequat varius
-              consequat....... Aliquam consequat varius consequat....... Aliquam
-              consequat varius consequat....... Aliquam consequat varius
-              consequat.......
-            </div> */}
-
             {/* trial 2 */}
             {/* for the animation to work the content inside the following 2 divs must be same so just copy the same news twice  */}
             <div className="hitem">
@@ -372,15 +324,16 @@ function Home() {
             <div class="dot">
               <img src={SU} style={{width:"125%", height:"125%"}}/>
             </div>
-            {/* <div class="dot"></div>
-            <div class="dot" id="dot3"></div>
-            <div class="dot" id="dot4"></div> */}
           </div>
 
           <button className="contri-btn">Contributors To This Page</button>
         </div>
       </div>
       <Footer background={Footerdark} />
+      </div>
+      ) : 
+      (<div style={{height:"100vh", width:"100%", background:"black"}}></div>)
+        }
     </div>
   );
 }

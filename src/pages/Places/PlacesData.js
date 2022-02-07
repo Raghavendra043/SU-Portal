@@ -4,21 +4,27 @@ export const places = {
   rightheading: [
     {
       heading: "Academic Blocks",
+      link:"#"
     },
     {
       heading: "Food Outlets",
+      link:"/foodoutlets"
     },
     {
       heading: "SAC",
+      link:"#"
     },
     {
       heading: "Auditorium",
+      link:"#"
     },
     {
       heading: "Campus Facilities",
+      link:"#"
     },
     {
       heading: "Links To Visit",
+      link:"#"
     },
   ],
   leftpara:
