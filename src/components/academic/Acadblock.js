@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import React from "react";
 import "./acadblock.css";
 import img1 from "./MaskGroup35.png";

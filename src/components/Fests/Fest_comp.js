@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
+/* eslint-disable eqeqeq */
 import React from "react";
 
 function Fest_comp(props) {

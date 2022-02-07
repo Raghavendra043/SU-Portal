@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-useless-escape */
 import React from 'react'
 import Page1 from './page1'
 import Assocs from './assocs'
