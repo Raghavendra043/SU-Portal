@@ -47,11 +47,11 @@
 
 @media all and (max-width: 1440px) {
     .welcome-freshers {
-        height: 60vh;
+        height: 600px;
     }
 
     .welcome-freshers-text {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         top: 10vh;
     }
 
@@ -63,7 +63,8 @@
     }
 
     .group_photo {
-        height: 60vh;
+        height: 430px;
+        right: 120px;
     }
 }
 
