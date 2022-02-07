@@ -136,11 +136,12 @@ function Home() {
           <param name="param1" value={dp} />
         </object>
         
-        <div style={{ position: "relative", top: 100, paddingLeft: 30 }}>
+        <div style={{ position: "relative", top: 120, paddingLeft: 30 }}>
           <Text />
           <div
             style={{
-              height: "60px",
+              height: "50px",
+              marginTop:"20px",
               textAlign: "left",
               font: "normal normal 800 30px/49px Montserrat",
               letterSpacing: "0px",

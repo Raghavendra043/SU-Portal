@@ -56,7 +56,7 @@ export default function Studentlife() {
               <Fade direction="right" delay={300} triggerOnce>
                 {studentlife.rightheading.map(event => {
                   return (
-                    <Link to="#" className={studentlifecss.link}>
+                    <Link to={event.link} className={studentlifecss.link}>
                       <h1>{event.heading}</h1>
                     </Link>
                   );

@@ -8,6 +8,7 @@ function Text() {
           margin: 0,
           padding: 0,
           fontSize: 50,
+          height:"60px",
           fontFamily: "Montserrat",
           fontWeight: "bold",
           background:

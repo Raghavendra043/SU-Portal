@@ -4,27 +4,35 @@ export const studentlife = {
   rightheading: [
     {
       heading: "Fests",
+      link:"/fests"
     },
     {
       heading: "Departments",
+      link:"/techsenate"
     },
     {
       heading: "Cultural Senate",
+      link:"/cultsenate"
     },
     {
       heading: "Sports Senate",
+      link:"/sportssenate"
     },
     {
       heading: "Tech Senate",
+      link:"/techsenate"
     },
     {
       heading: "Societies",
+      link:"/techsenate"
     },
     {
       heading: "Volunteering",
+      link:"/techsenate"
     },
     {
       heading: "Others (tedx, embryo, raf etc.)",
+      link:"/techsenate"
     },
   ],
   leftpara:

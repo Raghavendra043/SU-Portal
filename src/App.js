@@ -29,6 +29,7 @@ import CultSenate from "./components/Senates/CultSenate";
 import SportsSenate from "./components/Senates/SportsSenate";
 import FoodOutlets from "./pages/FoodOutlets/FoodOutlets";
 import Fests from "./pages/Fests/Fests";
+
 const App = () => {
   return (
     <>
