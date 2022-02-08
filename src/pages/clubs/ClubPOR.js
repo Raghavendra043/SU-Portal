@@ -1,5 +1,5 @@
 import Svg from "./svg";
-import { PorHolders } from "./data";
+//import { PorHolders } from "./data";
 import "../Feg/Feg.css";
 import { useEffect } from "react";
 export default function ClubPOR({pors}) {
@@ -17,7 +17,7 @@ export default function ClubPOR({pors}) {
         POR Holders
       </h1>
       <div className="porbox">
-        {PorHolders.map(element => {
+        {pors.map(element => {
           return <Svg porHolders={element} />;
         })}
       </div>

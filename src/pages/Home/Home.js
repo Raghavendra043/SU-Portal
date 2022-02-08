@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-pascal-case */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import path1 from "../../assets/home/hero/path1.svg";
 import path2 from "../../assets/images/video/Coverup.svg";
 import heroImg from "../../assets/home/hero/heroImg.svg";
@@ -30,6 +30,9 @@ import Navbar from "../../components/NavbarNew/Navbar";
 import SU from '../../assets/home/hero/su.jpeg'
 // import SU1 from '../../assets/home/hero/su1.jpeg'
 // import SU2 from '../../assets/home/hero/su2.jpeg'
+import { BarWave } from "react-cssfx-loading";
+// Better way to reduce bundle size
+import BarWave1 from "react-cssfx-loading/lib/FadingBalls";
 
 function Home() {
   const [index, setIndex] = useState(0);
@@ -117,9 +120,18 @@ function Home() {
     },
   ];
 
+  const [loading, setLoading] = useState(true);
+  const setSpinner = (x)=>{
+    setLoading(x);
+  }
+
+  useEffect(() => {
+    setTimeout(() => setSpinner(false), 3000)
+  }, []);
+
   return (
     <div>
-      { true ? (
+      { !loading ? (
       <div>
       <Navbar />
                   <div
@@ -335,7 +347,10 @@ function Home() {
       <Footer background={Footerdark} />
       </div>
       ) : 
-      (<div style={{height:"100vh", width:"100%", background:"black"}}></div>)
+      (<div style={{height:"100vh", width:"100%", background:"black", position:"absolute"}}>
+        <div style={{marginTop:"50vh", marginLeft:"47vw"}}><BarWave1 color="red" height="25px" width="25px" /></div>
+
+      </div>)
         }
     </div>
   );

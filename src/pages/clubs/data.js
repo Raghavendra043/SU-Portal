@@ -101,9 +101,7 @@ export const PorHolders = [
     image: `${image1}`,
     insta: "https://www.instagram.com/bitspilaniofficial/",
     linkedin: "https://www.instagram.com/bitspilaniofficial/",
-    facebook: "https://www.instagram.com/bitspilaniofficial/",
-    image_width: "268.462",
-    image_height: "244.85",
+    facebook: "https://www.instagram.com/bitspilaniofficial/"
   },
   {
     name: "Krishna Prawjal S 1",
@@ -116,6 +114,24 @@ export const PorHolders = [
     image_height: "244.85",
   },
   {
+    name: "Krishna Prawjal S 2",
+    post: "president2",
+    image: `${image1}`,
+    insta: "https://www.instagram.com/bitspilaniofficial/",
+    linkedin: "https://www.instagram.com/bitspilaniofficial/",
+    facebook: "https://www.instagram.com/bitspilaniofficial/",
+    image_width: "268.462",
+    image_height: "244.85",
+  },{
+    name: "Krishna Prawjal S 2",
+    post: "president2",
+    image: `${image1}`,
+    insta: "https://www.instagram.com/bitspilaniofficial/",
+    linkedin: "https://www.instagram.com/bitspilaniofficial/",
+    facebook: "https://www.instagram.com/bitspilaniofficial/",
+    image_width: "268.462",
+    image_height: "244.85",
+  },{
     name: "Krishna Prawjal S 2",
     post: "president2",
     image: `${image1}`,

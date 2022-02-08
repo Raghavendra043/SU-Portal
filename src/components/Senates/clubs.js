@@ -81,7 +81,7 @@ function Clubs() {
           return (
             <div
               onClick={()=>{
-                history.push('club', {name:x.name, type:"Clubs"})
+                history.push('/club', {name:x.name, type:"Clubs"})
               }}
             ><DisplayBox data={x} /></div>
           );

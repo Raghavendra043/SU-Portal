@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Clubname from "./clubname";
 import Clubevents from "./Clubevents";
+import Testevents from './testevents'
 import ClubPOR from "./ClubPOR";
 import Activities from "./activities";
 import Clubvideo from "./clubvideo";
@@ -42,9 +43,9 @@ function Clubs() {
       <>
       <Clubname {...{name:name, about:Data.about}}/>
       <Clubvideo {...{link:Data.link}}/>
-      <Clubevents {...{events:Data.events}}/>
+      <Testevents {...{Event:Data.events}}/>
       <Activities {...{current:Data.current}}/>
-      <ClubPOR {...{pors:Data.pors}}/>
+      <ClubPOR {...{pors:Data.POR}}/>
       </>
       ) : (<>
         <div
