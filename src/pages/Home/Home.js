@@ -33,6 +33,7 @@ import SU from '../../assets/home/hero/su.jpeg'
 import { BarWave } from "react-cssfx-loading";
 // Better way to reduce bundle size
 import BarWave1 from "react-cssfx-loading/lib/FadingBalls";
+import { useHistory } from "react-router-dom";
 
 function Home() {
   const [index, setIndex] = useState(0);
@@ -119,9 +120,13 @@ function Home() {
       title: "The heading and heading part2",
     },
   ];
-
-  const [loading, setLoading] = useState(true);
+  const history = useHistory();
+  const [loading, setLoading] = useState(history.length <= 2);
   const setSpinner = (x)=>{
+    console.log(history.length);
+    if(history.length >1){
+      x = false;
+    }
     setLoading(x);
   }
 
