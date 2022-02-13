@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { Hidden } from "@material-ui/core";
 import React from "react";
 import "./clubevents.css";
 export default function svg(prop) {
@@ -78,7 +79,8 @@ export default function svg(prop) {
           <image
             id="_233927002_3002635430007293_6642489037113739055_n-removebg-preview-2"
             data-name="233927002_3002635430007293_6642489037113739055_n-removebg-preview"
-            width="268.462"
+            // width="268.462"
+            overflow={Hidden}
             height="244.85"
             transform="translate(30 30)"
             xlinkHref={prop.porHolders.image}

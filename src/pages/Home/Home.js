@@ -13,6 +13,9 @@ import bgvideo from '../../assets/images/video/movie.mp4'
 import footer from "../../assets/images/footer.png";
 import Footerdark from '../../assets/images/Footerdark.svg'
 
+import dopy from '../../assets/home/hero/dopy.jpg'
+import journal from '../../assets/home/hero/journal.jpg'
+
 import Text from "./Text";
 
 import overlay from '../../assets/images/video/Overlay.svg'
@@ -219,7 +222,7 @@ function Home() {
       </div>
 
       {/* Campus Events */}
-      <div>
+      <div >
         <p className="header">Campus Events</p>
         <div className="container">
           <button
@@ -269,7 +272,7 @@ function Home() {
       <div>
         <p
           className="header"
-          style={{ marginTop: "-2vh", marginBottom: "4vh" }}
+          style={{ marginTop: "-3vh", marginBottom: "4vh" }}
         >
           SU Initiatives
         </p>
@@ -339,14 +342,14 @@ function Home() {
               <img src={SU} style={{width:"125%", height:"125%"}}/>
             </div>
             <div class="dot">
-              <img src={SU} style={{width:"125%", height:"125%"}}/>
+              <img src={journal} style={{width:"125%", height:"125%"}}/>
             </div>
             <div class="dot">
-              <img src={SU} style={{width:"125%", height:"125%"}}/>
+              <img src={dopy} style={{width:"125%", height:"125%"}}/>
             </div>
           </div>
 
-          <button className="contri-btn">Contributors To This Page</button>
+          <button className="contri-btn">Contributors</button>
         </div>
       </div>
       <Footer background={Footerdark} />

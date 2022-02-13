@@ -30,7 +30,7 @@ export default function Clubname({name, about}) {
         </div>
         <div className="clubname" style={{ display: "flex" }}>
           <div>{name}</div>
-          <i
+          {/* <i
             class="fa fa-bell-o bell"
             aria-hidden="true"
             style={{
@@ -39,8 +39,8 @@ export default function Clubname({name, about}) {
               cursor: "pointer",
             }}
             onClick={subscribefun}
-          ></i>
-          <i
+          ></i> */}
+          {/* <i
             class="fa fa-bell bell"
             aria-hidden="true"
             style={{
@@ -50,7 +50,7 @@ export default function Clubname({name, about}) {
               cursor: "pointer",
             }}
             onClick={notsubscribefun}
-          ></i>
+          ></i> */}
         </div>
       </div>
       <div className="club_aboutus">

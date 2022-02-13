@@ -25,7 +25,7 @@
 
 .explore-btn {
     padding: 1.2vh 1.8vw;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: white;
     border: none;
     background-color: #da544f;
@@ -57,7 +57,7 @@
 
     .explore-btn {
         left: 10%;
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 1vh 2vw;
         margin-top: 11vh;
     }

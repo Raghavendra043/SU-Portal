@@ -10,6 +10,7 @@ export default function activities({current}) {
           width: "70%",
           margin: "auto",
           marginTop: "50px",
+          marginBottom:"30px"
         }}
       >
         Current Activities
@@ -38,7 +39,7 @@ export default function activities({current}) {
               padding: "20px",
             }}
           >
-            {current[0]}
+            <b>{current[0].title}</b><br/>{current[0].info}
           </p>
         </div>
         <img
@@ -53,7 +54,7 @@ export default function activities({current}) {
         style={{
           display: "flex",
 
-          marginTop: "50px",
+          marginTop: "20px",
         }}
       >
         <div
@@ -75,7 +76,7 @@ export default function activities({current}) {
               WebkitOverflowScrolling: "none",
             }}
           >
-            {current[1]}
+            <b>{current[1].title}</b><br/>{current[1].info}
           </p>
         </div>
         <img

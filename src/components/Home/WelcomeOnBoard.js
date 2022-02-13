@@ -11,8 +11,8 @@ export default function WelcomeOnBoard() {
         <div className="welcome-container">
           <img src={bg2} alt="bg2" style={{ width: "100%" }} />
           <img src={bg1} alt="bg1" style={{ width: "100%", position: "absolute", top: "0.8vh" }} />
-          <h1 className="welcome-title">Welcome On Board!</h1>
-          <h2 className="welcome-subtitle"><b>BITS, It's Magic</b></h2>
+          <h1 className="welcome-title">Welcome On Board !</h1>
+          <h2 className="welcome-subtitle"><b>BITS, It's Magic...</b></h2>
           <img className="image1" alt="" />
           <img className="image2" alt="" />
 
