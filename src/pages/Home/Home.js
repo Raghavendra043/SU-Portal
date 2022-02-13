@@ -336,10 +336,10 @@ function Home() {
         >
           <div class="flex-container-contri">
             <div class="dot">
-              <img src={SU} style={{width:"125%", height:"125%"}}/>
+              <img src={SU} style={{width:"130%", height:"125%"}}/>
             </div>
             <div class="dot">
-              <img src={SU} style={{width:"125%", height:"125%"}}/>
+              <img src={SU} style={{width:"130%", height:"125%"}}/>
             </div>
             <div class="dot">
               <img src={journal} style={{width:"125%", height:"125%"}}/>
