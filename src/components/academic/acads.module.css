@@ -1,0 +1,61 @@
+@import url('http://fonts.cdnfonts.com/css/nicholia');
+.back {
+    position: absolute;
+    left: 0%;
+    top: 30%;
+    width: 110vw;
+    z-index: -1;
+    height: 600px;
+    margin-left: -20px;
+}
+
+.acad {
+    position: absolute;
+    left: 10%;
+    z-index: -2;
+    height: 550px;
+}
+
+.txt {
+    /* display: none; */
+    position: absolute;
+    font-family: Montserrat;
+    width: 450px;
+    left: 1000px;
+    top: 250px;
+    font-weight: 600;
+}
+
+.curve {
+    position: relative;
+    /* bottom: 80px; */
+    top:-140px;
+}
+
+.know {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top:-350px;
+}
+.knowtxt{
+    text-align: left;
+    font: normal normal normal 100px/139px Nicholia;
+    height: 139px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-right: 100px;
+}
+.map{
+    position: relative;
+    /* bottom: 400px; */
+    top: -450px;
+    z-index: -1;
+    margin-bottom: -440px;
+}
+.compass{
+    margin-left: 40px;
+    height: 90px;
+}
