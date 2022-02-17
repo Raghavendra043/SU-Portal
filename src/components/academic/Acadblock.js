@@ -3,9 +3,42 @@ import React from "react";
 import "./acadblock.css";
 import img1 from "./MaskGroup35.png";
 import img2 from "./MaskGroup34.png";
+import svg_1 from "./../../assets/images/Academic/acad.png";
+import svg_2 from "./../../assets/images/Academic/back.png";
+import svg_3 from "./../../assets/images/Academic/curve.png";
+import svg_4 from "./../../assets/images/Academic/MapView_night.svg";
+import svg_5 from "./../../assets/images/Academic/compass.png";
+import styles from "./acads.module.css";
+// import backsvg from "./Group 99.svg";
 export default function () {
   return (
     <div className="acadouterbox">
+      <div className="hero_div">
+        <div className="img_div">
+          <img src={svg_2} alt="photo" className={styles.back} />
+          <div style={{ display: "flex" }}>
+            <img src={svg_1} alt="photo" className={styles.acad} />
+            <div className={styles.txt}>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna aliquyam erat, sed diam
+              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+            </div>
+          </div>
+        </div>
+      </div>
+      <img className={styles.curve} src={svg_3} />
+      <div className={styles.know}>
+        <img src={svg_5} className={styles.compass}/>
+        <div className={styles.knowtxt}>Know your Campus</div>
+      </div>
+      <img className={styles.map} src={svg_4} />
+
       <div className="acadinnerbox">
         <div
           className="acadinnerleftbox"
