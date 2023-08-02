@@ -1,12 +1,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e367785 (set up the toggling in about us)
 import React, { useState } from "react";
 =======
 import React,{useState} from "react";
 >>>>>>> f8fe872 (set up the toggling in about us)
+<<<<<<< HEAD
 =======
 import React,{useState} from "react";
 >>>>>>> f8fe872 (set up the toggling in about us)
+=======
+>>>>>>> e367785 (set up the toggling in about us)
 import { Fade } from "react-awesome-reveal";
 import aboutcss from "./AboutContent.module.css";
 import { Link } from "react-router-dom";
@@ -15,6 +21,9 @@ import { about } from "./data";
 export default function About() {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e367785 (set up the toggling in about us)
 	const [selectedItem, setSelectedItem] = useState(about.rightheading[0]);
 
 	const handleItemClick = (item) => {
@@ -94,8 +103,11 @@ export default function About() {
 		</div>
 	);
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> f8fe872 (set up the toggling in about us)
+=======
+>>>>>>> e367785 (set up the toggling in about us)
   const [selectedItem, setSelectedItem] = useState(about.rightheading[0]);
 
   const handleItemClick = (item)=>{

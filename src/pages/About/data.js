@@ -2,6 +2,9 @@ import backimage from "./Union1.jpeg";
 export const about = {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e367785 (set up the toggling in about us)
 	rightheading: [
 		{
 			id: "about-us",
@@ -42,8 +45,11 @@ export const about = {
 	bottomheading: "About",
 	backimage: `${backimage}`,
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> f8fe872 (set up the toggling in about us)
+=======
+>>>>>>> e367785 (set up the toggling in about us)
   rightheading: [
     {
       id: "about-us",
