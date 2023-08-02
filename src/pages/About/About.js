@@ -1,10 +1,15 @@
-import React from "react";
+import React,{useState} from "react";
 import { Fade } from "react-awesome-reveal";
 import aboutcss from "./AboutContent.module.css";
 import { Link } from "react-router-dom";
 import { about } from "./data";
 
 export default function About() {
+  const [selectedItem, setSelectedItem] = useState(about.rightheading[0]);
+
+  const handleItemClick = (item)=>{
+    setSelectedItem(item);
+  }
   const back = () => {
     window.history.go(-1);
   };
@@ -44,25 +49,34 @@ export default function About() {
             </h6>
           </div>
           <div className={aboutcss.aboutcontent}>
-            <div className={aboutcss.aboutleft}>
-              <Fade direction="left" delay={300} triggerOnce>
-                <div className={aboutcss.aboutleftheading}>
-                  <h1>{about.leftheading}</h1>
-                  <p style={{ marginTop: "1rem" }}>{about.leftpara}</p>
-                </div>
-              </Fade>
-            </div>
-            <div className={aboutcss.aboutright}>
-              <Fade direction="right" delay={300} triggerOnce>
-                {about.rightheading.map(event => {
-                  return (
-                    <Link to="#" className={aboutcss.link}>
-                      <h1>{event.heading}</h1>
-                    </Link>
-                  );
-                })}
-              </Fade>
-            </div>
+          <div className={aboutcss.aboutleft}>
+  <Fade direction="left" delay={300} triggerOnce>
+    <div className={aboutcss.aboutleftheading}>
+      <h1>{selectedItem.heading}</h1>
+      <p style={{ marginTop: "1rem" }}>{selectedItem.content}</p>
+    </div>
+  </Fade>
+</div>
+
+
+<div className={aboutcss.aboutright}>
+  <Fade direction="right" delay={300} triggerOnce>
+    {about.rightheading.map((item) => (
+      <div key={item.id} className={aboutcss.link}>
+        {item.id === "su-team" || item.id === "contact-us" ? (
+          <Link to={`/other-page#${item.id}`}>
+            <h1>{item.title}</h1>
+          </Link>
+        ) : (
+          <h1 onClick={() => handleItemClick(item)}>{item.title}</h1>
+        )}
+      </div>
+    ))}
+  </Fade>
+</div>
+
+
+
           </div>
           <div className={aboutcss.aboutbottomheading}>
             <h1>{about.bottomheading}</h1>
