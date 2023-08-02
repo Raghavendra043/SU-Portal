@@ -75,3 +75,29 @@
   margin-top: -85px;
   margin-right: -90px;
 }
+
+@media screen and (max-width : 993px){
+  .outletouterbox, .revoutletouterbox{
+    height: 80vh;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .outletleftbox{
+    width: 90vw;
+    box-sizing: border-box;
+    position: absolute;
+    top: 30%;
+  } 
+  .revoutletleftbox{
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 30%;
+  }
+  .outletimg, .revoutletimg{
+    opacity: 0.6;
+    width: 80%;
+    
+  }
+  
+}
