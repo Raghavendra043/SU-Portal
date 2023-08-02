@@ -12,6 +12,7 @@ import svg_3 from "./../../assets/images/FoodOutletssvgs/Food outlets svgs/Mask 
 import svg_4 from "./../../assets/images/FoodOutletssvgs/Food outlets svgs/Path 50.svg";
 // import backsvg from "./Group 99.svg";
 export default function FoodOutlets() {
+<<<<<<< HEAD
 	return (
 		<div>
 			<div className="hero_div">
@@ -35,6 +36,31 @@ export default function FoodOutlets() {
 				<Revoutlet fooddata={fooddata.sixth} />
 				<Outlet fooddata={fooddata.seventh} />
 			</div>
+=======
+  return (
+    <div>
+      <div className="hero_div">
+        <div className="img_div">
+          <img src={svg_1} alt="photo" className="svg_1" />
+          <img src={svg_2} alt="photo" className="svg_2" />
+          <img src={svg_3} alt="photo" className="svg_3" />
+          <img src={svg_4} alt="photo" className="svg_4" />
+        </div>
+        <div className="write_up">
+            Have a look at all the food outlets in campus.Have a look at all the food outlets in campus.
+          </div>
+      </div>
+      <div className="backsvg">
+        <Outlet fooddata={fooddata.first} id={"one"} />
+        <Revoutlet fooddata={fooddata.second} />
+        <Outlet fooddata={fooddata.third} />
+        <Revoutlet fooddata={fooddata.fourth} />
+        <Outlet fooddata={fooddata.fivth} />
+        <Revoutlet fooddata={fooddata.sixth} />
+        <Outlet fooddata={fooddata.seventh} />
+        <Revoutlet fooddata={fooddata.eight} />
+      </div>
+>>>>>>> 4eb6c4d (Make the Food Outlets page responsive.)
 
 			<div>
 				<Footer background={footer} />
