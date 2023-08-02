@@ -20,18 +20,10 @@ export default function FoodOutlets() {
           <img src={svg_2} alt="photo" className="svg_2" />
           <img src={svg_3} alt="photo" className="svg_3" />
           <img src={svg_4} alt="photo" className="svg_4" />
-          <div className="write_up">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum
-          </div>
         </div>
+        <div className="write_up">
+            Have a look at all the food outlets in campus.Have a look at all the food outlets in campus.
+          </div>
       </div>
       <div className="backsvg">
         <Outlet fooddata={fooddata.first} id={"one"} />
