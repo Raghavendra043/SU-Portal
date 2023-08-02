@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, { useState } from "react";
+=======
+import React,{useState} from "react";
+>>>>>>> f8fe872 (set up the toggling in about us)
 =======
 import React,{useState} from "react";
 >>>>>>> f8fe872 (set up the toggling in about us)
@@ -9,6 +13,7 @@ import { Link } from "react-router-dom";
 import { about } from "./data";
 
 export default function About() {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	const [selectedItem, setSelectedItem] = useState(about.rightheading[0]);
 
@@ -89,6 +94,8 @@ export default function About() {
 		</div>
 	);
 =======
+=======
+>>>>>>> f8fe872 (set up the toggling in about us)
   const [selectedItem, setSelectedItem] = useState(about.rightheading[0]);
 
   const handleItemClick = (item)=>{
