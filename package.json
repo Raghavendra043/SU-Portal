@@ -1,8 +1,11 @@
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4eb6c4d (Make the Food Outlets page responsive.)
+=======
+>>>>>>> 58bdffa (Make the Food Outlets page responsive.)
   "name": "su-portal",
   "version": "0.1.0",
   "private": true,
@@ -56,6 +59,7 @@
       "last 1 safari version"
     ]
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 	"name": "su-portal",
@@ -124,4 +128,6 @@
 >>>>>>> f8fe872 (set up the toggling in about us)
 =======
 >>>>>>> 4eb6c4d (Make the Food Outlets page responsive.)
+=======
+>>>>>>> 58bdffa (Make the Food Outlets page responsive.)
 }

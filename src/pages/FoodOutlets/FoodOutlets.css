@@ -79,10 +79,14 @@
       z-index: -4;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   @media screen and (max-width : 900px) {
 =======
   @media screen and (max-width : 993px) {
 >>>>>>> 4eb6c4d (Make the Food Outlets page responsive.)
+=======
+  @media screen and (max-width : 993px) {
+>>>>>>> 58bdffa (Make the Food Outlets page responsive.)
       .hero_div{
           height: 90vh;
           margin-top: 10vh;
@@ -118,6 +122,7 @@
       }
       
 <<<<<<< HEAD
+<<<<<<< HEAD
   }
 @media screen and (600px <= width <= 900px) {
   .hero_div{
@@ -128,3 +133,6 @@
 =======
   }
 >>>>>>> 4eb6c4d (Make the Food Outlets page responsive.)
+=======
+  }
+>>>>>>> 58bdffa (Make the Food Outlets page responsive.)

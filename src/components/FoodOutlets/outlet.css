@@ -77,6 +77,7 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media screen and (max-width : 900px){
   .outletouterbox, .revoutletouterbox{
     height: 40vh;
@@ -90,13 +91,18 @@
     clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 95%);
   }
 =======
+=======
+>>>>>>> 58bdffa (Make the Food Outlets page responsive.)
 @media screen and (max-width : 993px){
   .outletouterbox, .revoutletouterbox{
     height: 80vh;
     flex-direction: column;
     margin-top: 0px;
   }
+<<<<<<< HEAD
 >>>>>>> 4eb6c4d (Make the Food Outlets page responsive.)
+=======
+>>>>>>> 58bdffa (Make the Food Outlets page responsive.)
   .outletleftbox{
     width: 90vw;
     box-sizing: border-box;
@@ -116,6 +122,7 @@
   }
   
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 @media screen and (max-width : 600px){
   #c3{
@@ -129,4 +136,6 @@
   }
 =======
 >>>>>>> 4eb6c4d (Make the Food Outlets page responsive.)
+=======
+>>>>>>> 58bdffa (Make the Food Outlets page responsive.)
 }
