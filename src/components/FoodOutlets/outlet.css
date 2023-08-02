@@ -82,6 +82,12 @@
     flex-direction: column;
     margin-top: 0px;
   }
+  .outletouterbox{
+    clip-path: polygon(0 0, 100% 5%, 100% 90%, 0 100%);
+  }
+  .revoutletouterbox{
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 95%);
+  }
   .outletleftbox{
     width: 90vw;
     box-sizing: border-box;
