@@ -76,7 +76,7 @@
   margin-right: -90px;
 }
 
-@media screen and (max-width : 993px){
+@media screen and (max-width : 600px){
   .outletouterbox, .revoutletouterbox{
     height: 80vh;
     flex-direction: column;
