@@ -22,7 +22,7 @@ export default function FoodOutlets() {
           <img src={svg_4} alt="photo" className="svg_4" />
         </div>
         <div className="write_up">
-            Have a look at all the food outlets in campus.Have a look at all the food outlets in campus.
+            Have a look at all the food outlets in campus. You'll probably be spending most of your money here afterall.
           </div>
       </div>
       <div className="backsvg">
