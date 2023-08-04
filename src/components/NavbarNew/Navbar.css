@@ -1,5 +1,7 @@
 nav {
   height: 10vh;
+  background-color: rgb(255, 255, 255);
+
 }
 
 .nav-des-top {
@@ -57,11 +59,18 @@ nav {
 .navbar .navbar-nav .navbar-login::after {
   display: none;
 }
+.navbar-brand{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin: -27px 0px;
+
+}
 
 .bits-logo-img {
   height: 13vh;
   width: 15vw;
-  min-width: 150px;
+  min-width: 200px;
   margin-right: 0.2em;
   margin-top: 7px;
   transition: 0.2s ease;
@@ -80,22 +89,45 @@ nav {
     justify-content: flex-end;
   }
 }
+.hamburger{
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  right: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+}
+.hamburger .line{
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  background-color: #333;
 
-@media only screen and (max-width: 993px) {
-  .navbar {
-    background-color: black;
+}
+.hamburger .cross{
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  background-color: #333;
+  transform-origin: 1px;
+  transition: all 0.1s ease-out;
+  z-index: 10000;
+
+  &:nth-child(1){
+    transform: rotate(45deg);
   }
-
-  nav {
-    height: auto;
+  &:nth-child(3){
+    transform: rotate(-45deg);
   }
-
-  .navbar .navbar-nav .nav-link {
-    color: white;
-    padding: 0.5em 1em;
-  }
-
-  .navbar .navbar-nav .navbar-login {
-    margin: 0;
+  &:nth-child(2){
+    opacity: 0;
   }
 }
+@media (min-width:900px){
+  .hamburger{
+    display: none;
+  }
+}
+
+
