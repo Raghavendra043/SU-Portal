@@ -89,7 +89,7 @@
     }
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1080px) {
     .welcome-freshers {
         height: 50vh;
     }
@@ -109,6 +109,28 @@
     .group_photo {
         height: 45vh;
         width: 38%;
+    }
+}
+@media all and (max-width: 920px) {
+    .welcome-freshers {
+        height: 50vh;
+    }
+
+    .welcome-freshers-text {
+        font-size: 0.9rem;
+        top: 10vh;
+    }
+
+    .explore-btn {
+        font-size: 1rem;
+        padding: 1vh 1.5vw;
+        margin-top: 11vh;
+        left: 12vh;
+    }
+
+    .group_photo {
+        height: 45vh;
+        width: 30%;
     }
 }
 
@@ -133,16 +155,40 @@
 
     .group_photo {
         height: 45vh;
+        width: 25%;
     }
 }
-
-@media all and (max-width: 425px) {
+@media all and (max-width: 620px) {
     .welcome-freshers {
-        height: 70vh;
+        height: 50vh;
     }
 
     .welcome-freshers-text {
-        font-size: 0.85rem;
+        margin-top: -10px;
+        font-size: 0.6rem;
+        top: 10vh;
+    }
+
+    .explore-btn {
+        font-size: 1rem;
+        padding: 1vh 1.5vw;
+        margin-top: 11vh;
+        left: 12vh;
+    }
+
+    .group_photo {
+        height: 45vh;
+        width: 20%;
+    }
+}
+@media all and (max-width: 498px) {
+    .welcome-freshers {
+        height: 70vh;
+        margin-bottom: -10;
+    }
+
+    .welcome-freshers-text {
+        font-size: 0.9rem;
         left: 10vh;
         top: 15vh;
     }
@@ -163,7 +209,7 @@
         visibility: visible;
         z-index: -1;
         position: absolute;
-        top: 10vh;
+        
     }
 
     .welcomeimg {

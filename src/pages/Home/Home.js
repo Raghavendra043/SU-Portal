@@ -114,24 +114,25 @@ function Home() {
       sub1:"The SU has successfully reopened college for all batches (except the 2021 batch) through staggered slots of arrival. COVID protocols have been abided and all precautions have been taken for isolations if need be."
     },
     {
-      title: "The heading and heading part2",
+      title: "The heading and heading part1",
     },
     {
       title: "The heading and heading part2",
     },
     {
-      title: "The heading and heading part2",
+      title: "The heading and heading part3",
     },
   ];
   const history = useHistory();
   const [loading, setLoading] = useState(history.length <= 2);
-  const setSpinner = (x)=>{
-    console.log(history.length);
-    if(history.length >1){
-      x = false;
+  
+  const setSpinner = (x) => {
+    if (history.length > 1) {
+      setLoading(false);
+    } else {
+      setLoading(x);
     }
-    setLoading(x);
-  }
+  };
 
   useEffect(() => {
     setTimeout(() => setSpinner(false), 3000)
@@ -151,25 +152,19 @@ function Home() {
         </video>
         <img src={overlay} alt="path1" style={{ width: "100%", position:"absolute" }} />
         <object
+          className="start-image"
           type="image/svg+xml"
           data={heroImg}
-          style={{ position: "absolute", top: 30, right: 20, width: "50vw" }}
+          style={{ position: "absolute", top: "45px", right: 20, width: "50vw", animation: "moveUpDown 2s forwards" }}
         >
           <param name="param1" value={dp} />
         </object>
         
-        <div style={{ position: "relative", top: 120, paddingLeft: 30 }}>
+        <div className="main-text" >
           <Text />
           <div
-            style={{
-              height: "50px",
-              marginTop:"20px",
-              textAlign: "left",
-              font: "normal normal 800 30px/49px Montserrat",
-              letterSpacing: "0px",
-              color: "#FFFFFF",
-              opacity: "1",
-            }}
+            className="student-text"
+           
           >
             Students' Union
           </div>
@@ -222,13 +217,13 @@ function Home() {
       </div>
 
       {/* Campus Events */}
-      <div >
+      <div style={{marginTop:"100px"}}>
         <p className="header">Campus Events</p>
-        <div className="container">
+        <div className="container" >
           <button
-            disabled={index <= 0 ? true : false}
-            className="more more-left"
-            style={{ left: "5vw" }}
+            disabled={index <= 0 }
+            className="mobile-left mobile-right-index-1"
+            style={{ left: 0 }}
             onClick={() => {
               setIndex(index - 4);
             }}
@@ -238,7 +233,32 @@ function Home() {
           <Media query="(max-width: 1000px)">
             {(matches) => {
               return matches ? (
+                <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginRight:"30px",marginLeft:"15px"}}>
+                <button
+                  disabled={index <=  0}
+                  className="mobile-left"
+                  style={{ left: 0 }}
+                  onClick={() => {
+                    setIndex(index - 1);
+                  }}
+                >
+                  <i className="fa fa-lg fa-chevron-left" aria-hidden="true"></i>
+                </button>
                 <CampusEvents Event={Event} index={index} temp={[0, 1]} />
+                {index < Event.length - 1 && 
+                <button
+                  disabled={index === Event.length-1 }
+                  className="mobile-right  "
+                  style={{ right: 0}}
+                  onClick={() => {
+                    setIndex(index + 1);
+                  }}
+                >
+                  <i className="fa fa-lg fa-chevron-right" aria-hidden="true"></i>
+                </button>
+            }
+              </div>
+                
               ) : (
                 <CampusEvents Event={Event} index={index} temp={[50, 4]} />
               );
@@ -247,10 +267,10 @@ function Home() {
 
           <button
             disabled={
-              index === 4 * (Math.ceil(Event.length / 4) - 1) ? true : false
+              index >= Event.length - 4
             }
-            className="more"
-            style={{ right: "5vw" }}
+            className="mobile-right mobile-right-index-1"
+            style={{ right: 0 }}
             onClick={() => {
               setIndex(index + 4);
             }}
@@ -261,29 +281,29 @@ function Home() {
       </div>
 
       {/* Welcome Freshers */}
-
-      <div>
+ 
+      <div style={{marginTop:"100px"}}>
         <p className="header">Welcome Freshers</p>
         <WelcomeFreshers />
       </div>
 
       {/* SU Initiaves */}
 
-      <div>
+      <div className="mt-3">
         <p
-          className="header"
+          className="header "
           style={{ marginTop: "-3vh", marginBottom: "4vh" }}
         >
           SU Initiatives
         </p>
         <div
           className="container"
-          style={{ width: "100vw", flexDirection: "row !important" }}
+          style={{ width: "100vw", flexDirection: "row "}}
         >
           <button
             disabled={count <= 0 ? true : false}
-            className="more more-left"
-            style={{ left: "5vw" }}
+            className="mobile-left"
+            style={{ left: 0 }}
             onClick={() => {
               setCount(count - 3);
             }}
@@ -294,12 +314,35 @@ function Home() {
           <Media query="(max-width: 1000px)">
             {(matches) => {
               return matches ? (
+                <div style={{display:"flex",alignItems:"center"}}>
+                   <button
+                  disabled={count <= 0 ? true : false}
+                  className="mobile-left"
+                  style={{ left: 0 }}
+                  onClick={() => {
+                    setCount(count - 1);
+                  }}
+                >
+                  <i className="fa fa-lg fa-chevron-left" aria-hidden="true"></i>
+                </button>
                 <SUInitiatives Event={Initiatives} index={count} temp={1} />
+                <button
+                  disabled={count === Initiatives.length - 1 ? true : false}
+                  className="mobile-right"
+                  style={{ right: 0 }}
+                  onClick={() => {
+                    setCount(count + 1);
+                  }}
+                >
+                  <i className="fa fa-lg fa-chevron-right" aria-hidden="true"></i>
+                </button>
+                </div>
               ) : (
                 <SUInitiatives Event={Initiatives} index={count} temp={3} />
               );
             }}
           </Media>
+         
 
           <button
             disabled={
@@ -307,8 +350,8 @@ function Home() {
                 ? true
                 : false
             }
-            className="more"
-            style={{ right: "5vw" }}
+            className="mobile-right mobile-right-index-1"
+            style={{ right: 0}}
             onClick={() => {
               setCount(count + 3);
             }}
@@ -334,18 +377,18 @@ function Home() {
             textAlign: "center",
           }}
         >
-          <div class="flex-container-contri">
-            <div class="dot">
-              <img src={SU} style={{width:"130%", height:"125%"}}/>
+          <div className="flex-container-contri">
+            <div className="dot mb-5">
+              <img src={SU} />
             </div>
-            <div class="dot">
-              <img src={SU} style={{width:"130%", height:"125%"}}/>
+            <div className="dot mb-5">
+              <img src={SU} />
             </div>
-            <div class="dot">
-              <img src={journal} style={{width:"125%", height:"125%"}}/>
+            <div className="dot mb-5 mt-5">
+              <img src={journal} />
             </div>
-            <div class="dot">
-              <img src={dopy} style={{width:"125%", height:"125%"}}/>
+            <div className="dot mb-5 mt-5">
+              <img src={dopy} />
             </div>
           </div>
 

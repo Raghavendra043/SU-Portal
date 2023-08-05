@@ -27,7 +27,7 @@ export default function SU_Initiatives(props) {
       let data = [];
       for(let j=0;j<Event.length;j++){
         data[j] = Event[j].sub;
-      }
+      } 
       setData(data);
       document.getElementById(i).style.height = "36%";
       document.getElementById(i).style.borderTopLeftRadius = "0";

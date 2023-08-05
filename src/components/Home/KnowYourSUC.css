@@ -68,4 +68,15 @@
     font-size: 6px;
   }
 }
+@media only screen and (max-width: 500px) {
+  .knowyoursuc_images {
+    font-size: 5px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .knowyoursuc_images {
+    font-size: 4px;
+  }
+}
+
 /* responsive upto 550px */

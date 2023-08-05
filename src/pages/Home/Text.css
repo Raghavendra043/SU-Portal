@@ -1,0 +1,26 @@
+
+.text{
+    margin: 0;
+  padding: 0;
+  font-size: 50px; /* Added 'px' unit for font size */
+  height: 60px; /* Added 'px' unit for height */
+  font-family: "Montserrat";
+  font-weight: bold;
+  background: transparent linear-gradient(90deg, #c400ff 0%, #e24e56 100%) 0% 0%
+    no-repeat padding-box;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+@media (max-width: 900px) {
+    .text {
+      font-size: 35px; /* Added 'px' unit for font size */
+    }
+  }
+  @media (max-width: 600px) {
+    .text {
+      font-size: 35px;
+      /* Added 'px' unit for font size */
+    }
+    
+    
+  }
