@@ -1,4 +1,31 @@
-  
+  .scroll{
+    font: normal normal 800 30px/49px Montserrat;
+    letter-spacing: 0px;
+    color: white;
+    opacity: 1;
+    padding-right: 10;
+  }  
+  @media (min-width: 601px) and (max-width: 901px) {
+    .scroll {
+      position: relative;
+      top: 80px; /* Move the h1 element down by 60 pixels */
+      color: grey; /* Change text color to black for screens less than 900px */
+    }
+  }
+  @media (min-width: 451px) and (max-width: 600px) {
+    .scroll {
+      position: relative;
+      top: 50px; /* Move the h1 element down by 60 pixels */
+      color: grey; /* Change text color to black for screens less than 900px */
+    }
+  }
+  @media (max-width: 451px) {
+    .scroll {
+      position: relative;
+      top: 50px; /* Move the h1 element down by 60 pixels */
+      color: grey; /* Change text color to black for screens less than 900px */
+    }
+  }
   h1 {
     font-size: 30px;
     color: "#FFFFFF";

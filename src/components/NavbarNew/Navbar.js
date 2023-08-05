@@ -1,11 +1,43 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect } from "react";
+import React, { useEffect,useState,useRef } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //import logo from "./logo.png";
+import { faBars, faTimes,faUser } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../assets/images/logo.svg";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function Navbar() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isProfileVisible, setIsProfileVisible] = useState(window.innerWidth < 993);
+  const navRef = useRef(null);
+
+  const handleToggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setIsNavOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsProfileVisible(window.innerWidth < 993);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   //   useEffect(() => {
   //     const handleScroll = () => {
   //       var navbar = document.getElementsByClassName("navbar");
@@ -61,7 +93,8 @@ function Navbar() {
   //           </li>
 
   return (
-    <div>
+    <div ref={navRef}>
+      {isNavOpen && <div className="background-overlay" onClick={handleToggleNav} />}
       <nav
         className="navbar navbar-expand-lg  fixed-top py-0 nav-des-free"
         id="main-nav"
@@ -72,24 +105,37 @@ function Navbar() {
               <img src={logo} alt="Bits SU" className="bits-logo-img" />
             </div>
           </a>
+          <div className="d-flex align-items-center">
+          {isProfileVisible && (
+            <div className="user-icon ml-5" style={{ fontSize: "24px"}}> {/* Increase the font size for the user icon */}
+              <FontAwesomeIcon icon={faUser} />
+            </div>
+          )}
+      
           <button
-            className="navbar-toggler"
+            className={`navbar-toggler ${isNavOpen ? "active" : ""} `}
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={handleToggleNav}
+            style={{ fontSize: "28px" }}
           >
-            <span className="navbar-toggler-icon"></span>
+            
+        
+           <FontAwesomeIcon icon={isNavOpen ? faTimes : faBars} />
           </button>
+          </div>
+          
           <div
-            className="collapse navbar-collapse ms-lg-2 pt-2"
+              className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}  navbar-side-collapse-right`}
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav ml-auto ">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/about" exact>
+                <NavLink className="nav-link topper" to="/about" exact>
                   About Us
                 </NavLink>
               </li>

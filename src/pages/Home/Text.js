@@ -1,24 +1,14 @@
 import React from "react";
-
+import "./Text.css"
 function Text() {
   return (
-    <div>
+    <div className="texter">
       <h1
-        style={{
-          margin: 0,
-          padding: 0,
-          fontSize: 50,
-          height:"60px",
-          fontFamily: "Montserrat",
-          fontWeight: "bold",
-          background:
-            "transparent linear-gradient(90deg, #C400FF 0%, #E24E56 100%) 0% 0% no-repeat padding-box",
-          WebkitTextFillColor: "transparent",
-          WebkitBackgroundClip: "text",
-        }}
+       className="text"
       >
         BITS Pilani Hyderabad
       </h1>
+     
     </div>
   );
 }

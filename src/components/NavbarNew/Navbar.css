@@ -77,25 +77,61 @@ nav {
   #navbarSupportedContent {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; 
   }
 }
 
 @media only screen and (max-width: 993px) {
   .navbar {
-    background-color: black;
+    background-color: white;
+  }
+  .bits-logo-img{
+    margin-top: -5px;
+    
+    
   }
 
   nav {
-    height: auto;
+    height: 80px;
+    
   }
 
   .navbar .navbar-nav .nav-link {
-    color: white;
+    color: black;
     padding: 0.5em 1em;
-  }
+    font-size: 20px;
 
+  }
+  .topper{
+    margin-top: 40px;
+  }
   .navbar .navbar-nav .navbar-login {
     margin: 0;
   }
+
+  /* Slide-in from the right animation for the dropdown menu */
+  .navbar-side-collapse-right {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Move the dropdown to the right side, initially hidden */
+    width: 50%; /* Adjust the width to your preference */
+    height: 100%; /* Make the dropdown take the full height of the screen */
+    padding: 1em;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(206, 6, 6, 0.2);
+    transition: right 0.3s ease;
+    white-space: nowrap;
+    z-index: 9999; /* Ensure the dropdown is above other elements */
+  }
+
+  .navbar-side-collapse-right.show {
+    right: 0; /* Show the dropdown by moving it to the right */
+  }
+
+  .navbar-side-collapse-right ul {
+    flex-direction: column;
+  }
 }
+
+
+

@@ -64,11 +64,11 @@
   position: absolute;
   color: white;
   top: 25vh;
-  left: 40%;
+  left: 60%;
   width: 53%;
 }
 
-@media all and (max-width: 1440px) {
+@media all and (max-width: 1536px) {
   .welcome-title {
     font-weight: 700;
   }
@@ -96,179 +96,50 @@
     margin-top: 3vh;
     top: 150px;
     width: 52%;
-    font-size: 1.1em;
+    font-size: 1.3em;
     left: 600px;
+    color: black;
   }
 }
 
-@media all and (max-width: 1350px) {
+
+@media all and (max-width: 1200px) {
   .welcome-title {
     font-weight: 700;
+    top: 5vh;
   }
 
   .welcome-subtitle {
     font-weight: 100;
-    top: 11vh;
+    top: 9vh;
   }
 
   .image1 {
     margin-right: 1vh;
     left: 5vh;
-    height: 38vh;
-    top: 20vh;
+    height: 35vh;
+    top: 18vh;
   }
 
   .image2 {
     margin-left: 1vh;
-    left: 32vh;
-    height: 38vh;
-    top: 15vh;
+    left: 30vh;
+    height: 35vh;
+    top: 13vh;
   }
 
   .welcome-text {
     margin-top: 3vh;
     top: 16vh;
-    width: 52%;
+    width: 50%;
     font-size: 2.2vh;
+    left: 500px;
 
   }
 }
 
-@media all and (max-width: 1250px) {
-  .welcome-title {
-    font-weight: 700;
-    top: 5vh;
-  }
 
-  .welcome-subtitle {
-    font-weight: 100;
-    top: 9vh;
-  }
-
-  .image1 {
-    margin-right: 1vh;
-    left: 5vh;
-    height: 35vh;
-    top: 18vh;
-  }
-
-  .image2 {
-    margin-left: 1vh;
-    left: 30vh;
-    height: 35vh;
-    top: 13vh;
-  }
-
-  .welcome-text {
-    margin-top: 3vh;
-    top: 16vh;
-    width: 52%;
-    font-size: 2.1vh;
-
-  }
-}
-
-@media all and (max-width: 1150px) {
-  .welcome-title {
-    font-weight: 700;
-    top: 5vh;
-  }
-
-  .welcome-subtitle {
-    font-weight: 100;
-    top: 9vh;
-  }
-
-  .image1 {
-    margin-right: 1vh;
-    left: 5vh;
-    height: 35vh;
-    top: 18vh;
-  }
-
-  .image2 {
-    margin-left: 1vh;
-    left: 30vh;
-    height: 35vh;
-    top: 13vh;
-  }
-
-  .welcome-text {
-    margin-top: -1vh;
-    top: 16vh;
-    width: 52%;
-    font-size: 2.1vh;
-
-  }
-}
-
-@media all and (max-width: 1024px) {
-  .welcome-title {
-    font-weight: 500;
-    top: 5vh;
-  }
-
-  .welcome-subtitle {
-    font-weight: 100;
-    top: 9vh;
-  }
-
-  .image1 {
-    margin-right: 1vh;
-    left: 5vh;
-    height: 35vh;
-    top: 16vh;
-  }
-
-  .image2 {
-    margin-left: 1vh;
-    left: 25vh;
-    height: 35vh;
-    top: 12vh;
-  }
-
-  .welcome-text {
-    margin-top: -2vh;
-    top: 17vh;
-    width: 52%;
-    font-size: 0.85rem;
-  }
-}
-
-@media all and (max-width: 935px) {
-  .welcome-title {
-    font-weight: 500;
-    top: 5vh;
-  }
-
-  .welcome-subtitle {
-    font-weight: 100;
-    top: 9vh;
-  }
-
-  .image1 {
-    margin-right: 1vh;
-    left: 5vh;
-    height: 32.5vh;
-    top: 16vh;
-  }
-
-  .image2 {
-    margin-left: 1vh;
-    left: 22.5vh;
-    height: 32.5vh;
-    top: 12vh;
-  }
-
-  .welcome-text {
-    margin-top: -2vh;
-    top: 17vh;
-    width: 52%;
-    font-size: 0.7rem;
-  }
-}
-
-@media all and (max-width: 768px) {
+@media all and (max-width: 900px) {
   .welcome-title {
     font-weight: 700;
     font-size: x-large;
@@ -298,20 +169,70 @@
   .welcome-text {
     margin-top: -1.5vh;
     top: 14vh;
-    width: 59%;
-    font-size: 0.6rem;
+    width: 50%;
+    font-size: 0.8rem;
+    left: 40vh;
   }
 }
 
-@media all and (max-width: 425px) {
+
+@media all and (max-width: 600px) and (min-width: 450px) {
+  .welcome-title {
+    font-weight: 700;
+    font-size: x-large;
+    top: 4.5vh;
+  }
+
+  .welcome-subtitle {
+    font-weight: 100;
+    font-size: large;
+    top: 8vh;
+  }
+
+  .image1 {
+    margin-right: 1vh;
+    left: 5vh;
+    height: 27.5vh;
+    top: 16vh;
+  }
+
+  .image2 {
+    margin-left: 1vh;
+    left: 60vh;
+    height: 27.5vh;
+    top: 12vh;
+    
+  }
+
+  .welcome-text {
+    margin-top: -1.5vh;
+    top: 14vh;
+    width: 58%;
+    font-size: 0.8rem;
+    left: 18vh;
+    color: black;
+
+  }
+  .bg1{
+   margin-top: 190px;
+  }
+  
+  
+  
+}
+
+@media all and (max-width: 451px) {
 
   /* ../../assets/home/WelcomeOnBoard/bg1.svg */
   .bg1 {
     src: url(../../assets/home/WelcomeOnBoard/mobile_bg2.svg);
+    margin-top: 220px;
+    
   }
 
   .bg2 {
     src: url(../../assets/home/WelcomeOnBoard/mobile_bg2.svg);
+    margin-top: -280px;
 
   }
 
@@ -320,51 +241,50 @@
   }
 
   .welcome-title {
-    text-align: left;
-    font-weight: 700;
+    text-align: center;
+    font-weight: 500;
     font-size: large;
     top: 4.5vh;
-    left: 28%;
+    
   }
 
   .welcome-subtitle {
-    text-align: left;
+    text-align: center;
     font-weight: 100;
     font-size: medium;
     top: 8vh;
-    left: 20%;
+    
   }
 
   .image1 {
     margin-right: 1vh;
-    left: 5vh;
-    height: 32.5vh;
+    left: 10vh;
+    height: 28vh;
     width: 16vh;
-    top: 42.5vh;
+    top: 53vh;
     border: 0.2rem solid whitesmoke;
+    
 
   }
 
   .image2 {
     margin-left: 1vh;
-    left: 40vh;
-    height: 32.5vh;
+    left: 46%;
+    height: 28vh;
     width: 16vh;
-    top: 10vh;
+    top: 51vh;
     border: 0.2rem solid whitesmoke;
+    
   }
 
-  /* .welcome-text {
-    margin-top: -1.5vh;
-    top: 10vh;
-    font-size: 5px;
-  } */
+  .welcome-text {
+    margin-top: 6vh;
+    top: 8vh;
+    font-size: 12px;
+    left: 15%;
+    width: 75%;
+    color: black;
+  } 
 
-  .welcome-text-1 {
-    left: 5%;
-  }
-
-  .welcome-text-2 {
-    left: 25%;
-  }
+  
 }
