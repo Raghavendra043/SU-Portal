@@ -83,7 +83,7 @@
 		"web-vitals": "^1.0.1"
 	},
 	"scripts": {
-		"start": "react-scripts start",
+		"start": "cross-env NODE_OPTIONS=\"--openssl-legacy-provider\"  react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
@@ -105,6 +105,9 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
+	},
+	"devDependencies": {
+		"cross-env": "^7.0.3"
 	}
 >>>>>>> f8fe872 (set up the toggling in about us)
 }
