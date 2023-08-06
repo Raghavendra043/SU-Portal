@@ -88,10 +88,14 @@
 	},
 	"scripts": {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		"start": "cross-env NODE_OPTIONS=\"--openssl-legacy-provider\"  react-scripts start",
 =======
 		"start": "react-scripts start",
 >>>>>>> f8fe872 (set up the toggling in about us)
+=======
+		"start": "cross-env NODE_OPTIONS=\"--openssl-legacy-provider\"  react-scripts start",
+>>>>>>> a2cf2aa (changed package.json)
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
