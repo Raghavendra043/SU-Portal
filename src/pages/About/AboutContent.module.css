@@ -35,7 +35,7 @@
 
 .link {
   text-decoration: none;
-  color: white;
+  color: white; 
 }
 
 .link:hover {
@@ -286,3 +286,10 @@
     font-size: 30%;
   }
 }
+
+.customLink {
+  color: #ffffff; 
+  text-decoration: none;
+}
+
+

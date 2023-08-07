@@ -34,7 +34,7 @@ export const about = {
       title: "Batch Reps",
       heading: "Batch Reps/Hostel Reps",
     },
-    { id: "contact-us",
+    { id: "contact",
       title: "Contact us",
       heading: "Contact us",
     },

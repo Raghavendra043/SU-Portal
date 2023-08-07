@@ -63,10 +63,10 @@ export default function About() {
   <Fade direction="right" delay={300} triggerOnce>
     {about.rightheading.map((item) => (
       <div key={item.id} className={aboutcss.link}>
-        {item.id === "su-team" || item.id === "contact-us" ? (
-          <Link to={`/other-page#${item.id}`}>
-            <h1>{item.title}</h1>
-          </Link>
+        {item.id === "su-team" || item.id === "contact" ? (
+          <Link to={`/${item.id}`} className={aboutcss.customLink}>
+          <h1>{item.title}</h1>
+        </Link>
         ) : (
           <h1 onClick={() => handleItemClick(item)}>{item.title}</h1>
         )}
