@@ -7,6 +7,7 @@ export default function Outlet(props) {
       <div
         className="outletouterbox"
         style={{ backgroundColor: `${props.fooddata.backcolor}` }}
+        id={props.fooddata.id}
       >
         <div
           className="outletleftbox"

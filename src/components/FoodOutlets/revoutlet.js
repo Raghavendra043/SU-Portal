@@ -7,6 +7,7 @@ export default function revoutlet(props) {
       <div
         className="revoutletouterbox"
         style={{ backgroundColor: `${props.fooddata.backcolor}` }}
+        id={props.fooddata.id}
       >
         <div
           className="revoutletleftbox"
