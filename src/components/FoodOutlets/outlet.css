@@ -78,7 +78,7 @@
 
 @media screen and (max-width : 900px){
   .outletouterbox, .revoutletouterbox{
-    height: 80vh;
+    height: 40vh;
     flex-direction: column;
     margin-top: 0px;
   }
@@ -106,4 +106,30 @@
     
   }
   
+}
+@media screen and (max-width : 600px){
+  #c3{
+    height: 80vh;
+  }
+  #wich{
+    height: 55vh;
+  }
+  #fruitful{
+    height: 55vh;
+  }
+  #maggi{
+    height: 55vh;
+  }
+  #euro{
+    height: 55vh;
+  }
+  #yummpy{
+    height: 80vh;
+  }
+  #nescafe{
+    height: 60vh;
+  }
+  #sfc{
+    height: 60vh;
+  }
 }
