@@ -33,7 +33,6 @@ export default function FoodOutlets() {
         <Outlet fooddata={fooddata.fivth} />
         <Revoutlet fooddata={fooddata.sixth} />
         <Outlet fooddata={fooddata.seventh} />
-        <Revoutlet fooddata={fooddata.eight} />
       </div>
 
       <div>
