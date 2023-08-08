@@ -114,3 +114,9 @@
       }
       
   }
+@media screen and (600px <= width <= 900px) {
+  .hero_div{
+          height: 70vh;
+          margin-top: 10vh;
+      }
+}
